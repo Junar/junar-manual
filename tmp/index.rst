@@ -9,7 +9,7 @@ Lista
  
 .. image:: static/imagen.jpg
 
-Indice:  
+Indice (para sphinx):  
 
 .. toctree::
    :maxdepth: 2
