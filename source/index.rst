@@ -1,3 +1,5 @@
+|logo|
+
 Contenido
 *********
 
@@ -34,5 +36,6 @@ El Equipo Junar
 
 |image87|
 
+.. |logo| image:: _static/images/logo.png
 .. |image87| image:: _static/images/image87.jpg
 
