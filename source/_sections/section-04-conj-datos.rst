@@ -3,22 +3,22 @@
 
 Acceso directo desde:
 
-Posicionarse sobre el botón Conjunto de datos
+Posicionarse sobre el botón → Conjunto de datos
 
-Seleccione una opción de recolección de datos
+Seleccione una opción de recolección de datos →
 
 .. image:: ../_static/images/img004.png
 
 Otra opción para poder acceder es:
 
-Ingrese a la sección Conjuntos de Datos
+Ingrese a la sección → Conjuntos de Datos
 
 .. image:: ../_static/images/img005.png
   :align: center
 
-Presione el botón Nuevos Conjuntos de Datos
+Presione el botón → Nuevos Conjuntos de Datos
 
-Seleccione una opción de recolección de datos
+Seleccione una opción de recolección de datos →
 
 .. image:: ../_static/images/img006.png
   :align: center
@@ -93,13 +93,14 @@ Para Editar un Conjunto de Datos, hay dos opciones:
 
 
 .. image:: ../_static/images/img014.png
+  :align: center
 
 .. image:: ../_static/images/img015.png
 
 + Acercar el mouse sobre el Conjunto de Datos: Se visualizan las siguientes opciones:
 
   .. image:: ../_static/images/img016.png
-
+    :align: center
   + Crear Vista: Al hacer click sobre este botón puede crear una nueva Vista, tomando como referencia el Conjunto de datos seleccionado.
   + Editar: Al hacer click sobre este botón puede realizar cambios a la información del Conjunto de Datos.
   + Borrar: Al hacer click sobre este botón puede borrar los cambios recientes del Conjunto de datos o todos los cambios el Conjunto de datos.
@@ -134,11 +135,14 @@ Para eliminar un Conjunto de Datos, hay dos opciones:
 + En el listado de Conjuntos de Datos, seleccione un Conjunto de Datos y presione el botón |btn-borrar|
 
   .. image:: ../_static/images/img021.png
+
   .. image:: ../_static/images/img022.png
+    :align: center
 
 El sistema permite eliminar la revisión actual o todas las revisiones del Conjunto de Datos. Esta última acción elimina el Conjunto de Datos y todos sus recursos asociados, como así también los elimina del micrositio. Por Revisión se entiende los distintos cambios realizados sobre la información del Conjunto de Datos.
 
 .. image:: ../_static/images/img023.png
+  :align: center
 
 .. |icono-ver-sitio| image:: ../_static/images/icono-ver-sitio.png
 .. |icono-eliminar| image:: ../_static/images/icono-eliminar.png

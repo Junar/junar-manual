@@ -2,37 +2,36 @@
 ============================
 Acceso directo desde:
 
-Posicionarse sobre el botón Colecciones
+Posicionarse sobre el botón → Colecciones
 
-Seleccione la opción Nueva
+Seleccione la opción → Nueva
 
-|image104|
+.. image:: ../_static/images/img072.png
 
-Ingrese a la sección Colecciones
+Ingrese a la sección → Colecciones
 
-|image105|
+.. image:: ../_static/images/img073.png
+  :align: center
 
-Presione el botón Nueva Colección
+Presione el botón → Nueva Colección
 
-|image106|
+.. image:: ../_static/images/img074.png
 
-El sistema muestra el listado de Recursos Dispnibles y Recursos agregados permitiendo agregar recursos o bloques HTML.
+La plataforma muestra el listado de Recursos Disponibles y Recursos agregados permitiendo agregar recursos o bloques HTML a la Colección.
 
-Para agregar Recursos presione el botón |image107| permitiendo agregar recursos asociados, Vistas |image108| y Visualizaciones |image109| .
+Para agregar Recursos a la Colección, presione el botón |icono-mas-2| permitiendo agregar recursos asociados, Vistas |icono-vista-2| y Visualizaciones |icono-visualizacion-2| .
 
-|image110|
+Para agregar Recursos presiona el botón el botón |icono-mas-2| permitiendo agregar Vistas |icono-vista-2| y Visualizaciones |icono-visualizacion-2| .
 
-Para agregar Recursos presiona el botón el botón |image107| permitiendo agregar Vistas |image108| y Visualizaciones |image109| .
+Luego de agregar los recursos presiona el botón **Listo**
 
-|image111|
+La plataforma muestra los recursos agregados. Puede modificar el orden en el que aparecen los recursos.
 
-Luego Luego de agregar los recursos presiona el botón Listo
+.. image:: ../_static/images/img075.png
 
-El sistema muestra los recursos agregados. Puede modificar el orden en el que aparecen los recursos.
+.. image:: ../_static/images/img076.png
 
-|image112|
-
-Creada la colección, presione el botón Continuar.
+Creada la colección, presione el botón **"Continuar"**.
 
 El sistema muestra la siguiente pantalla, complete los campos requeridos (*), pudiendo omitirse el campo Notas. 
 
@@ -41,98 +40,80 @@ El sistema permite seleccionar las siguientes opciones:
 + Colección como destacada 
 + Mostrar colecciones relacionadas.
 
-|image113|
+.. image:: ../_static/images/img077.png
+  :align: center
 
-Luego de completar los campos requeridos, presione el botón Continuar y luego el botón Guardar. La Colección se crea por defecto en estado Borrador.
+Luego de completar los campos requeridos, presione el botón **"Continuar"** y luego el botón **"Guardar"**. La Colección se crea por defecto en estado **Borrador**.
 
-|image114|
+.. image:: ../_static/images/img078.png
 
-|image115|
+.. image:: ../_static/images/img079.png
 
 
 7.1 Edición de una Colección
 ----------------------------
-Antes de Guardar la Colección o sea antes de presionar el botón Guardar, puede editar la colección presionando el botón |image61|, esta acción le permite seleccionar nuevamente los recursos agregados. También puede editar la información de la Colección  presionado el |image61| ubicado el margen derecho de la pantalla.
+Antes de Guardar la Colección o sea antes de presionar el botón Guardar, puede editar la colección presionando el botón |icono-editar-2|, esta acción le permite seleccionar nuevamente los recursos agregados. También puede editar la información de la Colección presionado el |icono-editar-2| ubicado el margen derecho de la pantalla.
 
-|image116|
+.. image:: ../_static/images/img080.png
 
-Una vez creada la Colección, se muestra la misma en un listado, este listado cuenta con una paginación, es decir que se puede ir avanzando página por página dentro del listado. Para esto se dirige a la sección Colecciones.
+Una vez creada la Colección, se muestra la misma en un listado, este listado cuenta con una paginación, es decir que se puede ir avanzando página por página dentro del listado. Para esto se dirige a la sección → Colecciones 
 
-|image117|
+.. image:: ../_static/images/img081.png
 
 Para editar una Colección, hay dos opciones:
 
-+ Clic sobre la Colección: El sistema muestra los recursos agregados en la pestaña “Recursos” y en la pestaña “Descripción” la información del mismo: Título del gráfico, Estado, Fecha de Creación, Descripción, Categoría y Nota, presione |image28| , e introduzca los cambios sobre la información como así también sobre el contenido de la Colección.
++ Clic sobre la Colección: El sistema muestra los recursos agregados en la pestaña “Recursos” y en la pestaña “Descripción” la información del mismo: Título del gráfico, Estado, Fecha de Creación, Descripción, Categoría y Nota, presione |icono-editar| , e introduzca los cambios sobre la información como así también sobre el contenido de la Colección.
 
-  |image118|
+  .. image:: ../_static/images/img082.png
 
 + Acercar el mouse sobre la Colección: Se muestra las siguientes opciones:
 
-  |image119|
+  .. image:: ../_static/images/img083.png
+    :align: center
 
-  + Editar: Al hacer clic sobre este botón puede realizar cambios a la información de la Colección.
-  + Borrar: Al hacer clic sobre este botón puede borrar los cambios recientes de la Colección  o todos los cambios de la Colección.
+  + Editar: Al hacer click sobre este botón puede realizar cambios a la información de la Colección.
+  + Borrar: Al hacer click sobre este botón puede borrar los cambios recientes de la Colección o todos los cambios de la Colección.
 
-Cuando la Colección se encuentra En revisión:  
+Cuando la Colección se encuentra en **Revisión**:  
 
-+ Los usuarios con rol Editores pueden enviar la Colección a Revisión, la Coleccion en este estado no puede ser editado, su opción de Editar solo es posible cuando el recurso es Aceptado o Rechazado.
++ Los usuarios con el rol de Editor pueden enviar la Colección a Revisión, la Colección en este estado no puede ser editada, su opción de Editar solo es posible cuando el recurso es **Aceptado** o **Rechazado**.
 
-+ Los usuarios con rol Publicadores o Administradores podrán Aceptar o Rechazar el recurso para luego publicarlo.
++ Los usuarios con el rol de Publicador o Administrador podrán **Aceptar** o **Rechazar** el recurso para luego publicarlo.
 
-|image120|
+  .. image:: ../_static/images/img084.png
 
 7.2 Publicación de una Colección
 --------------------------------
 
-Para publicar una Colección, la Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente Publicado. En el caso que la Colección esté en Revisión, esta deberá ser Aceptada para posteriormente ser Publicada, haga clic sobre el botón Publicar.
+Para publicar una Colección, la Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente Publicados. En el caso que la Colección esté en **Revisión**, esta deberá ser **Aceptada** para posteriormente ser **Publicada**, haga click sobre el botón **Publicar**.
 
-|image121|
+.. image:: ../_static/images/img085.png
 
-Para acceder al micrositio y ver la Visualización publicada |image122| , haga clic sobre |image07| , en el margen superior derecho.
+Para acceder al micrositio y ver la Visualización publicada |icono-visualizacion-publicada| , haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
 
-|image123|
+.. image:: ../_static/images/img086.png
 
 7.3 Eliminación de una Colección
 --------------------------------   
 Para eliminar una Visualización, hay dos opciones:
 
-+ Dentro de la Colección, clic sobre |image09|
-+ En el listado de Colecciones, seleccione una Visualización y presione el Botón |image41| 
++ Dentro de la Colección, clic sobre |icono-eliminar|
++ En el listado de Colecciones, seleccione una Visualización y presione el Botón |btn-borrar| 
 
-|image124|
+.. image:: ../_static/images/img087.png
+  :align: center
 
-Si la Visualización se encuentra con estado En Revisión, no podrá ser eliminada del sistema.
+Si la Visualización se encuentra con estado en **Revisión**, no podrá ser eliminada de la plataforma.
 
-|image125|
+.. image:: ../_static/images/img088.png
 
-.. |image07| image:: ../_static/images/image07.png
-.. |image09| image:: ../_static/images/image09.png
-.. |image13| image:: ../_static/images/image13.png
-.. |image14| image:: ../_static/images/image14.png
-.. |image41| image:: ../_static/images/image41.png
-.. |image61| image:: ../_static/images/image61.png
-.. |image28| image:: ../_static/images/image28.png
+.. |icono-mas-2| image:: ../_static/images/icono-mas-2.png
+.. |icono-vista-2| image:: ../_static/images/icono-vista-2.png
+.. |icono-visualizacion-2| image:: ../_static/images/icono-visualizacion-2.png
+.. |icono-editar-2| image:: ../_static/images/icono-editar-2.png
+.. |icono-editar| image:: ../_static/images/icono-editar.png
+.. |icono-visualizacion-publicada| image:: ../_static/images/icono-visualizacion-publicada.png
+.. |icono-ver-sitio| image:: ../_static/images/icono-ver-sitio.png
+.. |icono-eliminar| image:: ../_static/images/icono-eliminar.png
+.. |btn-borrar| image:: ../_static/images/btn-borrar.png
 
-.. |image104| image:: ../_static/images/image104.png
-.. |image105| image:: ../_static/images/image105.png
-.. |image106| image:: ../_static/images/image106.png
-.. |image107| image:: ../_static/images/image107.png
-.. |image108| image:: ../_static/images/image108.png
-.. |image109| image:: ../_static/images/image109.png
-.. |image110| image:: ../_static/images/image110.png
-.. |image111| image:: ../_static/images/image111.png
-.. |image112| image:: ../_static/images/image112.png
-.. |image113| image:: ../_static/images/image113.png
-.. |image114| image:: ../_static/images/image114.png
-.. |image115| image:: ../_static/images/image115.png
-
-.. |image116| image:: ../_static/images/image116.png
-.. |image117| image:: ../_static/images/image117.png
-.. |image118| image:: ../_static/images/image118.png
-.. |image119| image:: ../_static/images/image119.png
-.. |image120| image:: ../_static/images/image120.png
-.. |image121| image:: ../_static/images/image121.png
-.. |image122| image:: ../_static/images/image122.png
-.. |image123| image:: ../_static/images/image123.png
-.. |image124| image:: ../_static/images/image124.png
-.. |image125| image:: ../_static/images/image125.png

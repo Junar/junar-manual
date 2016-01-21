@@ -7,6 +7,7 @@ Para acceder a la plataforma hacer click en el siguiente link: http://workspace.
 .. http://workspace.staging.junar.com/signin/: http://workspace.staging.junar.com/signin/
 
 .. image:: ../_static/images/img001.png
+  :align: center
 
 2.1 Tipos de Roles de Usuarios
 ---------------------

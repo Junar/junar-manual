@@ -13,6 +13,7 @@ Otra opción para poder acceder es:
 Ingrese a la sección → Visualizaciones
 
 .. image:: ../_static/images/img046.png
+  :align: center
 
 Presione el botón → Nueva visualización
 
@@ -28,7 +29,7 @@ El sistema muestra la siguiente pantalla con los tipos de gráficos para la crea
 
 + Mapas: Marcadores y Trazados.
 
-.. image:: ../_static/images/img049.png
+  .. image:: ../_static/images/img049.png
 
 Una vez seleccionado el tipo de gráfico, el sistema muestra la siguiente pantalla según sea Gráficos o Mapas.
 
@@ -91,7 +92,7 @@ Para editar una Visualización, hay dos opciones:
 + Acercar el mouse sobre la Visualización: Se muestra las siguientes opciones:
 
   .. image:: ../_static/images/img063.png
-
+    :align: center
 
   + Editar: Al hacer click sobre este botón puede realizar cambios a la información de la Visualización.
   + Borrar: Al hacer click sobre este botón puede borrar los cambios recientes de la Visualización o todos los cambios de la Visualización.
@@ -102,46 +103,44 @@ Cuando la Visualización se encuentra en **Revisión**:
 + Los usuarios con rol de Editor pueden enviar la Visualización a Revisión, la Visualización en este estatus no puede ser editada, su opción de Editar solo es posible cuando el recurso es **Aceptado** o **Rechazado**.
 + Los usuarios con rol de Publicador o Administrador podrán **Aceptar** o **Rechazar** el recurso para luego publicarlo.
 
-.. image:: ../_static/images/img064.png
+  .. image:: ../_static/images/img064.png
 
 6.2 Publicación de una Visualización
 ------------------------------------
-Para publicar una Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente Publicado. En el caso que la Visualización esté en Revisión, esta deberá ser Aceptada para posteriormente ser Publicada, haga clic sobre el botón Publicar.
+Para publicar una Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente **Publicados**. En el caso que la Visualización esté en **Revisión**, esta deberá ser **Aceptada** para posteriormente ser **Publicada**, haga click sobre el botón **Publicar**.
 
-.. image:: ../_static/images/image56.png
-.. image:: ../_static/images/image59.png
+.. image:: ../_static/images/img065.png
+.. image:: ../_static/images/img066.png
 
-Para acceder al micrositio y ver la Visualización publicada |image60|, haga clic sobre |image07| , en el margen superior derecho.
+Para acceder al micrositio y ver la Visualización publicada |icono-visualizacion|, haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
 
-.. image:: ../_static/images/image55.png
+.. image:: ../_static/images/img067.png
 
 6.3 Eliminación de una Visualización
 ------------------------------------
 Para eliminar una Visualización, hay dos opciones:
 
-+ Dentro de la Visualización, clic sobre |image09|
++ Dentro de la Visualización, clic sobre |icono-eliminar|
 
-+ En el listado de Visualizaciones, seleccione una Visualización y presione el Botón |image41|
++ En el listado de Visualizaciones, seleccione una Visualización y presione el Botón |btn-borrar|
 
-.. image:: ../_static/images/image56.png
-.. image:: ../_static/images/image57.png
+.. image:: ../_static/images/img068.png
+.. image:: ../_static/images/img069.png
+  :align: center
 
+La Plataforma permite eliminar la revisión actual de la Visualización o todas las revisiones de la Visualización. Esta última acción elimina la Visualización, como así también lo elimina del micrositio. Por Revisión se entienden los distintos cambios realizados sobre la información de la Visualización.
 
-El sistema permite eliminar la revisión actual de la Visualización o todas las revisiones de la Visualización. Esta última acción elimina la Visualización, como así también lo elimina del micrositio. Por revisión se entiende los distintos cambios realizados sobre la información de la Visualización.
+.. image:: ../_static/images/img070.png
+  :align: center
 
-.. image:: ../_static/images/image58.png
+Si la Visualización se encuentra con estatus de **Revisión**, no podrá ser eliminada de la plataforma.
 
-Si la Visualización se encuentra con estado En Revisión, no podrá ser eliminada del sistema.
+.. image:: ../_static/images/img071.png
 
-.. image:: ../_static/images/image51.png
-
-.. |image07| image:: ../_static/images/image07.png
-.. |image09| image:: ../_static/images/image09.png
+.. |icono-ver-sitio| image:: ../_static/images/icono-ver-sitio.png
+.. |icono-visualizacion| image:: ../_static/images/icono-visualizacion.png
 .. |icono-editar| image:: ../_static/images/icono-editar.png
 .. |icono-mas| image:: ../_static/images/icono-mas.png
-.. |image41| image:: ../_static/images/image41.png
-.. |image46| image:: ../_static/images/image46.png
-.. |image47| image:: ../_static/images/image47.png
-.. |image60| image:: ../_static/images/image60.png
+.. |icono-eliminar| image:: ../_static/images/icono-eliminar.png
+.. |btn-borrar| image:: ../_static/images/btn-borrar.png
 .. |icono-editar-2| image:: ../_static/images/icono-editar-2.png
-.. |image103| image:: ../_static/images/image103.png

@@ -13,7 +13,7 @@ Otra opción para poder acceder es:
 Ingrese a la sección → Vistas
 
 .. image:: ../_static/images/img025.png
-
+  :align: center
 
 Presione el botón → Nueva vista
 
@@ -27,7 +27,7 @@ El sistema visualiza las tablas de los datos para la creación de la Vista. En u
 
 Luego precise qué datos serán incluidos en la creación de la Vista.
 
-Puede seleccionar todas las filas y columnas presionando |icono-columnas| o si lo desea solo algunas filas y columnas haciendo clic sobre ellas.
+Puede seleccionar todas las filas y columnas presionando |icono-columna| o si lo desea solo algunas filas y columnas haciendo clic sobre ellas.
 
 
 .. image:: ../_static/images/img028.png
@@ -35,14 +35,16 @@ Puede seleccionar todas las filas y columnas presionando |icono-columnas| o si l
 Una vez seleccionados los datos tiene la opción de habilitar  el Modo Avanzado, para ello haga click en el botón **“Habilitar Modo Avanzado”**:
 
 .. image:: ../_static/images/img029.png
+  :align: center
 
-+ Fijar Cabeceras:, Haga click en Selecciona Cabeceras de la tabla, elija la fila que quiera fijar como cabecera y luego haga click en **Listo abajo de las opciones avanzadas**.
++ Fijar Cabeceras: Haga click en Selecciona Cabeceras de la tabla, elija la fila que quiera fijar como cabecera y luego haga click en **Listo abajo de las opciones avanzadas**.
 + Agregar un filtro: Seleccione un valor para la búsqueda ó ingrese los  parámetros necesarios, luego haga click en **Listo**.
 + Agregar Aliases: Esta funcionalidad es de interés exclusivamente para los desarrolladores. Su objetivo es permitir a los usuarios dar aliases a las columnas de una Vista, con el beneficio de que esto les permita identificarlas más fácilmente a la hora de procesarlas a través de nuestra API .Seleccione la opción Alias, luego sobre cada columna aparecen cajas de texto, ingrese el nombre de Alias deseado y haga click en **Listo**.
 
 Hay dos importantes opciones para los filtros:
 
 .. image:: ../_static/images/img030.png
+  :align: center
 
 1.- Valores:
 
@@ -91,6 +93,7 @@ Para Editar una Vista, hay dos opciones:
   opciones:
 
   .. image:: ../_static/images/img035.png
+    :align: center
 
   + Crear Visualización: Al hacer click sobre este botón puede crear una nueva Visualización tomando como referencia la Vista seleccionada.
   + Editar: Al hacer click sobre este botón puede realizar cambios a la información de la Vista
@@ -133,10 +136,12 @@ Para eliminar una Vista, hay dos opciones:
 
   .. image:: ../_static/images/img041.png
   .. image:: ../_static/images/img042.png
+    :align: center
 
 El sistema permite eliminar la revisión actual de la Vista o todas las revisiones de la Vista. Esta última acción elimina la Vista y todos sus recursos asociados, como así también los elimina del micrositio. Por **Revisión** se entiende los distintos cambios realizados sobre la información de la Vista.
 
 .. image:: ../_static/images/img043.png
+  :align: center
 
 Si la Vista se encuentra con estado en **Revisión**, no podrá ser eliminada del sistema.
 
@@ -145,7 +150,7 @@ Si la Vista se encuentra con estado en **Revisión**, no podrá ser eliminada de
 
 .. |icono-vista| image:: ../_static/images/icono-vista.png
 .. |icono-ver-sitio| image:: ../_static/images/icono-ver-sitio.png
-.. |icono-columnas| image:: ../_static/images/icono-columnas.png
+.. |icono-columna| image:: ../_static/images/icono-columnas.png
 .. |icono-eliminar| image:: ../_static/images/icono-eliminar.png
 .. |icono-editar| image:: ../_static/images/icono-editar.png
 .. |btn-borrar| image:: ../_static/images/btn-borrar.png
