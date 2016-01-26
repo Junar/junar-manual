@@ -1,3 +1,5 @@
+|logo|
+
 Contenido
 *********
 
@@ -32,7 +34,6 @@ Esperamos que disfruten y utilicen de manera exitosa la plataforma de Datos Abie
 
 El Equipo Junar
 
-|image87|
 
-.. |image87| image:: _static/images/image87.jpg
+.. |logo| image:: _static/images/logo.png
 
