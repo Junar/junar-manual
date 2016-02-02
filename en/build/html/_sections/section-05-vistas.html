@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Creating a Data View &mdash; Users Manual 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Users Manual 1.0.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Users Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="section-01-intro.html">1. Intro</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Users Manual</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>5. Creating a Data View</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_sections/section-05-vistas.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="creating-a-data-view">
+<h1>5. Creating a Data View<a class="headerlink" href="#creating-a-data-view" title="Permalink to this headline">¶</a></h1>
+<p>The platform offers several methods of generating a new data view from a dataset.</p>
+<p>You can create a new data view by placing your mouse over the Data Views button from the main menu and clicking on New. This action will launch an internal lightbox from where you can choose the dataset you want to use to generate the new data view.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<p>Additionally, you may generate a new data view directly from any dataset. You can place your mouse over the dataset you want to use, then from the Datasets menu select Create Data View and follow the prompts. Or you can also click on the dataset’s title to go into the Datasets page, and then on the Create Data View button on the upper right side on your screen.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<p>Once you have followed the process correctly, the platform will launch the wizard to create a data view. Select the table you want to use to create the data view.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<p>You can select all the rows and columns by clicking on the upper left section of the table. Or select specific data by clicking on each individual column and row.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<p>After selecting the data, you can use the Advanced Mode to set your headers, add filters to the data, and add aliases.</p>
+<ul>
+<li><p class="first">Setting the Data View’s Headers: Click on the Select table headers option from the Advanced Mode section, then select the row that you want to set as the data view’s header, then press Done.</p>
+</li>
+<li><p class="first">Adding Filters: Click on Filter Data for selecting the column to apply a filter to. From the drop-down, select the column and add one of the following operations:</p>
+<ul class="simple">
+<li>Equal to: Enter a value that is exactly what appears in the selected column.</li>
+<li>Not Equal to: Enter a value that is not exactly to what appears in the selected column.</li>
+<li>Higher than &amp; Lower than: Enter numeric values​​, allowing return values to be higher or lower than your inquiry.</li>
+<li>It contains: Enter a value that is similar to what appears in the column.</li>
+</ul>
+<p>And then select one of the following operations:</p>
+<ul class="simple">
+<li>Parameter: Enter any parameters you want to add to the web service.</li>
+<li>Fixed Value: Enter a specific parameter for the query.</li>
+</ul>
+</li>
+<li><p class="first">Add Aliases: This function is of most interest to developers. Its aim is to enable users to add aliases to the columns, allowing them to more easily identify the columns when processing through an API. Select the Alias ​​option, then on each column in the text boxes, enter the desired alias name and click Done.</p>
+</li>
+</ul>
+<p>Once you are done making changes to your new data view, click on Continue to add a Title, Description, and Other Metadata. When finished, click on Continue for a final review. If you are happy with the result, click on Save. The new data view will be saved as a Draft, and you can now publish it to the Open Data microsite or create a visualization.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<div class="section" id="editing-and-deleting-data-views">
+<h2>5.1 Editing and Deleting Data Views<a class="headerlink" href="#editing-and-deleting-data-views" title="Permalink to this headline">¶</a></h2>
+<p>To edit/delete a dataset, please go to the Data View page by clicking on the Data View button from the main menu on the left. Place your mouse over the data view’s title in the list and the editing menu will be displayed. Click on Edit or Delete.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+<ul class="simple">
+<li>Create Visualization: When selecting this option, the user is able to create a new visualization using the selected data view as the source.</li>
+<li>Edit: When selecting this option, the user is able to update the data view’s information.</li>
+<li>Delete: When selecting this option, the user is able to delete the recent changes or all changes made to the data view.</li>
+<li>View Dataset: When selecting this option, the user accesses the original dataset.</li>
+</ul>
+<p>You may also click on the data view’s title to go into its information section, then click on the options menu <a href="#id1"><span class="problematic" id="id2">|icon-menu|</span></a> located on the upper right part of your screen. From the drop down menu, click on Edit or Delete.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+</div>
+<div class="section" id="publishing-a-data-view">
+<h2>5.2 Publishing a Data View<a class="headerlink" href="#publishing-a-data-view" title="Permalink to this headline">¶</a></h2>
+<p>To publish a data view, the associated dataset must be published. By default, all new data views will be saved as drafts. If the data view is under review, it must first be accepted to be published. To publish a data view to the Open Data microsite, click on the data view of interest and then the Publish button in the upper right section.</p>
+<p>&lt;&lt;image&gt;&gt;</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Junar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
