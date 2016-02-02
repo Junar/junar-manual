@@ -55,12 +55,11 @@ To edit/delete a dataset, please go to the Data View page by clicking on the Dat
 
 You may also click on the data view’s title to go into its information section, then click on the options menu |icon-menu| located on the upper right part of your screen. From the drop down menu, click on Edit or Delete.
 
-[INSERT GIF HERE]
 
 5.2 Publishing a Data View
 --------------------------
 To publish a data view, the associated dataset must be published. By default, all new data views will be saved as drafts. If the data view is under review, it must first be accepted to be published. To publish a data view to the Open Data microsite, click on the data view of interest and then the Publish button in the upper right section.
 
-[INSERT GIF HERE]
+.. image:: ../_static/images/img05-07.gif
 
 .. |icon-menu| image:: ../_static/images/icon-menu.png
