@@ -14,7 +14,7 @@ Additionally, you may generate a new visualization directly from any data view. 
 
 Once you have followed the process correctly, the platform will launch the wizard to create a visualization. Select the type of visualization you want to create. You may generate charts and maps depending on the data you have.
 
-<<image>>
+.. image:: ../_static/images/img06-03.png
 
 Click on the the type of chart you want to create. 
 
@@ -23,15 +23,15 @@ You may choose a chart for a Comparison In Time (Line chart and Area chart) or a
 
 Next, click on the |icon-plus| button to add the data you want to represent. Please also note that you will be using the Google’s chart library by default, but you may switch to the D3 library by clicking on the drop-down and clicking on D3.
 
-<<image>>
+.. image:: ../_static/images/img06-04.png
 
 You will need to define the Data Intervals, Labels, and Legends by clicking on each and selecting the range of cells pertaining to each field.
 
-<<image>>
+.. image:: ../_static/images/img06-05.png
 
 Then click on Graph to generate the new visualization.
 
-<<image>>
+[INSERT IMAGE HERE]
 
 Once you are done making changes to the new visualization, click on Continue to add a Title, Description, and Other Metadata. When finished, click on Continue for a final review. If you are happy with the result, click on Save. The new visualization will be saved as a Draft, and you can now publish it to the Open Data microsite.
 
@@ -41,7 +41,7 @@ Once you are done making changes to the new visualization, click on Continue to 
 
 To edit/delete a visualization, please go to the Visualizations page by clicking on the Visualization button from the main menu on the left. Place your mouse over the visualization’s title in the list and the editing menu will be displayed. Click on Edit or Delete.
 
-<<image>>
+[INSERT GIF HERE]
 
 + Edit: When selecting this option, the user is able to update the visualization’s information.
 + Delete: When selecting this option, the user is able to delete the recent changes or all changes made to the visualization.
@@ -50,7 +50,7 @@ To edit/delete a visualization, please go to the Visualizations page by clicking
 You may also click on the visualization’s title to go into its information section, then click on the options menu [ . . . ] located on the upper right part of your screen. From the drop down menu, click on Edit or Delete.
 
 
-<<image>>
+[INSERT GIF HERE]
 
 6.2 Publishing a Visualization
 ------------------------------
@@ -60,6 +60,6 @@ To publish a visualization, the associated data view must be published. By defau
 [INSERT GIF HERE]
 
 
-|icon-plus|
 
+.. |icon-plus| image:: ../_static/images/icon-plus.png
 

@@ -5,19 +5,19 @@ The platform offers several methods of generating a new data view from a dataset
 
 You can create a new data view by placing your mouse over the Data Views button from the main menu and clicking on New. This action will launch an internal lightbox from where you can choose the dataset you want to use to generate the new data view.
 
-<<image>>
+.. image:: ../_static/images/img05-01.gif
 
 Additionally, you may generate a new data view directly from any dataset. You can place your mouse over the dataset you want to use, then from the Datasets menu select Create Data View and follow the prompts. Or you can also click on the dataset’s title to go into the Datasets page, and then on the Create Data View button on the upper right side on your screen.
 
-<<image>>
+.. image:: ../_static/images/img05-02.gif
 
 Once you have followed the process correctly, the platform will launch the wizard to create a data view. Select the table you want to use to create the data view.
 
-<<image>>
+.. image:: ../_static/images/img05-03.png
 
 You can select all the rows and columns by clicking on the upper left section of the table. Or select specific data by clicking on each individual column and row. 
 
-<<image>>
+.. image:: ../_static/images/img05-04.gif
 
 After selecting the data, you can use the Advanced Mode to set your headers, add filters to the data, and add aliases.
 
@@ -39,14 +39,14 @@ After selecting the data, you can use the Advanced Mode to set your headers, add
 
 Once you are done making changes to your new data view, click on Continue to add a Title, Description, and Other Metadata. When finished, click on Continue for a final review. If you are happy with the result, click on Save. The new data view will be saved as a Draft, and you can now publish it to the Open Data microsite or create a visualization.
 
-<<image>>
+.. image:: ../_static/images/img05-05.gif
 
 5.1 Editing and Deleting Data Views
 -----------------------------------
 
 To edit/delete a dataset, please go to the Data View page by clicking on the Data View button from the main menu on the left. Place your mouse over the data view’s title in the list and the editing menu will be displayed. Click on Edit or Delete.
 
-<<image>>
+.. image:: ../_static/images/img05-06.gif
 
 + Create Visualization: When selecting this option, the user is able to create a new visualization using the selected data view as the source.
 + Edit: When selecting this option, the user is able to update the data view’s information.
@@ -55,11 +55,12 @@ To edit/delete a dataset, please go to the Data View page by clicking on the Dat
 
 You may also click on the data view’s title to go into its information section, then click on the options menu |icon-menu| located on the upper right part of your screen. From the drop down menu, click on Edit or Delete.
 
-<<image>>
+[INSERT GIF HERE]
 
 5.2 Publishing a Data View
 --------------------------
 To publish a data view, the associated dataset must be published. By default, all new data views will be saved as drafts. If the data view is under review, it must first be accepted to be published. To publish a data view to the Open Data microsite, click on the data view of interest and then the Publish button in the upper right section.
 
-<<image>>
+[INSERT GIF HERE]
 
+.. |icon-menu| image:: ../_static/images/icon-menu.png

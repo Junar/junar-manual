@@ -3,7 +3,7 @@
 
 To access the Junar platform, the user must have a valid username and password. If you need to add a new user, please ask your account’s administrator or send a request to support@junar.com
 
-<<image>>
+.. image:: ../_static/images/img02-01.jpg
 
 2.1 User Roles
 --------------

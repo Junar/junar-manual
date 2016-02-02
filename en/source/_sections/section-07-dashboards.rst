@@ -11,19 +11,19 @@ The platform will launch the wizard to add content to your new dashboard.
 
 Click on HTML widget to launch the wizard, add HTML code, and be able to import external content such as embed codes, an iFrame, URLs, etc...
 
-<<image>>
+.. image:: ../_static/images/img07-02.png
 
 Click on Add resources to start adding resources on the platform.
 
-<<image>>
+.. image:: ../_static/images/img07-03.png
 
 In the Add resources wizard, click on the available resources on the left. You may use the search box and filters to find your resources quicker. When finished, click on Done.
 
-<<image>>
+.. image:: ../_static/images/img07-04.png
 
 Next, you can organize and resize your dashboards as needed by dragging the elements from the top and resizing them by dragging from the bottom right corner. (DOESN’T MAKE SENSE)
 
-<<image>>
+.. image:: ../_static/images/img07-05.png
 
 Once you are done making changes to the new dashboard, click on Continue to add a Title, Description, and Other Metadata or select as a Feature dashboard. When finished, click on Continue for a final review. If you are happy with the result, click on Save. The new dashboard will be saved as a Draft, and you can now publish it to the Open Data microsite.
 
@@ -49,6 +49,4 @@ To publish a dashboard, the associated resources must be published. If the resou
 
 [INSERT GIF HERE]
 
-
-|icon-menu|
-
+.. |icon-menu| image:: ../_static/images/icon-menu.png
