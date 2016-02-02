@@ -5,8 +5,6 @@ Demo:  http://opencity.site.demo.junar.com/home
 
 .. image:: ../_static/images/img09-01.png
 
-Each Open Data microsite can look different but you will always find some sections to be standard across the board.
-
-OPEN DATA MICROSITE INFO
+The Open Data Microsite will display your welcome title, brief introduction, catalogue of published resources with some additional functionality such as resource filters, a graphical representation for each resource so the end user can identify the different resource types, and categories.
 
 

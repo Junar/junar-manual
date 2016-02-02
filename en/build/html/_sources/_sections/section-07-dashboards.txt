@@ -4,7 +4,7 @@
 You can create a new dashboard by placing your mouse over the Dashboard button from the main menu and clicking on New. You can also create a new dashboard by clicking on the New Dashboard button in the Dashboard section.
 
 
-[INSERT GIF HERE]
+.. image:: ../_static/images/img07-01.gif
 
 
 The platform will launch the wizard to add content to your new dashboard.
@@ -32,7 +32,7 @@ Once you are done making changes to the new dashboard, click on Continue to add 
 
 To edit/delete a dashboard, please go to the Dashboards page by clicking on the Dashboard button from the main menu on the left. Place your mouse over the dashboard’s title in the list and the editing menu will be displayed. Click on Edit or Delete.
 
-[INSERT GIF HERE]
+.. image:: ../_static/images/img07-06.gif
 
 + Edit: When selecting this option, the user is able to update the dashboard’s information.
 + Delete: When selecting this option, the user is able to delete the recent changes or all changes made to the dashboard.
@@ -40,13 +40,13 @@ To edit/delete a dashboard, please go to the Dashboards page by clicking on the 
 You may also click on the dashboard’s title to go into its information section, then click on the options menu |icon-menu| located on the upper right part of your screen. From the drop down menu, click on Edit or Delete.
 
 
-[INSERT GIF HERE].
+.. image:: ../_static/images/img07-07.gif
 
 7.2 Publishing a Dashboard
 --------------------------
 
 To publish a dashboard, the associated resources must be published. If the resources are under review, they must first be accepted to be published. To publish a dashboard to the Open Data microsite, click on the dashboard of interest and then the Publish button in the upper right section.
 
-[INSERT GIF HERE]
+.. image:: ../_static/images/img07-08.gif
 
 .. |icon-menu| image:: ../_static/images/icon-menu.png
