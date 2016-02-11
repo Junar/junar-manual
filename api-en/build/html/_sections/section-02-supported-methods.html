@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Supported Methods &mdash; API Technical Documentation 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="API Technical Documentation 1.0.0 documentation" href="../index.html"/>
+        <link rel="prev" title="1. Data Resources" href="section-01-data-resources.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> API Technical Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="section-01-data-resources.html">1. Data Resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">2. Supported Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-lists">GET Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get">GET</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">API Technical Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>2. Supported Methods</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_sections/section-02-supported-methods.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="supported-methods">
+<h1>2. Supported Methods<a class="headerlink" href="#supported-methods" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="get-lists">
+<h2>GET Lists<a class="headerlink" href="#get-lists" title="Permalink to this headline">¶</a></h2>
+<p>Retrieve a list of all available resources</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">resources</span>
+</pre></div>
+</div>
+<p>Retrieve a list of data views</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datastreams</span>
+</pre></div>
+</div>
+<p>Retrieve a list of datasets</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datasets</span>
+</pre></div>
+</div>
+<p>Retrieve a list of visualizations.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span>
+</pre></div>
+</div>
+<p>In no GET parameters are included, the API will return all resources associated with the account. The following parameters can be included in the GET query to sort and/or filter.</p>
+<ul class="simple">
+<li>query: string of text to search in all parameters of the data view</li>
+<li>offset: starting from which data view will return results</li>
+<li>limit: used with offset can limit the amount of results</li>
+<li>order: it can be top,&nbsp;viewed,&nbsp;downloaded&nbsp;o&nbsp;last&nbsp;which sorts the results accordingly.</li>
+<li>categories: lists the names of the categories, separated by commas</li>
+<li>resources: a list of resources by type (‘ds’, ‘dt’, or ‘vz’).</li>
+<li>count: the total amount of results</li>
+<li>next: a link to the next API request according to pagination</li>
+<li>previous: a link to the previous API request according to pagination</li>
+<li>result: an array with the final results</li>
+</ul>
+<p>An example of results with limit 2 would be as follows</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+
+  <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+
+  <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+
+  <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">{</span>
+
+          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+
+          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+              <span class="s2">&quot;&quot;</span>
+
+          <span class="p">],</span>
+
+          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
+
+          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+
+      <span class="p">},</span>
+
+      <span class="p">{</span>
+
+          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+
+          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+              <span class="s2">&quot;&quot;</span>
+
+          <span class="p">],</span>
+
+          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
+
+          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
+
+          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+
+      <span class="p">}</span>
+
+  <span class="p">]</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get">
+<h2>GET<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h2>
+<p>Retrieve information associated to a data view</p>
+<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datastreams/:guid
+</pre></div>
+</div>
+<p>Retrieve information and data content associated to a data view</p>
+<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datastreams/:guid/data
+</pre></div>
+</div>
+<p>Retrieve information associated to a dataset</p>
+<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datasets/:guid
+</pre></div>
+</div>
+<p>Retrieve information associated to a visualization</p>
+<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/visualizations/:guid
+</pre></div>
+</div>
+<p>An example output of a data view</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+
+  <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+
+  <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+
+  <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+
+  <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="section-01-data-resources.html" class="btn btn-neutral" title="1. Data Resources" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Junar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
