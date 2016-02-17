@@ -1,4 +1,4 @@
-8. Creación y Configuración de una Cuenta
+9. Creación y Configuración de una Cuenta
 =========================================
 
 Ingrese a la sección → Configuraciones
@@ -8,7 +8,7 @@ Ingrese a la sección → Configuraciones
 
 La plataforma visualiza en la pantalla las siguientes pestañas:
 
-+ Información de la Cuenta: En esta pestaña están la información de la cuenta. Contiene el nombre de la organización y la dirección del sitio web de la misma y es visible a todo aquel que visite el Micrositio. La Información de Contacto en cambio sólo está disponible para el equipo Junar, contiene el nombre de la contraparte de Junar, correo electrónico, teléfonos y país. Luego de completados los campos requeridos (*), presione el botón **Guardar**.
++ Información de la Cuenta: En esta pestaña están la información de la cuenta. Contiene el nombre de la organización y la dirección del sitio web de la misma y es visible a todo aquel que visite el portal de datos abiertos. La Información de Contacto en cambio sólo está disponible para el equipo Junar, contiene el nombre de la contraparte de Junar, correo electrónico, teléfonos y país. Luego de completados los campos requeridos (*), presione el botón **Guardar**.
 
   .. image:: ../_static/images/img090.png
 
