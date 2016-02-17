@@ -1,4 +1,4 @@
-6. Creación de una Visualización
+7. Creación de una Visualización
 ================================
 Acceso directo desde:
 
@@ -73,7 +73,7 @@ El sistema muestra el gráfico con la información del mismo.
 También puede crear una Visualización editando una Vista, vaya a la sección de Vistas, haga click sobre una Vista y presione el botón **Crear Visualización**.
 
 
-6.1 Edición de una Visualización
+7.1 Edición de una Visualización
 --------------------------------
 Antes de Guardar la Visualización o sea antes de presionar el botón **Guardar**, puede editar el gráfico presionando el botón |icono-editar-2|, esta acción le permite seleccionar nuevamente los datos a graficar. También puede editar la información de la Visualización presionado el |icono-editar-2| ubicado el margen izquierdo de la pantalla.
 
@@ -105,18 +105,18 @@ Cuando la Visualización se encuentra en **Revisión**:
 
   .. image:: ../_static/images/img064.png
 
-6.2 Publicación de una Visualización
+7.2 Publicación de una Visualización
 ------------------------------------
 Para publicar una Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente **Publicados**. En el caso que la Visualización esté en **Revisión**, esta deberá ser **Aceptada** para posteriormente ser **Publicada**, haga click sobre el botón **Publicar**.
 
 .. image:: ../_static/images/img065.png
 .. image:: ../_static/images/img066.png
 
-Para acceder al micrositio y ver la Visualización publicada |icono-visualizacion|, haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
+Para acceder al portal de datos abiertos y ver la Visualización publicada |icono-visualizacion|, haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
 
 .. image:: ../_static/images/img067.png
 
-6.3 Eliminación de una Visualización
+7.3 Eliminación de una Visualización
 ------------------------------------
 Para eliminar una Visualización, hay dos opciones:
 
@@ -128,7 +128,7 @@ Para eliminar una Visualización, hay dos opciones:
 .. image:: ../_static/images/img069.png
   :align: center
 
-La Plataforma permite eliminar la revisión actual de la Visualización o todas las revisiones de la Visualización. Esta última acción elimina la Visualización, como así también lo elimina del micrositio. Por Revisión se entienden los distintos cambios realizados sobre la información de la Visualización.
+La Plataforma permite eliminar la revisión actual de la Visualización o todas las revisiones de la Visualización. Esta última acción elimina la Visualización, como así también lo elimina del portal de datos abiertos. Por Revisión se entienden los distintos cambios realizados sobre la información de la Visualización.
 
 .. image:: ../_static/images/img070.png
   :align: center

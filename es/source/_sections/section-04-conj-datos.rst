@@ -1,4 +1,4 @@
-4. Creación de un Conjunto de Datos
+5. Creación de un Conjunto de Datos
 ===================================
 
 Acceso directo desde:
@@ -24,7 +24,7 @@ Seleccione una opción de recolección de datos →
   :align: center
 
 
-4.1 Desde un Archivo
+5.1 Desde un Archivo
 --------------------
 
 .. image:: ../_static/images/img007.png
@@ -33,7 +33,7 @@ Seleccione una opción de recolección de datos →
 La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su computador como Conjunto de Datos, cargarlos  a la plataforma y convertirlos en  recursos de datos abiertos. Seleccione el archivo desde su computador, haga click sobre “Seleccionar”, el sistema adjunta el archivo elegido. La recolección de datos consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. Luego de completar los campos requeridos, presione el botón Continuar.
 
 
-4.2 Desde una URL o sitio web
+5.2 Desde una URL o sitio web
 -----------------------------
 
 .. image:: ../_static/images/img008.png
@@ -47,7 +47,7 @@ También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archiv
 .. image:: ../_static/images/img009.png
   :align: center
 
-4.3 Desde un Servicio Web
+5.3 Desde un Servicio Web
 -------------------------
 
 .. image:: ../_static/images/img010.png
@@ -81,7 +81,7 @@ El sistema visualiza la siguiente pantalla, complete los campos requeridos (*), 
 
 .. image:: ../_static/images/img012.png
 
-4.4 Edición de un Conjunto de Datos
+5.4 Edición de un Conjunto de Datos
 -----------------------------------
 Una vez creado el Conjunto de Datos, se  visualiza el mismo en un listado, este listado cuenta con una paginación, es decir que se puede ir avanzando página por página dentro del listado o bien presionando la página correspondiente a la que desea acceder, de esta manera esa página es mostrada en el listado de Conjuntos de Datos correspondiente. Para esto se dirige a la sección → Conjuntos de Datos
 
@@ -116,17 +116,17 @@ Cuando el Conjunto de Datos se encuentra En revisión:
 
   .. image:: ../_static/images/img018.png
 
-4.5 Publicación de un Conjunto de Datos
+5.5 Publicación de un Conjunto de Datos
 ---------------------------------------
-Para publicar un Conjunto de Datos en el micrositio, haga click sobre el botón Publicar.
+Para publicar un Conjunto de Datos en el portal de datos abiertos, haga click sobre el botón Publicar.
 
 .. image:: ../_static/images/img019.png
 
-Para acceder al micrositio y visualizar el Conjunto de Datos publicado |icono-publicado|, haga clic sobre |icono-ver-sitio|, localizado en el margen superior derecho de la visualización del Conjunto de Datos.
+Para acceder al portal de datos abiertos y visualizar el Conjunto de Datos publicado |icono-publicado|, haga clic sobre |icono-ver-sitio|, localizado en el margen superior derecho de la visualización del Conjunto de Datos.
 
 .. image:: ../_static/images/img020.png
 
-4.6 Eliminación de un Conjunto de Datos
+5.6 Eliminación de un Conjunto de Datos
 ---------------------------------------
 
 Para eliminar un Conjunto de Datos, hay dos opciones:
@@ -139,7 +139,7 @@ Para eliminar un Conjunto de Datos, hay dos opciones:
   .. image:: ../_static/images/img022.png
     :align: center
 
-El sistema permite eliminar la revisión actual o todas las revisiones del Conjunto de Datos. Esta última acción elimina el Conjunto de Datos y todos sus recursos asociados, como así también los elimina del micrositio. Por Revisión se entiende los distintos cambios realizados sobre la información del Conjunto de Datos.
+El sistema permite eliminar la revisión actual o todas las revisiones del Conjunto de Datos. Esta última acción elimina el Conjunto de Datos y todos sus recursos asociados, como así también los elimina del portal de datos abiertos. Por Revisión se entiende los distintos cambios realizados sobre la información del Conjunto de Datos.
 
 .. image:: ../_static/images/img023.png
   :align: center

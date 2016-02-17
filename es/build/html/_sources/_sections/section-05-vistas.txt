@@ -1,4 +1,4 @@
-5. Creación de una Vista
+6. Creación de una Vista
 ========================
 Acceso directo desde:
 
@@ -71,7 +71,7 @@ El sistema visualiza la Vista previa antes de guardar.
 También puede crear una Vista editando un Conjunto de Datos, vaya a la sección Conjuntos de datos, haga click sobre un Conjunto de Datos y presione el botón Crear Vista.
 
 
-5.1 Edición de una Vista
+6.1 Edición de una Vista
 ------------------------
 Una vez creada la Vista, se visualiza la misma en un listado, este listado cuenta con una paginación al igual que el listado de Conjuntos de Datos. Para esto se dirige a la sección → Vistas
 
@@ -113,19 +113,19 @@ Cuando la Vista se encuentra en **Revisión**:
   .. image:: ../_static/images/img038.png
 
 
-5.2 Publicación de una Vista
+6.2 Publicación de una Vista
 ----------------------------
 
 Para publicar una Vista, el Conjunto de Datos asociado debe estar previamente **Publicado**. En el caso que la Vista esté en **Revisión**, esta deberá ser **Aceptada** para luego ser **Publicada**, haga click sobre el botón **Publicar**.
 
 .. image:: ../_static/images/img039.png
 
-Para acceder al micrositio y visualizar la Vista publicada |icono-vista|, haga clic sobre |icono-ver-sitio|, margen superior derecho de la visualización de la Vista.
+Para acceder al portal de datos abiertos y visualizar la Vista publicada |icono-vista|, haga clic sobre |icono-ver-sitio|, margen superior derecho de la visualización de la Vista.
 
 .. image:: ../_static/images/img040.png
 
 
-5.3 Eliminación de una Vista
+6.3 Eliminación de una Vista
 ----------------------------
 
 Para eliminar una Vista, hay dos opciones:
@@ -138,7 +138,7 @@ Para eliminar una Vista, hay dos opciones:
   .. image:: ../_static/images/img042.png
     :align: center
 
-El sistema permite eliminar la revisión actual de la Vista o todas las revisiones de la Vista. Esta última acción elimina la Vista y todos sus recursos asociados, como así también los elimina del micrositio. Por **Revisión** se entiende los distintos cambios realizados sobre la información de la Vista.
+El sistema permite eliminar la revisión actual de la Vista o todas las revisiones de la Vista. Esta última acción elimina la Vista y todos sus recursos asociados, como así también los elimina del portal de datos abiertos. Por **Revisión** se entiende los distintos cambios realizados sobre la información de la Vista.
 
 .. image:: ../_static/images/img043.png
   :align: center

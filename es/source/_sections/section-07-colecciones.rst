@@ -1,4 +1,4 @@
-7. Creación de una Colección
+8. Creación de una Colección
 ============================
 Acceso directo desde:
 
@@ -50,7 +50,7 @@ Luego de completar los campos requeridos, presione el botón **"Continuar"** y l
 .. image:: ../_static/images/img079.png
 
 
-7.1 Edición de una Colección
+8.1 Edición de una Colección
 ----------------------------
 Antes de Guardar la Colección o sea antes de presionar el botón Guardar, puede editar la colección presionando el botón |icono-editar-2|, esta acción le permite seleccionar nuevamente los recursos agregados. También puede editar la información de la Colección presionado el |icono-editar-2| ubicado el margen derecho de la pantalla.
 
@@ -82,18 +82,18 @@ Cuando la Colección se encuentra en **Revisión**:
 
   .. image:: ../_static/images/img084.png
 
-7.2 Publicación de una Colección
+8.2 Publicación de una Colección
 --------------------------------
 
 Para publicar una Colección, la Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente Publicados. En el caso que la Colección esté en **Revisión**, esta deberá ser **Aceptada** para posteriormente ser **Publicada**, haga click sobre el botón **Publicar**.
 
 .. image:: ../_static/images/img085.png
 
-Para acceder al micrositio y ver la Visualización publicada |icono-visualizacion-publicada| , haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
+Para acceder al portal de datos abiertos y ver la Visualización publicada |icono-visualizacion-publicada| , haga clic sobre |icono-ver-sitio| , en el margen superior derecho.
 
 .. image:: ../_static/images/img086.png
 
-7.3 Eliminación de una Colección
+8.3 Eliminación de una Colección
 --------------------------------   
 Para eliminar una Visualización, hay dos opciones:
 
