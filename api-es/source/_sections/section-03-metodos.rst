@@ -241,3 +241,5 @@ Puede modificarse el formato de salida de la API cambiando la extensión del arg
 + data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS
 
 Nuevos tipos de salida se irán incluyendo con el tiempo.
+
+
