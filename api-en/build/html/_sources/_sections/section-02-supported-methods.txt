@@ -212,4 +212,6 @@ The output of the data invoked through the API can be modified by changing the e
 
 + data.xls : Returns a url to redirect to an XLS document.
 
-More output formats will be added in time
+More output formats will be added in time.
+
+
