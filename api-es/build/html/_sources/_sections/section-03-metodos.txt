@@ -213,7 +213,7 @@ Estructura JSON
 
 El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:
 
-+ fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.
+fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.
 
 Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.
 
@@ -241,3 +241,5 @@ Puede modificarse el formato de salida de la API cambiando la extensión del arg
 + data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS
 
 Nuevos tipos de salida se irán incluyendo con el tiempo.
+
+

@@ -300,9 +300,7 @@ PUT/PATCH /api/v2/datasets/:guid
 <div class="section" id="estructura-json">
 <h2>Estructura JSON<a class="headerlink" href="#estructura-json" title="Permalink to this headline">¶</a></h2>
 <p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
-<ul class="simple">
-<li>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</li>
-</ul>
+<p>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</p>
 <p>Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.</p>
 <p>Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.</p>
 <p>Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.</p>
