@@ -85,6 +85,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="">2. Supported Methods</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#get-lists">GET Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#get">GET</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#json-structure">JSON Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#retrieving-data-in-a-different-format">Retrieving data in a different format</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -167,67 +171,67 @@
 <p>An example of results with limit 2 would be as follows</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
 
-  <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+  <span class="s">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
 
-  <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
+  <span class="s">&quot;next&quot;</span><span class="p">:</span> <span class="s">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
 
-  <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="s">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
 
       <span class="p">{</span>
 
-          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
 
-          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
 
-              <span class="s2">&quot;&quot;</span>
+              <span class="s">&quot;&quot;</span>
 
           <span class="p">],</span>
 
-          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
+          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
 
-          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
+          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
+          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
+          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
 
       <span class="p">},</span>
 
       <span class="p">{</span>
 
-          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
+          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
 
-          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
 
-              <span class="s2">&quot;&quot;</span>
+              <span class="s">&quot;&quot;</span>
 
           <span class="p">],</span>
 
-          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
+          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
 
-          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
+          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
+          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
+          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
 
-          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
 
       <span class="p">}</span>
 
@@ -258,28 +262,50 @@
 <p>An example output of a data view</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
 
-  <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+  <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
+  <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
 
-  <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
 
-  <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="s">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
+  <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
 
-  <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
+  <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
 
-  <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+  <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
 
 <span class="p">}</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="json-structure">
+<h2>JSON Structure<a class="headerlink" href="#json-structure" title="Permalink to this headline">¶</a></h2>
+<p>The result is an Argument object, which is a recursive data structure containing the following properties:</p>
+<p>fType: Indicates the data type of the Argument. Its values could be ARRAY | TEXT | NUMBER | DATE. The ARRAY data type indicates that the Argument contains a TABLE.</p>
+<p>When the data type is ARRAY fRows and fCols indicate the number of rows and columns of the TABLE. In the same way, fArray contains the data of the TABLE as an array of Argument objects.</p>
+<p>When the data type is TEXT the value is contained in fStr. For a NUMBER data type the value is contained in fNum. For a DATE data type the value is contained in fNum as an epoch time value.</p>
+<p>An Argument may contain a LINK. In such case, fType contains LINK, the corresponding uri comes in fUri and the text to show is contained in fStr.</p>
+<p>When data type is ERROR, it means that there was an error when executing the data view, the error message will be contained in fStr.</p>
+<p>When a error occurs, the result is replaced with the last result that was correctly executed.</p>
+<p>To recognize if a result is updated, an additional property called fTimestamp exists. It has the POSIX time when the last execution was successful. If fTimestamp has a value of 0, that means that the result is updated.</p>
+<div class="section" id="retrieving-data-in-a-different-format">
+<h3>Retrieving data in a different format<a class="headerlink" href="#retrieving-data-in-a-different-format" title="Permalink to this headline">¶</a></h3>
+<p>The output of the data invoked through the API can be modified by changing the extention of the data value in the request. By default, the data value is set as data.json, which returns an object with the structure described aboves are available. Current available formats are:</p>
+<ul class="simple">
+<li>data.ajson : Returns data as a json array</li>
+<li>data.xml : Returns data as an XML</li>
+<li>data.csv : Returns data as a CSV</li>
+<li>data.xls : Returns a url to redirect to an XLS document.</li>
+</ul>
+<p>More output formats will be added in time</p>
 </div>
 </div>
 </div>
