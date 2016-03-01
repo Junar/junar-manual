@@ -179,3 +179,37 @@ An example output of a data view
 
   }
 
+
+JSON Structure
+--------------
+
+The result is an Argument object, which is a recursive data structure containing the following properties:
+
+fType: Indicates the data type of the Argument. Its values could be ARRAY | TEXT | NUMBER | DATE. The ARRAY data type indicates that the Argument contains a TABLE.
+
+When the data type is ARRAY fRows and fCols indicate the number of rows and columns of the TABLE. In the same way, fArray contains the data of the TABLE as an array of Argument objects.
+
+When the data type is TEXT the value is contained in fStr. For a NUMBER data type the value is contained in fNum. For a DATE data type the value is contained in fNum as an epoch time value.
+
+An Argument may contain a LINK. In such case, fType contains LINK, the corresponding uri comes in fUri and the text to show is contained in fStr.
+
+When data type is ERROR, it means that there was an error when executing the data view, the error message will be contained in fStr.
+
+When a error occurs, the result is replaced with the last result that was correctly executed.
+
+To recognize if a result is updated, an additional property called fTimestamp exists. It has the POSIX time when the last execution was successful. If fTimestamp has a value of 0, that means that the result is updated.
+
+Retrieving data in a different format
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The output of the data invoked through the API can be modified by changing the extention of the data value in the request. By default, the data value is set as data.json, which returns an object with the structure described aboves are available. Current available formats are:
+
++ data.ajson : Returns data as a json array
+
++ data.xml : Returns data as an XML
+
++ data.csv : Returns data as a CSV
+
++ data.xls : Returns a url to redirect to an XLS document.
+
+More output formats will be added in time
