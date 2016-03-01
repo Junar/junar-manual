@@ -206,3 +206,38 @@ Ejemplo de llamada para crear un datastream
 ::
 
   curl -H 'Accept: application/json; indent=4' -H "Content-Type: application/json" -X POST -d @api/tests/datastream-ok.json "http://api.dev:8080/api/v2/datastreams.json?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e"
+
+
+Estructura JSON
+---------------
+
+El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:
+
++ fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.
+
+Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.
+
+Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.
+
+Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.
+
+Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.
+
+Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.
+
+Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue ejecutada exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.
+
+Modificar el formato de salida
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:
+
++ data.ajson : Trae los datos como un array json.
+
++ data.xml : Trae los datos como una estructura XML
+
++ data.csv : Trae los datos como un documento CSV
+
++ data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS
+
+Nuevos tipos de salida se irán incluyendo con el tiempo.

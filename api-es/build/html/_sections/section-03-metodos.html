@@ -91,6 +91,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#datastreams">Datastreams</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-json">Estructura JSON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modificar-el-formato-de-salida">Modificar el formato de salida</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -175,37 +179,37 @@
 </ul>
 <p>Un ejemplo de resultados con limit igual a 2 sería asi</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
-  <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
-  <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="s">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+  <span class="s">&quot;next&quot;</span><span class="p">:</span> <span class="s">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
+  <span class="s">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
-          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
-              <span class="s2">&quot;&quot;</span>
+          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="s">&quot;&quot;</span>
           <span class="p">],</span>
-          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
-          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
+          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
+          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
+          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
+          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
       <span class="p">},</span>
       <span class="p">{</span>
-          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
-              <span class="s2">&quot;&quot;</span>
+          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
+          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="s">&quot;&quot;</span>
           <span class="p">],</span>
-          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
-          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
+          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
+          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
+          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
+          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
       <span class="p">}</span>
   <span class="p">]</span>
 <span class="p">}</span>
@@ -232,16 +236,16 @@
 </div>
 <p>Un ejemplo de resultado de un datastream sería así</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
-  <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
+  <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+  <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
+  <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="s">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
+  <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
+  <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -291,6 +295,30 @@ PUT/PATCH /api/v2/datasets/:guid
 <div class="highlight-python"><div class="highlight"><pre>curl -H &#39;Accept: application/json; indent=4&#39; -H &quot;Content-Type: application/json&quot; -X POST -d @api/tests/datastream-ok.json &quot;http://api.dev:8080/api/v2/datastreams.json?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&quot;
 </pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="estructura-json">
+<h2>Estructura JSON<a class="headerlink" href="#estructura-json" title="Permalink to this headline">¶</a></h2>
+<p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
+<ul class="simple">
+<li>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</li>
+</ul>
+<p>Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.</p>
+<p>Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.</p>
+<p>Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.</p>
+<p>Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.</p>
+<p>Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.</p>
+<p>Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue ejecutada exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.</p>
+<div class="section" id="modificar-el-formato-de-salida">
+<h3>Modificar el formato de salida<a class="headerlink" href="#modificar-el-formato-de-salida" title="Permalink to this headline">¶</a></h3>
+<p>Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:</p>
+<ul class="simple">
+<li>data.ajson : Trae los datos como un array json.</li>
+<li>data.xml : Trae los datos como una estructura XML</li>
+<li>data.csv : Trae los datos como un documento CSV</li>
+<li>data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS</li>
+</ul>
+<p>Nuevos tipos de salida se irán incluyendo con el tiempo.</p>
 </div>
 </div>
 </div>
