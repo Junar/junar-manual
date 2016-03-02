@@ -295,12 +295,12 @@
 <p>An Argument may contain a LINK. In such case, fType contains LINK, the corresponding uri comes in fUri and the text to show is contained in fStr.</p>
 <p>When data type is ERROR, it means that there was an error when executing the data view, the error message will be contained in fStr.</p>
 <p>When a error occurs, the result is replaced with the last result that was correctly executed.</p>
-<p>To recognize if a result is updated, an additional property called fTimestamp exists. It has the POSIX time when the last execution was successful. If fTimestamp has a value of 0, that means that the result is updated.</p>
+<p>To recognize if a result is updated, an additional property called fTimestamp exists. It contains the POSIX time when <strong>the data source was successfully accessed</strong> for the last time. If fTimestamp has a value of 0, that means that the result is updated.</p>
 <div class="section" id="retrieving-data-in-a-different-format">
 <h3>Retrieving data in a different format<a class="headerlink" href="#retrieving-data-in-a-different-format" title="Permalink to this headline">¶</a></h3>
 <p>The output of the data invoked through the API can be modified by changing the extention of the data value in the request. By default, the data value is set as data.json, which returns an object with the structure described aboves are available. Current available formats are:</p>
 <ul class="simple">
-<li>data.ajson : Returns data as a json array</li>
+<li>data.json : Returns data as a json array</li>
 <li>data.xml : Returns data as an XML</li>
 <li>data.csv : Returns data as a CSV</li>
 <li>data.xls : Returns a url to redirect to an XLS document.</li>
