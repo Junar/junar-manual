@@ -139,6 +139,7 @@ Un ejemplo de resultado de un datastream sería así
 
 POST / PUT / PATCH
 ------------------
+
 Creación, Edición y Edición Parcial de recursos.
 
 Al momento solo podemos crear y editar datasets y vistas. Y para poder hacerlo hay que tener acceso a una clave privada que esté asociada a un usuario.
@@ -225,14 +226,14 @@ Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de dato
 
 Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.
 
-Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue ejecutada exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.
+Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue **accedida la fuente de datos** de forma exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.
 
 Modificar el formato de salida
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:
 
-+ data.ajson : Trae los datos como un array json.
++ data.json : Trae los datos como un array json.
 
 + data.xml : Trae los datos como una estructura XML
 
