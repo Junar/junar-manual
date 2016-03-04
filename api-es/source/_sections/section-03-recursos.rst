@@ -1,4 +1,4 @@
-2. Recursos
+3. Recursos
 ===========
 
 Todos los recursos de la api salvo que aparezca alguna excepción retornan una objeto con los siguientes atributos:

@@ -1,4 +1,4 @@
-1. Autorización
+2. Autorización
 ===============
 
 1. Lo primero que se hace es tratar de identificar la cuenta (Account) mediante el dominio. Si no se puede identificar no se permite el acceso.
