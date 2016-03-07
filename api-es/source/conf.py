@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'API Documento Técnico'
+project = u'Datal API '
 copyright = u'2015, Junar'
 author = u'Junar'
 

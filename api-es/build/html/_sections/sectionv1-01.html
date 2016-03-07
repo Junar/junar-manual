@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. Junar API &mdash; API Documento Técnico 1.0.0 documentation</title>
+  <title>1. Junar API &mdash; Datal API  1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="API Documento Técnico 1.0.0 documentation" href="../index.html"/>
+    <link rel="top" title="Datal API  1.0.0 documentation" href="../index.html"/>
         <link rel="up" title="API v.1" href="apiv1.html"/>
         <link rel="prev" title="API v.1" href="apiv1.html"/> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> API Documento Técnico
+            <a href="../index.html" class="icon icon-home"> Datal API 
           
 
           
@@ -81,9 +81,211 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="apiv2.html">API v.2</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">API v.1</a><ul class="current">
+                <p class="caption"><span class="caption-text">Topicos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../authentication.html">Autenticación</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Errores</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Paginación</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Versionado</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Recursos</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Conjuntos de Datos</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Vistas</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Visualizaciones</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-de-datos">1.2.1   Consumiendo una Vista de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">1.2.2   URL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metodos-de-consulta-soportados">1.2.3   Métodos de consulta soportados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parametros">1.2.4   Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo">1.2.5   Ejemplo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ejemplo-de-formato-de-salida">1.2.6 Ejemplo de formato de salida</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consumiendo-una-vista-con-parametros">1.2.7   Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">1.2.8   Filtrar los resultados de una vista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formateo-de-datos">1.2.9   Formateo de Datos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-accesar-objetos">1.3 Métodos para accesar objetos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vistas-de-datos">1.3.1   Información de vistas de datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-vista-de-datos-con-parametros">1.3.2   Información de Vista de Datos con Parámetros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informacion-de-las-colecciones">1.3.3   Información de las Colecciones</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-realizar-busquedas">1.4     Métodos para realizar búsquedas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#buscar-vistas-de-datos">1.4.1   Buscar Vistas de Datos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-de-colecciones">1.4.2   Búsqueda de Colecciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones-de-busqueda">1.4.3   Opciones de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos-para-obtener-metricas-para-una-cuenta-de-datos-abiertos">1.5     Métodos para obtener métricas para una cuenta de datos abiertos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manejo-de-errores">1.6     Manejo de Errores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apiv1.html">Dashboards</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="">1. Junar API</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#snippets-de-codigo-y-api-wrappers">1.1             Snippets de código y API Wrappers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#metodos-para-consumir-vistas-de-datos">1.2             Metodos para consumir Vistas de Datos</a><ul>
@@ -129,7 +331,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">API Documento Técnico</a>
+        <a href="../index.html">Datal API </a>
       </nav>
 
 
@@ -138,7 +340,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -227,73 +429,73 @@
 <div class="section" id="ejemplo">
 <h3>1.2.5   Ejemplo<a class="headerlink" href="#ejemplo" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/dataviews/invoke/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTH_KEY">http://paloalto.cloudapi.junar.com/dataviews/invoke/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTH_KEY</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
- <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
- <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
- <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
- <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
- <span class="s">&quot;result&quot;</span><span class="p">:{</span>
-    <span class="s">&quot;fArray&quot;</span><span class="p">:[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;result&quot;</span><span class="p">:{</span>
+    <span class="s2">&quot;fArray&quot;</span><span class="p">:[</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;People QuickFacts&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fHeader&quot;</span><span class="p">:</span><span class="n">true</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;People QuickFacts&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fHeader&quot;</span><span class="p">:</span><span class="n">true</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fHeader&quot;</span><span class="p">:</span><span class="n">true</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fHeader&quot;</span><span class="p">:</span><span class="n">true</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;Persons under 5 years, percent, 2010&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;Persons under 5 years, percent, 2010&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;5.4%&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;5.4%&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;Persons under 18 years, percent, 2010&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;Persons under 18 years, percent, 2010&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;23.4%&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;23.4%&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;Persons under 64 years, percent, 2010&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;Persons under 64 years, percent, 2010&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;82.9%&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;82.9%&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;Persons 65 years and over&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;Persons 65 years and over&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">},</span>
        <span class="p">{</span>
-          <span class="s">&quot;fStr&quot;</span><span class="p">:</span><span class="s">&quot;17.1%&quot;</span><span class="p">,</span>
-          <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;TEXT&quot;</span>
+          <span class="s2">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;17.1%&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
        <span class="p">}</span>
     <span class="p">],</span>
-    <span class="s">&quot;fRows&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
-    <span class="s">&quot;fCols&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
-    <span class="s">&quot;fType&quot;</span><span class="p">:</span><span class="s">&quot;ARRAY&quot;</span><span class="p">,</span>
-    <span class="s">&quot;fTimestamp&quot;</span><span class="p">:</span><span class="mi">1349219063874</span><span class="p">,</span>
-    <span class="s">&quot;fLength&quot;</span><span class="p">:</span><span class="mi">0</span>
+    <span class="s2">&quot;fRows&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+    <span class="s2">&quot;fCols&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;ARRAY&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;fTimestamp&quot;</span><span class="p">:</span><span class="mi">1349219063874</span><span class="p">,</span>
+    <span class="s2">&quot;fLength&quot;</span><span class="p">:</span><span class="mi">0</span>
  <span class="p">},</span>
- <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-    <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-    <span class="s">&quot;Population&quot;</span><span class="p">,</span>
-    <span class="s">&quot;2010&quot;</span><span class="p">,</span>
-    <span class="s">&quot;age groups&quot;</span><span class="p">,</span>
-    <span class="s">&quot;us census&quot;</span><span class="p">,</span>
-    <span class="s">&quot;us&quot;</span>
+ <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+    <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Population&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2010&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;age groups&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;us census&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;us&quot;</span>
  <span class="p">],</span>
- <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2012-07-30 23:13:08&quot;</span><span class="p">,</span>
- <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;73025-palo-alto-population-by-age-groups.csv&quot;</span><span class="p">,</span>
- <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
+ <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2012-07-30 23:13:08&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;73025-palo-alto-population-by-age-groups.csv&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -301,7 +503,7 @@
 <div class="section" id="ejemplo-de-formato-de-salida">
 <h3>1.2.6 Ejemplo de formato de salida<a class="headerlink" href="#ejemplo-de-formato-de-salida" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/dataviews/invoke/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTK_KEY&amp;output=xml">http://paloalto.cloudapi.junar.com/dataviews/invoke/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTK_KEY&amp;output=xml</a></p>
-<div class="highlight-python"><div class="highlight"><pre>&lt;table&gt;
+<div class="highlight-python"><div class="highlight"><pre><span></span>&lt;table&gt;
       &lt;row&gt;
               &lt;column&gt;People QuickFacts&lt;/column&gt;
               &lt;column&gt;Palo Alto&lt;/column&gt;
@@ -333,7 +535,7 @@
 <p>Donde N es la posición del parámetro en la vista, empezando desde cero y X es el valor que tendrá dicho parámetro.</p>
 <p>Ejemplo</p>
 <p><a class="reference external" href="http://lima.cloudapi.junar.com/dataviews/invoke/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY&amp;pArgument0=MAIZ">http://lima.cloudapi.junar.com/dataviews/invoke/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY&amp;pArgument0=MAIZ</a></p>
-<div class="highlight-python"><div class="highlight"><pre>{
+<div class="highlight-python"><div class="highlight"><pre><span></span>{
  &quot;id&quot;:&quot;VOLUM-DE-PRODU-INGRE-POR&quot;,
  &quot;title&quot;:&quot;Volumen de Productos Ingresados - Por Producto&quot;,
  &quot;description&quot;:&quot;Detalla el volumen de productos ingresados por producto seleccionado.&quot;,
@@ -391,12 +593,12 @@
 <div class="section" id="filtrar-los-resultados-de-una-vista">
 <h3>1.2.8   Filtrar los resultados de una vista<a class="headerlink" href="#filtrar-los-resultados-de-una-vista" title="Permalink to this headline">¶</a></h3>
 <p>La API de Datos Abiertos de Junar permite a sus usuarios filtrar los resultados obtenidos durante la solicitud de una vista de datos utilizando la siguiente sintaxis:</p>
-<div class="highlight-python"><div class="highlight"><pre>http://lasvegas.cloudapi.junar.com/datastreams/invoke/DEVEL-SERVI-PROJE-INSPE?auth_key=YOUR_AUTH_KEY&amp;filter0=column4[contains]GAS&amp;filter1=column7[==]RANDOLPH&amp;where=(filter0 and filter1)
+<div class="highlight-python"><div class="highlight"><pre><span></span>http://lasvegas.cloudapi.junar.com/datastreams/invoke/DEVEL-SERVI-PROJE-INSPE?auth_key=YOUR_AUTH_KEY&amp;filter0=column4[contains]GAS&amp;filter1=column7[==]RANDOLPH&amp;where=(filter0 and filter1)
 </pre></div>
 </div>
 <p>Esto retornaría todos los datos que contengan la palabra GAS en la columna 4 y la palabra RANDOLPH en la columna 7.</p>
 <p>Los filtros pueden ir desde 0 a N (filter0, filter1...filterN) y tienen la siguiente sintaxis:</p>
-<div class="highlight-python"><div class="highlight"><pre>operando0 | operador lógico | operando1
+<div class="highlight-python"><div class="highlight"><pre><span></span>operando0 | operador lógico | operando1
 </pre></div>
 </div>
 <p>Los operandos pueden ser : rownum (número de fila), columnN (columna N, donde N es un entero que va desde 0 a N) o una cadena de texto.</p>
@@ -407,7 +609,7 @@
 <div class="section" id="formateo-de-datos">
 <h3>1.2.9   Formateo de Datos<a class="headerlink" href="#formateo-de-datos" title="Permalink to this headline">¶</a></h3>
 <p>Permite a los desarrolladores el dar formato a columnas de datos con un tipo y formato que afectará cómo son devueltos los datos de la consulta. Usa la siguiente sintaxis y debe aplicarse a una columna que ya haya sido objeto de un filtro :</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">format</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;table&quot;</span><span class="p">:[{</span><span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;column10&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span><span class="s">&quot;DATE&quot;</span><span class="p">,</span> <span class="s">&quot;format&quot;</span><span class="p">:{</span><span class="s">&quot;country&quot;</span><span class="p">:</span><span class="s">&quot;ES&quot;</span><span class="p">,</span> <span class="s">&quot;lang&quot;</span><span class="p">:</span><span class="s">&quot;es&quot;</span><span class="p">,</span> <span class="s">&quot;style&quot;</span><span class="p">:</span> <span class="s">&quot;dd/MM/yyyy&quot;</span><span class="p">}}]}</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;table&quot;</span><span class="p">:[{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;column10&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;DATE&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;ES&quot;</span><span class="p">,</span> <span class="s2">&quot;lang&quot;</span><span class="p">:</span><span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;dd/MM/yyyy&quot;</span><span class="p">}}]}</span>
 </pre></div>
 </div>
 <p>Donde</p>
@@ -418,97 +620,97 @@
 </ul>
 <p>El formato DATE requiere country (país), lang (idioma) y style (estilo). Los valores de country y lang corresponden al formato ISO, mientras que posibles valores de style pueden encontrarse aquí:</p>
 <p><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="s">&quot;table&quot;</span><span class="p">:[{</span><span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;column10&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span><span class="s">&quot;DATE&quot;</span><span class="p">,</span> <span class="s">&quot;format&quot;</span><span class="p">:{</span><span class="s">&quot;country&quot;</span><span class="p">:</span><span class="s">&quot;CL&quot;</span><span class="p">,</span> <span class="s">&quot;lang&quot;</span><span class="p">:</span><span class="s">&quot;es&quot;</span><span class="p">,</span> <span class="s">&quot;style&quot;</span><span class="p">:</span> <span class="s">&quot;dd/MM/yyyy&quot;</span><span class="p">}}]}</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;table&quot;</span><span class="p">:[{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;column10&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;DATE&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;CL&quot;</span><span class="p">,</span> <span class="s2">&quot;lang&quot;</span><span class="p">:</span><span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;dd/MM/yyyy&quot;</span><span class="p">}}]}</span>
 </pre></div>
 </div>
 <p>El formato NUMBER requiere country (país), lang (idioma) y pattern (patrón). Los patrones permiten definir cómo se separarán los miles y los decimales o si las cifran irán agrupadas de acuerdo a estándares asociados al país e idioma elegidos</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="s">&quot;table&quot;</span><span class="p">:[{</span><span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;column4&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">:</span><span class="s">&quot;NUMBER&quot;</span><span class="p">,</span> <span class="s">&quot;format&quot;</span><span class="p">:{</span><span class="s">&quot;country&quot;</span><span class="p">:</span><span class="s">&quot;US&quot;</span><span class="p">,</span> <span class="s">&quot;lang&quot;</span><span class="p">:</span><span class="s">&quot;es&quot;</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">:</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;decimals&quot;</span><span class="p">:</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;thousands&quot;</span><span class="p">:</span><span class="s">&quot;&quot;</span><span class="p">}}]}</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;table&quot;</span><span class="p">:[{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;column4&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;NUMBER&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;US&quot;</span><span class="p">,</span> <span class="s2">&quot;lang&quot;</span><span class="p">:</span><span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="s2">&quot;pattern&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;decimals&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;thousands&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">}}]}</span>
 </pre></div>
 </div>
 <p>Ejemplo</p>
 <p>..../invoke/SACRA-ANNUA-CRIME-STATS?...&amp;filter0=column0[==]Homicide&amp;filter1=column4[&gt;]0&amp;where=(filter0 or filter1)&amp;format={&#8220;table&#8221;:[{&#8220;id&#8221;:&#8221;column4&#8221;, &#8220;type&#8221;:&#8221;NUMBER&#8221;, &#8220;format&#8221;:&#8221;format&#8221;:{&#8220;country&#8221;:&#8221;US&#8221;, &#8220;lang&#8221;:&#8221;es&#8221;, &#8220;pattern&#8221;:&#8221;&#8221;, &#8220;decimals&#8221;:&#8221;&#8221;, &#8220;thousands&#8221;:&#8221;&#8220;}}]}</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
-<span class="s">&quot;id&quot;</span><span class="p">:</span> <span class="s">&quot;SACRA-ANNUA-CRIME-STATI&quot;</span><span class="p">,</span>
-<span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Sacramento Annual Crime Statistics&quot;</span><span class="p">,</span>
-<span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Year to date information on different types of crimes and variation 2012 2013&quot;</span><span class="p">,</span>
-<span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;sacramento&quot;</span><span class="p">,</span>
-<span class="s">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
-  <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;ARRAY&quot;</span><span class="p">,</span>
-  <span class="s">&quot;fArray&quot;</span><span class="p">:</span> <span class="p">[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SACRA-ANNUA-CRIME-STATI&quot;</span><span class="p">,</span>
+<span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Sacramento Annual Crime Statistics&quot;</span><span class="p">,</span>
+<span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Year to date information on different types of crimes and variation 2012 2013&quot;</span><span class="p">,</span>
+<span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;sacramento&quot;</span><span class="p">,</span>
+<span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;ARRAY&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;fArray&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;Homicide&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Homicide&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;7&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;NUMBER&quot;</span>
+      <span class="s2">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;42.9%&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;42.9%&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;Robbery&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Robbery&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;275&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;275&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;309&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;309&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">34.0</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;NUMBER&quot;</span>
+      <span class="s2">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">34.0</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;12.4%&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;12.4%&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;Burglary&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Burglary&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;944&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;944&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;1,084&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;1,084&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">140.0</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;NUMBER&quot;</span>
+      <span class="s2">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">140.0</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="s">&quot;fStr&quot;</span><span class="p">:</span> <span class="s">&quot;14.8%&quot;</span><span class="p">,</span>
-      <span class="s">&quot;fType&quot;</span><span class="p">:</span> <span class="s">&quot;TEXT&quot;</span>
+      <span class="s2">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;14.8%&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
     <span class="p">}</span>
   <span class="p">],</span>
-  <span class="s">&quot;fRows&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-  <span class="s">&quot;fCols&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-  <span class="s">&quot;fTimestamp&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-  <span class="s">&quot;fLength&quot;</span><span class="p">:</span> <span class="mi">0</span>
+  <span class="s2">&quot;fRows&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="s2">&quot;fCols&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="s2">&quot;fTimestamp&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">&quot;fLength&quot;</span><span class="p">:</span> <span class="mi">0</span>
 <span class="p">},</span>
-<span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
-  <span class="s">&quot;Sacramento&quot;</span><span class="p">,</span>
-  <span class="s">&quot;POLICE&quot;</span><span class="p">,</span>
-  <span class="s">&quot;crime&quot;</span>
+<span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="s2">&quot;Sacramento&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;POLICE&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;crime&quot;</span>
 <span class="p">],</span>
-<span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="s">&quot;2013-05-28 00:27:27&quot;</span><span class="p">,</span>
-<span class="s">&quot;source&quot;</span><span class="p">:</span> <span class="s">&quot;http://www.sacpd.org/crime/stats/&quot;</span><span class="p">,</span>
-<span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://sacramento.opendata.junar.com/datastreams/77447/sacramento-annual-crime-statistics/&quot;</span>
+<span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2013-05-28 00:27:27&quot;</span><span class="p">,</span>
+<span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.sacpd.org/crime/stats/&quot;</span><span class="p">,</span>
+<span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://sacramento.opendata.junar.com/datastreams/77447/sacramento-annual-crime-statistics/&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -531,22 +733,22 @@
 </ul>
 <p>Ejemplo</p>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/dataviews/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTH_KEY">http://paloalto.cloudapi.junar.com/dataviews/PALO-ALTO-POPUL-BY-12452?auth_key=YOUR_AUTH_KEY</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
- <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
- <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
- <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
- <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
- <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-    <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-    <span class="s">&quot;Population&quot;</span><span class="p">,</span>
-    <span class="s">&quot;2010&quot;</span><span class="p">,</span>
-    <span class="s">&quot;age groups&quot;</span><span class="p">,</span>
-    <span class="s">&quot;us census&quot;</span><span class="p">,</span>
-    <span class="s">&quot;us&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+    <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Population&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2010&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;age groups&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;us census&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;us&quot;</span>
  <span class="p">],</span>
- <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2012-07-30 23:13:08&quot;</span><span class="p">,</span>
- <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;73025-palo-alto-population-by-age-groups.csv&quot;</span><span class="p">,</span>
- <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
+ <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2012-07-30 23:13:08&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;73025-palo-alto-population-by-age-groups.csv&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -555,24 +757,24 @@
 <h3>1.3.2   Información de Vista de Datos con Parámetros<a class="headerlink" href="#informacion-de-vista-de-datos-con-parametros" title="Permalink to this headline">¶</a></h3>
 <p>Ejemplo</p>
 <p><a class="reference external" href="http://lima.cloudapi.junar.com/dataviews/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY">http://lima.cloudapi.junar.com/dataviews/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
- <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;VOLUM-DE-PRODU-INGRE-POR&quot;</span><span class="p">,</span>
- <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Volumen de Productos Ingresados - Por Producto&quot;</span><span class="p">,</span>
- <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Detalla el volumen de productos ingresados por producto seleccionado.&quot;</span><span class="p">,</span>
- <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;Lima&quot;</span><span class="p">,</span>
- <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-    <span class="s">&quot;Volumen&quot;</span><span class="p">,</span>
-    <span class="s">&quot;productos&quot;</span><span class="p">,</span>
-    <span class="s">&quot;ingresados&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;VOLUM-DE-PRODU-INGRE-POR&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Volumen de Productos Ingresados - Por Producto&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Detalla el volumen de productos ingresados por producto seleccionado.&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;Lima&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+    <span class="s2">&quot;Volumen&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;productos&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ingresados&quot;</span>
  <span class="p">],</span>
- <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2012-10-24 10:49:24&quot;</span><span class="p">,</span>
- <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;Volumen_de_productos_ingresados.xls&quot;</span><span class="p">,</span>
- <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://lima.opendata.junar.com/dataviews/75010/volumen-de-productos-ingresados-por-producto/&quot;</span><span class="p">,</span>
- <span class="s">&quot;parameters&quot;</span><span class="p">:[</span>
+ <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2012-10-24 10:49:24&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;Volumen_de_productos_ingresados.xls&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://lima.opendata.junar.com/dataviews/75010/volumen-de-productos-ingresados-por-producto/&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;parameters&quot;</span><span class="p">:[</span>
     <span class="p">{</span>
-       <span class="s">&quot;position&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
-       <span class="s">&quot;name&quot;</span><span class="p">:</span><span class="s">&quot;Producto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Producto&quot;</span>
+       <span class="s2">&quot;position&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+       <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Producto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Producto&quot;</span>
     <span class="p">}</span>
  <span class="p">]</span>
 <span class="p">}</span>
@@ -593,60 +795,60 @@
 </ul>
 <p><strong>Ejemplo</strong></p>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/dashboards/PALO-ALTO-2010-CENSU-DATA?auth_key=YOUR_AUTH_KEY">http://paloalto.cloudapi.junar.com/dashboards/PALO-ALTO-2010-CENSU-DATA?auth_key=YOUR_AUTH_KEY</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
- <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-2010-CENSU-DATA&quot;</span><span class="p">,</span>
- <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;2010 Census Data&quot;</span><span class="p">,</span>
- <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
- <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
- <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-    <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-    <span class="s">&quot;2010 Census&quot;</span><span class="p">,</span>
-    <span class="s">&quot;Population&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-2010-CENSU-DATA&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;2010 Census Data&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;cityofpaloalto&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+    <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2010 Census&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Population&quot;</span>
  <span class="p">],</span>
- <span class="s">&quot;dataviews&quot;</span><span class="p">:[</span>
+ <span class="s2">&quot;dataviews&quot;</span><span class="p">:[</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-STATS&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population Statistics&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73021/palo-alto-population-statistics/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-STATS&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population Statistics&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73021/palo-alto-population-statistics/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-BY-51574&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population by Ethnicity&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/visualizations/4324/palo-alto-population-by-ethnicity/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-BY-51574&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population by Ethnicity&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/visualizations/4324/palo-alto-population-by-ethnicity/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-BY-12452&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population by Age Groups&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73247/palo-alto-population-by-age-groups/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;EDUCA-STATI&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Education Statistics&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73035/palo-alto-education-statistics/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;EDUCA-STATI&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Education Statistics&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73035/palo-alto-education-statistics/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-BY-ETHNI&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population by Ethnicity&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73029/palo-alto-population-by-ethnicity/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-BY-ETHNI&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population by Ethnicity&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73029/palo-alto-population-by-ethnicity/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;SECON-LANGU-AT-HOME&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Secondary Languages at Home&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73033/palo-alto-secondary-languages-at-home/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;SECON-LANGU-AT-HOME&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Secondary Languages at Home&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73033/palo-alto-secondary-languages-at-home/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;POVER-LEVEL-IN-PALO-ALTO&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Poverty Level&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73038/palo-alto-poverty-level/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;POVER-LEVEL-IN-PALO-ALTO&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Poverty Level&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73038/palo-alto-poverty-level/&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-       <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;HOUSI-STATI&quot;</span><span class="p">,</span>
-       <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Housing Statistics&quot;</span><span class="p">,</span>
-       <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dataviews/73037/palo-alto-housing-statistics/&quot;</span>
+       <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;HOUSI-STATI&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Housing Statistics&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dataviews/73037/palo-alto-housing-statistics/&quot;</span>
     <span class="p">}</span>
  <span class="p">],</span>
- <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2012-08-02 03:03:12&quot;</span><span class="p">,</span>
- <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dashboards/7539/2010-census-data/&quot;</span>
+ <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2012-08-02 03:03:12&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dashboards/7539/2010-census-data/&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -670,76 +872,76 @@
 </ul>
 <p><strong>Ejemplo</strong></p>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/datastreams/search?query=Census&amp;auth_key=YOUR_AUTH_KEY&amp;max_results=5">http://paloalto.cloudapi.junar.com/datastreams/search?query=Census&amp;auth_key=YOUR_AUTH_KEY&amp;max_results=5</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
   <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;poverty&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;poverty&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343437751&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Poverty Level&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/datastreams/73038/palo-alto-poverty-level/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;POVER-LEVEL-IN-PALO-ALTO&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343437751&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Poverty Level&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/datastreams/73038/palo-alto-poverty-level/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;POVER-LEVEL-IN-PALO-ALTO&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Population&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Languages&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us&quot;</span><span class="p">,</span>
-       <span class="s">&quot;census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us census&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Population&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Languages&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us census&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343438207&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Secondary Languages at Home&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/datastreams/73033/palo-alto-secondary-languages-at-home/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;SECON-LANGU-AT-HOME&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343438207&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Secondary Languages at Home&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/datastreams/73033/palo-alto-secondary-languages-at-home/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;SECON-LANGU-AT-HOME&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Education&quot;</span><span class="p">,</span>
-       <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;high school&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Education&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;high school&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343438507&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Education Statistics&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/datastreams/73035/palo-alto-education-statistics/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;EDUCA-STATI&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343438507&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Education Statistics&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/datastreams/73035/palo-alto-education-statistics/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;EDUCA-STATI&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;us&quot;</span><span class="p">,</span>
-       <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Housing&quot;</span><span class="p">,</span>
-       <span class="s">&quot;statistics&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Housing&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;statistics&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343438013&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Housing Statistics&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/datastreams/73037/palo-alto-housing-statistics/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;HOUSI-STATI&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343438013&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Housing Statistics&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/datastreams/73037/palo-alto-housing-statistics/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;HOUSI-STATI&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Population&quot;</span><span class="p">,</span>
-       <span class="s">&quot;census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;us&quot;</span><span class="p">,</span>
-       <span class="s">&quot;palo alto&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Population&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;palo alto&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343437308&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Palo Alto Population Statistics&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/datastreams/73021/palo-alto-population-statistics/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-POPUL-STATS&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343437308&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Palo Alto Population Statistics&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/datastreams/73021/palo-alto-population-statistics/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-POPUL-STATS&quot;</span>
  <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
@@ -761,18 +963,18 @@
 </ul>
 <p><strong>Ejemplo</strong></p>
 <p><a class="reference external" href="http://paloalto.cloudapi.junar.com/dashboards/search?query=Census&amp;auth_key=YOUR_AUTH_KEY&amp;max_results=5">http://paloalto.cloudapi.junar.com/dashboards/search?query=Census&amp;auth_key=YOUR_AUTH_KEY&amp;max_results=5</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
   <span class="p">{</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;palo alto&quot;</span><span class="p">,</span>
-       <span class="s">&quot;2010 Census&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Population&quot;</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Source: US Census Bureau&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;palo alto&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;2010 Census&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Population&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;1343890992&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;2010 Census Data&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://paloalto.opendata.junar.com/dashboards/7539/2010-census-data/&quot;</span><span class="p">,</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PALO-ALTO-2010-CENSU-DATA&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;1343890992&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;2010 Census Data&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://paloalto.opendata.junar.com/dashboards/7539/2010-census-data/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PALO-ALTO-2010-CENSU-DATA&quot;</span>
  <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
@@ -807,79 +1009,79 @@ Dependiendo del tipo de recurso solicitado la URL puede contener el elemento dat
 <p>Top vistas de datos  : <a class="reference external" href="http://lanacion.cloudapi.junar.com/datastreams/top?auth_key=YOUR_AUTH_KEY">http://lanacion.cloudapi.junar.com/datastreams/top?auth_key=YOUR_AUTH_KEY</a>
 Últimas colecciones  : <a class="reference external" href="http://paloalto.cloudapi.junar.com/dashboards/last?auth_key=YOUR_AUTH_KEY">http://paloalto.cloudapi.junar.com/dashboards/last?auth_key=YOUR_AUTH_KEY</a></p>
 <p>Top visualizaciones  : <a class="reference external" href="http://recursos.datos.gob.cl/visualizations/top?auth_key=YOUR_AUTH_KEY">http://recursos.datos.gob.cl/visualizations/top?auth_key=YOUR_AUTH_KEY</a></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
  <span class="p">{</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;ACTIV-ECONO-DURAN-2012-80010&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Actividad econ</span><span class="se">\u00f3</span><span class="s">mica durante 2012&quot;</span><span class="p">,</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Descripci</span><span class="se">\u00f3</span><span class="s">n por sector&quot;</span><span class="p">,</span>
-    <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;LNData&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;actividad economica&quot;</span><span class="p">,</span>
-       <span class="s">&quot;2012&quot;</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;ACTIV-ECONO-DURAN-2012-80010&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Actividad econ</span><span class="se">\u00f3</span><span class="s2">mica durante 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Descripci</span><span class="se">\u00f3</span><span class="s2">n por sector&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;LNData&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;actividad economica&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;2012&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2013-01-10 09:59:13&quot;</span><span class="p">,</span>
-    <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdDZkMGY4N043NkQ0TmRQSzdKdGxtZmc&amp;output=html&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://data.lanacion.com.ar/datastreams/76060/actividad-economica-durante-2012/&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2013-01-10 09:59:13&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdDZkMGY4N043NkQ0TmRQSzdKdGxtZmc&amp;output=html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://data.lanacion.com.ar/datastreams/76060/actividad-economica-durante-2012/&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;MATER-RECIC-POR-COMUN&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Materiales reciclabes por comuna&quot;</span><span class="p">,</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Detalle por comuna, barrio, toneladas por d</span><span class="se">\u00ed</span><span class="s">a, rubro, habitantes y tasa cada 100.000 habitantes&quot;</span><span class="p">,</span>
-    <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;LNData&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Basura&quot;</span><span class="p">,</span>
-       <span class="s">&quot;comuna&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Ciudad de Buenos Aires&quot;</span><span class="p">,</span>
-       <span class="s">&quot;toneladas&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Rubro&quot;</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;MATER-RECIC-POR-COMUN&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Materiales reciclabes por comuna&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Detalle por comuna, barrio, toneladas por d</span><span class="se">\u00ed</span><span class="s2">a, rubro, habitantes y tasa cada 100.000 habitantes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;LNData&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Basura&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;comuna&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Ciudad de Buenos Aires&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;toneladas&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Rubro&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2013-01-09 10:31:04&quot;</span><span class="p">,</span>
-    <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdDNHT29KVVB4OG5LT2x0bFY5MVVEaVE&amp;output=html&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://data.lanacion.com.ar/datastreams/76043/materiales-reciclabes-por-comuna/&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2013-01-09 10:31:04&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdDNHT29KVVB4OG5LT2x0bFY5MVVEaVE&amp;output=html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://data.lanacion.com.ar/datastreams/76043/materiales-reciclabes-por-comuna/&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;CON-CUANT-DEL-SALAR-SE&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Con cu</span><span class="se">\u00e1</span><span class="s">nto del salario se queda el impuesto a las ganancias&quot;</span><span class="p">,</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Descripci</span><span class="se">\u00f3</span><span class="s">n por a</span><span class="se">\u00f1</span><span class="s">o, monto del salario y porcentaje de retenci</span><span class="se">\u00f3</span><span class="s">n&quot;</span><span class="p">,</span>
-    <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;LNData&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Salario&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Impuesto a las ganancias&quot;</span><span class="p">,</span>
-       <span class="s">&quot;AFIP&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Argentina&quot;</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;CON-CUANT-DEL-SALAR-SE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Con cu</span><span class="se">\u00e1</span><span class="s2">nto del salario se queda el impuesto a las ganancias&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Descripci</span><span class="se">\u00f3</span><span class="s2">n por a</span><span class="se">\u00f1</span><span class="s2">o, monto del salario y porcentaje de retenci</span><span class="se">\u00f3</span><span class="s2">n&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;LNData&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Salario&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Impuesto a las ganancias&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;AFIP&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Argentina&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2013-01-09 10:18:22&quot;</span><span class="p">,</span>
-    <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdGZlZ0FRaDJUNGNGeURJOVlvZG9RR0E&amp;output=html&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://data.lanacion.com.ar/datastreams/76042/con-cuanto-del-salario-se-queda-el-impuesto-a-las-ganancias/&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2013-01-09 10:18:22&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdGZlZ0FRaDJUNGNGeURJOVlvZG9RR0E&amp;output=html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://data.lanacion.com.ar/datastreams/76042/con-cuanto-del-salario-se-queda-el-impuesto-a-las-ganancias/&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;MUERT-EN-ACCID-VIALE-89761&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Muertes en accidentes viales durante 2012&quot;</span><span class="p">,</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Descripci</span><span class="se">\u00f3</span><span class="s">n por provincia, cantidad de muertes, poblaci</span><span class="se">\u00f3</span><span class="s">n y tasa cada 100000 habitantes&quot;</span><span class="p">,</span>
-    <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;LNData&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Argentina&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Muertes viales&quot;</span><span class="p">,</span>
-       <span class="s">&quot;2012&quot;</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;MUERT-EN-ACCID-VIALE-89761&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Muertes en accidentes viales durante 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Descripci</span><span class="se">\u00f3</span><span class="s2">n por provincia, cantidad de muertes, poblaci</span><span class="se">\u00f3</span><span class="s2">n y tasa cada 100000 habitantes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;LNData&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Argentina&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Muertes viales&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;2012&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2013-01-08 09:28:05&quot;</span><span class="p">,</span>
-    <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdF9PV0t4QnZ5RDZZelBGR2NZQl9wb2c&amp;output=html&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://data.lanacion.com.ar/datastreams/76022/muertes-en-accidentes-viales-durante-2012/&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2013-01-08 09:28:05&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdF9PV0t4QnZ5RDZZelBGR2NZQl9wb2c&amp;output=html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://data.lanacion.com.ar/datastreams/76022/muertes-en-accidentes-viales-durante-2012/&quot;</span>
  <span class="p">},</span>
  <span class="p">{</span>
-    <span class="s">&quot;id&quot;</span><span class="p">:</span><span class="s">&quot;PRODU-AUTOM-2011-2012&quot;</span><span class="p">,</span>
-    <span class="s">&quot;title&quot;</span><span class="p">:</span><span class="s">&quot;Producci</span><span class="se">\u00f3</span><span class="s">n automotriz 2011 - 2012&quot;</span><span class="p">,</span>
-    <span class="s">&quot;description&quot;</span><span class="p">:</span><span class="s">&quot;Descripci</span><span class="se">\u00f3</span><span class="s">n por per</span><span class="se">\u00ed</span><span class="s">odo, a</span><span class="se">\u00f1</span><span class="s">o, tipo y categor</span><span class="se">\u00ed</span><span class="s">a&quot;</span><span class="p">,</span>
-    <span class="s">&quot;user&quot;</span><span class="p">:</span><span class="s">&quot;LNData&quot;</span><span class="p">,</span>
-    <span class="s">&quot;tags&quot;</span><span class="p">:[</span>
-       <span class="s">&quot;Producci</span><span class="se">\u00f3</span><span class="s">n automotriz&quot;</span><span class="p">,</span>
-       <span class="s">&quot;2011&quot;</span><span class="p">,</span>
-       <span class="s">&quot;2012&quot;</span><span class="p">,</span>
-       <span class="s">&quot;Categor</span><span class="se">\u00ed</span><span class="s">as&quot;</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;PRODU-AUTOM-2011-2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Producci</span><span class="se">\u00f3</span><span class="s2">n automotriz 2011 - 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Descripci</span><span class="se">\u00f3</span><span class="s2">n por per</span><span class="se">\u00ed</span><span class="s2">odo, a</span><span class="se">\u00f1</span><span class="s2">o, tipo y categor</span><span class="se">\u00ed</span><span class="s2">a&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;LNData&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="p">:[</span>
+       <span class="s2">&quot;Producci</span><span class="se">\u00f3</span><span class="s2">n automotriz&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;2011&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;2012&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;Categor</span><span class="se">\u00ed</span><span class="s2">as&quot;</span>
     <span class="p">],</span>
-    <span class="s">&quot;created_at&quot;</span><span class="p">:</span><span class="s">&quot;2013-01-07 12:13:52&quot;</span><span class="p">,</span>
-    <span class="s">&quot;source&quot;</span><span class="p">:</span><span class="s">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdERYMWc2eUxpQWYwemZmNzgxRElZZlE&amp;output=html&quot;</span><span class="p">,</span>
-    <span class="s">&quot;link&quot;</span><span class="p">:</span><span class="s">&quot;http://data.lanacion.com.ar/datastreams/76004/produccion-automotriz-2011-2012/&quot;</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2013-01-07 12:13:52&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;https://docs.google.com/spreadsheet/pub?key=0AuNh4LTzbqXMdERYMWc2eUxpQWYwemZmNzgxRElZZlE&amp;output=html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://data.lanacion.com.ar/datastreams/76004/produccion-automotriz-2011-2012/&quot;</span>
  <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>

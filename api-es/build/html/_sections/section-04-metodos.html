@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. Métodos &mdash; API Documento Técnico 1.0.0 documentation</title>
+  <title>4. Métodos &mdash; Datal API  1.0.0 documentation</title>
   
 
   
@@ -30,10 +30,7 @@
   
 
   
-    <link rel="top" title="API Documento Técnico 1.0.0 documentation" href="../index.html"/>
-        <link rel="up" title="API v.2" href="apiv2.html"/>
-        <link rel="next" title="API v.1" href="apiv1.html"/>
-        <link rel="prev" title="3. Recursos" href="section-03-recursos.html"/> 
+    <link rel="top" title="Datal API  1.0.0 documentation" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -51,7 +48,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> API Documento Técnico
+            <a href="../index.html" class="icon icon-home"> Datal API 
           
 
           
@@ -82,28 +79,19 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="apiv2.html">API v.2</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="section-01-introduccion.html">1. Introducción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="section-02-autorizacion.html">2. Autorización</a></li>
-<li class="toctree-l2"><a class="reference internal" href="section-03-recursos.html">3. Recursos</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">4. Métodos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#get-listados">GET Listados</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get">GET</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#post-put-patch">POST / PUT / PATCH</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#datasets">Datasets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#datastreams">Datastreams</a></li>
+                <p class="caption"><span class="caption-text">Topicos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../authentication.html">Autenticación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Errores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Paginación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Versionado</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#estructura-json">Estructura JSON</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#modificar-el-formato-de-salida">Modificar el formato de salida</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="apiv1.html">API v.1</a></li>
+<p class="caption"><span class="caption-text">Recursos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Conjuntos de Datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Vistas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Visualizaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiv1.html">Dashboards</a></li>
 </ul>
 
             
@@ -117,7 +105,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">API Documento Técnico</a>
+        <a href="../index.html">Datal API </a>
       </nav>
 
 
@@ -126,15 +114,13 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-          <li><a href="apiv2.html">API v.2</a> &raquo;</li>
       
     <li>4. Métodos</li>
       <li class="wy-breadcrumbs-aside">
@@ -155,19 +141,19 @@
 <div class="section" id="get-listados">
 <h2>GET Listados<a class="headerlink" href="#get-listados" title="Permalink to this headline">¶</a></h2>
 <p>Busca un litado de recursos</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">resources</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">resources</span>
 </pre></div>
 </div>
 <p>Busca un listado de datastreams.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datastreams</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datastreams</span>
 </pre></div>
 </div>
 <p>Busca un listado de datasets.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datasets</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datasets</span>
 </pre></div>
 </div>
 <p>Busca un listado de visualizaciones.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span>
 </pre></div>
 </div>
 <p>Si no hay parametros GET la API devuelve todos los recursos que le corresponden a la cuenta y sino se pueden pasar los siguientes parametros para ordenar o filtrar la búsqueda.</p>
@@ -187,38 +173,38 @@
 <li>result: un array con el resultado final</li>
 </ul>
 <p>Un ejemplo de resultados con limit igual a 2 sería asi</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
-  <span class="s">&quot;next&quot;</span><span class="p">:</span> <span class="s">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
-  <span class="s">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
-  <span class="s">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+  <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
-          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
-          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
-          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
-              <span class="s">&quot;&quot;</span>
+          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="s2">&quot;&quot;</span>
           <span class="p">],</span>
-          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
-          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
-          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
-          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
-          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
-          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
+          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611920</span><span class="p">,</span>
+          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Calificaciones 2006&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61649/nivel-de-calificaciones-2006&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61649&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
       <span class="p">},</span>
       <span class="p">{</span>
-          <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
-          <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
-          <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-          <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
-              <span class="s">&quot;&quot;</span>
+          <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Rendimiento_anio_2010.csv&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Descripcion del conjuto de datos&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+          <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="s2">&quot;&quot;</span>
           <span class="p">],</span>
-          <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
-          <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
-          <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="s">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
-          <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
-          <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
-          <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
+          <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="mi">1337611453</span><span class="p">,</span>
+          <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel de Rendimiento 2010&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://microsites.dev:8080/datasets/61648/nivel-de-rendimiento-2010&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;DATASET-ID-61648&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
       <span class="p">}</span>
   <span class="p">]</span>
 <span class="p">}</span>
@@ -228,33 +214,33 @@
 <div class="section" id="get">
 <h2>GET<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h2>
 <p>Trae la información asociada a una vista</p>
-<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datastreams/:guid
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /api/v2/datastreams/:guid
 </pre></div>
 </div>
 <p>Trae la información asociada completa (incluye los valores de la vista) a una vista</p>
-<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datastreams/:guid/data
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /api/v2/datastreams/:guid/data
 </pre></div>
 </div>
 <p>Trae la información asociada a un dataset</p>
-<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/datasets/:guid
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /api/v2/datasets/:guid
 </pre></div>
 </div>
 <p>Trae la información asociada a una visualización</p>
-<div class="highlight-python"><div class="highlight"><pre>GET /api/v2/visualizations/:guid
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /api/v2/visualizations/:guid
 </pre></div>
 </div>
 <p>Un ejemplo de resultado de un datastream sería así</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
-  <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="s">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
-  <span class="s">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="s">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="s">&quot;created_at&quot;</span><span class="p">:</span> <span class="s">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
-  <span class="s">&quot;title&quot;</span><span class="p">:</span> <span class="s">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
-  <span class="s">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
-  <span class="s">&quot;user&quot;</span><span class="p">:</span> <span class="s">&quot;publicador&quot;</span><span class="p">,</span>
-  <span class="s">&quot;guid&quot;</span><span class="p">:</span> <span class="s">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
-  <span class="s">&quot;category_name&quot;</span><span class="p">:</span> <span class="s">&quot;Educación&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://datastorage.mineduc.cl/tablas/Nivel_Calificaciones_anio_2006.csv&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Contiene indicadores para promedio anual de calificaciones (para Enseñanza Básica de Niños y Enseñanza Media de Jóvenes).&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nivel Calificaciones 2006&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+  <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NIVEL-DE-CALIF-2006-53010&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Educación&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -266,7 +252,7 @@
 <p>Por lo tanto la operación de edición y creación se realiza sobre las últimas revisiones de los recursos y no sobre laas últimas revisiones publicadas de los mismos.</p>
 <div class="section" id="datasets">
 <h3>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre>POST /api/v2/datasets
+<div class="highlight-python"><div class="highlight"><pre><span></span>POST /api/v2/datasets
 
 PUT/PATCH /api/v2/datasets/:guid
 </pre></div>
@@ -287,7 +273,7 @@ PUT/PATCH /api/v2/datasets/:guid
 </div>
 <div class="section" id="datastreams">
 <h3>Datastreams<a class="headerlink" href="#datastreams" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">POST</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datastreams</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">POST</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">datastreams</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -301,7 +287,7 @@ PUT/PATCH /api/v2/datasets/:guid
 <li>tags: Opcional. Tags separados por coma.</li>
 </ul>
 <p>Ejemplo de llamada para crear un datastream</p>
-<div class="highlight-python"><div class="highlight"><pre>curl -H &#39;Accept: application/json; indent=4&#39; -H &quot;Content-Type: application/json&quot; -X POST -d @api/tests/datastream-ok.json &quot;http://api.dev:8080/api/v2/datastreams.json?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&quot;
+<div class="highlight-python"><div class="highlight"><pre><span></span>curl -H &#39;Accept: application/json; indent=4&#39; -H &quot;Content-Type: application/json&quot; -X POST -d @api/tests/datastream-ok.json &quot;http://api.dev:8080/api/v2/datastreams.json?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&quot;
 </pre></div>
 </div>
 </div>
@@ -334,15 +320,6 @@ PUT/PATCH /api/v2/datasets/:guid
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="apiv1.html" class="btn btn-neutral float-right" title="API v.1" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="section-03-recursos.html" class="btn btn-neutral" title="3. Recursos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

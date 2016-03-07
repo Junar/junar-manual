@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Conjunto de Datos &mdash; Datal API  1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Datal API  1.0.0 documentation" href="index.html"/>
+        <link rel="prev" title="Autenticación" href="topicos.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Datal API 
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Topicos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html">Autenticación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#autorizacion">Autorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#errores">Errores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#paginacion">Paginación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#ordenamiento">Ordenamiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#filtros">Filtros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#busquedas-multiples">Busquedas Multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#versiones">Versiones</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recursos</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Conjunto de Datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vista">VISTA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-json-de-los-datos-de-origen">Estructura JSON de los datos de Origen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modificar-el-formato-de-salida">Modificar el formato de salida</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#visualizaciones">Visualizaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#dashboards">Dashboards</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Datal API </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Conjunto de Datos</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/recursos.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="conjunto-de-datos">
+<h1>Conjunto de Datos<a class="headerlink" href="#conjunto-de-datos" title="Permalink to this headline">¶</a></h1>
+<p>Los path con sus métodos existentes son</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datasets.json
+GET   /api/v2/datasets/{guid}.json
+POST  /api/v2/datasets.json
+PUT   /api/v2/datasets/:guid.json
+PATCH /api/v2/datasets/:guid.json
+</pre></div>
+</div>
+<p>Y los parametros son los siguientes.</p>
+<ul class="simple">
+<li>guid (L): Identificador del recurso,</li>
+<li>title (E/L): Título del conjunto de datos</li>
+<li>description (E/L): Descripción del conjunto de datos</li>
+<li>category (E): Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta</li>
+<li>category_name (L): Nombre de la categoría</li>
+<li>notes (E): Opcional. Texto de la nota del conjunto de datos</li>
+<li>end_point (E): Opcional. Url apuntando al recurso con los datos (archivos o página web).</li>
+<li>endpoint (L): Url apuntando al recurso con los datos (archivos o página web)</li>
+<li>file (E): Opcional. Archivo a subir a la plataforma</li>
+<li>license (E): Opcional. Tipo de licencia que aplica sobre el conjunto de datos</li>
+<li>spatial (E): Opcional. Zona geográfica a la cual aplica el conjunto de datos</li>
+<li>frequency (E): Opcional. Frecuencia de actualiación del resucro</li>
+<li>mbox (E): Opcional. Correo electronico de quien administra el conjunto de datos</li>
+<li>tags (E/L): Opcional. Tags separados por coma.</li>
+<li>user (L): Usuario que publica el recurso.</li>
+<li>parameters (L): Parametros que tiene el recurso.</li>
+<li>created_at (L): Fecha de creación de la versión del recurso</li>
+<li>link (L): Link a la vista del recurso en el portal</li>
+</ul>
+</div>
+<div class="section" id="vista">
+<h1>VISTA<a class="headerlink" href="#vista" title="Permalink to this headline">¶</a></h1>
+<p>Los path con sus métodos existentes son</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datastreams.json
+GET   /api/v2/datastreams/{guid}.json
+GET   /api/v2/datastreams/{guid}/data.{format}
+POST  /api/v2/datastreams.json
+PUT   /api/v2/datastreams/:guid.json
+PATCH /api/v2/datastreams/:guid.json
+</pre></div>
+</div>
+<p>Y los parametros son los siguientes.</p>
+<ul class="simple">
+<li>guid (L): Identificador del recurso,</li>
+<li>title (E/L): Título del recurso</li>
+<li>description (E/L): Descripción del recurso</li>
+<li>category (E): Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta</li>
+<li>category_name (L): Nombre de la categoría</li>
+<li>notes (E): Opcional. Texto de la nota del conjunto de datos</li>
+<li>dataset (E): GUID del conjunto de dataos asociado a la vista.</li>
+<li>header_row (E): Opcional. Indice númerico de la fila a usar como cabecera de la tabla comenzando de cero. Por defecto es vacio</li>
+<li>table_id (E): Opcional Indice numérico de la tabla en el conjunto de datos, comenzando de cero</li>
+<li>tags (E/L): Opcional. Tags separados por coma.</li>
+<li>user (L): Usuario que publica el recurso.</li>
+<li>parameters (L): Parametros que tiene el recurso.</li>
+<li>created_at (L): Fecha de creación de la versión del recurso</li>
+<li>link (L): Link a la vista del recurso en el portal</li>
+</ul>
+<p>El path que termine en data.{format} permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
+<div class="section" id="estructura-json-de-los-datos-de-origen">
+<h2>Estructura JSON de los datos de Origen<a class="headerlink" href="#estructura-json-de-los-datos-de-origen" title="Permalink to this headline">¶</a></h2>
+<p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
+<p>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</p>
+<p>Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.</p>
+<p>Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.</p>
+<p>Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.</p>
+<p>Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.</p>
+<p>Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.</p>
+<p>Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue <strong>accedida la fuente de datos</strong> de forma exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.</p>
+<div class="section" id="modificar-el-formato-de-salida">
+<h3>Modificar el formato de salida<a class="headerlink" href="#modificar-el-formato-de-salida" title="Permalink to this headline">¶</a></h3>
+<p>Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:</p>
+<ul class="simple">
+<li>data.json : Trae los datos como un array json.</li>
+<li>data.xml : Trae los datos como una estructura XML</li>
+<li>data.csv : Trae los datos como un documento CSV</li>
+<li>data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS</li>
+</ul>
+<p>Nuevos tipos de salida se irán incluyendo con el tiempo.</p>
+</div>
+</div>
+</div>
+<div class="section" id="visualizaciones">
+<h1>Visualizaciones<a class="headerlink" href="#visualizaciones" title="Permalink to this headline">¶</a></h1>
+<p>Los path con sus métodos existentes son</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">.</span><span class="n">json</span>
+<span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Y los parametros son los siguientes.</p>
+<ul class="simple">
+<li>guid: Identificador del recurso,</li>
+<li>title: Título del recursos.</li>
+<li>description: Descripción del recursos.</li>
+<li>category_name: Nombre de la categoría.</li>
+<li>endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>tags (E/L): Opcional. Tags separados por coma.</li>
+<li>user (L): Usuario que publica el recurso.</li>
+<li>parameters (L): Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>created_at (L): Fecha de creación de la versión del recurso</li>
+<li>link (L): Link a la vista del recurso en el portal</li>
+</ul>
+</div>
+<div class="section" id="dashboards">
+<h1>Dashboards<a class="headerlink" href="#dashboards" title="Permalink to this headline">¶</a></h1>
+<p>Los path con sus métodos existentes son</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">.</span><span class="n">json</span>
+<span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Y los parametros son los siguientes.</p>
+<ul class="simple">
+<li>guid: Identificador del recurso,</li>
+<li>title: Título del recurso</li>
+<li>description: Descripción del recurso</li>
+<li>category_name: Nombre de la categoría</li>
+<li>endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>tags (E/L): Opcional. Tags separados por coma.</li>
+<li>user (L): Usuario que publica el recurso.</li>
+<li>parameters (L): Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>created_at (L): Fecha de creación de la versión del recurso</li>
+<li>link (L): Link a la vista del recurso en el portal</li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="topicos.html" class="btn btn-neutral" title="Autenticación" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Junar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
