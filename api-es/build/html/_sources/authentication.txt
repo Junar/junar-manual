@@ -1,0 +1,21 @@
+1. Autenticación
+================
+
+3 Pasos para la autenticación de la llamada
+
+1. Lo primero que se hace es tratar de identificar la cuenta (Account) mediante el dominio. 
+2. Luego se intenta identificar la auth_key que debe coincidir con una de las auth_key dentro de las habilitadas en la cuenta.
+3. Por último, se trata de identificar el usuario y en caso negativo se lo considera un usuario anónimo.
+
+El sistema tiene dos tipos de auth_key; públicas y privadas. Las privadas las emite cada cuenta a travez de su configuración y las publicas entrando al path `/developers` dentro del portal de la cuenta.
+
+1. Autorización
+================
+
+Si el dominio no es un dominio que corresponde con una cuenta activa, se deniega el acceso
+
+Si la auth_key no se reconoce o no corresponde a la cuenta, se deniega el acceso
+
+Si la auth_key es pública se chequea el referer y si no se puede identificar (configurable por sistema) no se permite el acceso.
+
+Las auth_key públicas solo permiten operaciones de lectura.
