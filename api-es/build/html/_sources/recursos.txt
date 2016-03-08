@@ -34,6 +34,24 @@ Y los parametros son los siguientes.
 - created_at (L): Fecha de creación de la versión del recurso
 - link (L): Link a la vista del recurso en el portal
 
+Por ejemplo el ``GET   /api/v2/datasets/{guid}.json`` muestra los siguientes datos:
+
+.. code-block:: json
+
+  {
+    result: null,
+    endpoint: "file://1995/46721/71341786542282142096488420671282999110",
+    description: "res",
+    parameters: null,
+    tags: [ ],
+    created_at: "2016-02-10T17:10:39",
+    title: "resto",
+    link: null,
+    user: "junarcity",
+    guid: "RESTO",
+    category_name: "Financial"
+  }
+
 Vista
 =====
 
@@ -69,6 +87,25 @@ Y los parametros son los siguientes.
 - link (L): Link a la vista del recurso en el portal
 
 El path que termine en data.{format} permite retornar un nuevo campo ``result``: donde están los datos del origen del recurso 
+
+Por ejemplo el ``GET   /api/v2/datastreams/{guid}.json`` muestra los siguientes datos: 
+
+.. code-block:: json
+
+  {
+    result: null,
+    endpoint: "file://1995/46721/313214253556015558595838280659574174401",
+    description: "prueba mesa copypaste",
+    parameters: [ ],
+    tags: [ ],
+    created_at: "2016-02-23T10:34:42",
+    title: "prueba",
+    link: null,
+    user: "junarcity",
+    guid: "PRUEB",
+    category_name: "Financial"
+  }
+
 
 Estructura JSON de los datos de Origen
 --------------------------------------
@@ -129,8 +166,26 @@ Y los parametros son los siguientes.
 - created_at (L): Fecha de creación de la versión del recurso
 - link (L): Link a la vista del recurso en el portal
 
-Dashboards
-==========
+Por ejemplo el ``GET   /api/v2/visualizations/{guid}.json`` muestra los siguientes datos: 
+
+.. code-block:: json
+
+  {
+    result: null,
+    endpoint: null,
+    description: "prueba apeso 2",
+    parameters: [ ],
+    tags: [ ],
+    created_at: "2016-03-04T17:43:04",
+    title: "prueba p",
+    link: null,
+    user: "junarcity",
+    guid: "PRUEB-P",
+    category_name: "Financial"
+  }
+
+Colecciones
+===========
 
 Los path con sus métodos existentes son
 
@@ -153,3 +208,63 @@ Y los parametros son los siguientes.
 - parameters (L): Viene en null y se utiliza para concoordar con otros recursosde datos
 - created_at (L): Fecha de creación de la versión del recurso
 - link (L): Link a la vista del recurso en el portal
+
+Por ejemplo el ``GET   /api/v2/dashboards/{guid}.json`` muestra los siguientes datos: 
+
+.. code-block:: json
+
+  {
+    result: null,
+    endpoint: null,
+    description: "ph",
+    parameters: null,
+    tags: [ ],
+    created_at: "2016-02-11T09:07:19",
+    title: "Prueba HTML",
+    link: null,
+    user: "junarcity",
+    guid: "PRUEB-HTML",
+    category_name: "Category",
+    resources: [
+      {
+        doc_type: "datastream",
+        w: 4,
+        parameters: "",
+        h: 4,
+        last_revision: {
+        slug: "api-publish-test",
+        modified_at: "2016-02-11T09:08:08",
+        id: 211856,
+        parameters: [ ],
+        title: "API Publish Test"
+      },
+        order: 0,
+        link: "http://junarcity.site.beta.junar.com/dataviews/225402/-/",
+        last_published_revision: {
+        slug: "api-publish-test",
+        modified_at: "2016-02-11T09:08:08",
+        id: 211856,
+        parameters: [ ],
+        title: "API Publish Test"
+      },
+        y: 0,
+        x: 0,
+        guid: "API-PUBLI-TEST-50073",
+        type: "ds",
+        id: 225402
+      },
+      {
+        parameters: "",
+        h: 4,
+        html: "<iframe width="420" height="315" src="https://www.youtube.com/embed/v2I9eSUTPjY" frameborder="0" allowfullscreen></iframe>",
+        w: 4,
+        y: 0,
+        x: 4,
+        type: "html",
+        order: 0
+      }
+    ]
+  }
+
+
+

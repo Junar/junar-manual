@@ -1,5 +1,5 @@
 Autenticación
-================
+=============
 
 Existen 3 pasos para intentar identificar quien está llamando a la API
 
@@ -10,7 +10,7 @@ Existen 3 pasos para intentar identificar quien está llamando a la API
 El sistema tiene dos tipos de auth_key; públicas y privadas. Las privadas las emite cada cuenta a travez de su configuración y las publicas entrando al path ``/developers`` dentro del portal de la cuenta.
 
 Autorización
-================
+============
 
 Si el dominio no es un dominio que corresponde con una cuenta activa, se deniega el acceso
 
@@ -21,7 +21,7 @@ Si la auth_key es pública se chequea el referer y si no se puede identificar (c
 Las auth_key públicas solo permiten operaciones de lectura.
 
 Errores
-==========
+=======
 
 Datal usa respuesta HTTP convencionales para indicar el éxito o el fracaso de una llamada a la API. Siguiendo los lineamientos HTTP los códigos de rango 2xx indicana éxito y los códigos de rango 4xxx indicana un error.
 
@@ -36,9 +36,10 @@ Datal usa respuesta HTTP convencionales para indicar el éxito o el fracaso de u
 - UnsupportedMediaType: Se intenta subir un tipo de dato que no es válido "415 Unsupported Media Type".
 - Throttled: Se super el límite de accesos "429 Too Many Requests".
 - ValidationError: Parametros inválidos "400 Bad Request".
+- UnexpectedError: Error inesperado "500 internal Server".
 
 Paginación
-=============
+==========
 
 Todos los métodos de listado de recursos de la API tienen el funcionamiento de paginado. Cualquiera puede recibir los siguientes parámetros: 
 
@@ -93,7 +94,7 @@ Un ejemplo de respuesta con limit igual a 2 podría ser
   }
 
 Ordenamiento
-===============
+============
 
 Para poder ordenar los listados de todos los recursos se usa el parámetro ``order`` que puede tener uno de los siguientes valores.
 
@@ -103,14 +104,14 @@ Para poder ordenar los listados de todos los recursos se usa el parámetro ``ord
 - last: se ordena por fecha de actualización.
 
 Filtros
-==========
+=======
 
 Los filtros aplican tambien a los listdos de todos los recursos de la API.
 
 Las búsquedas se realizan utilizando el parámetro ``query`` y actualmente se puede filtrar por categorias utilizando el parmaetro ``categories`` que recibe los nombres de las categorias separadas por coma.
 
-Busquedas Multiples
-======================
+Busquedas Múltiples
+===================
 
 Existe la posibilidad de tener un listado de múltiples recursos y para ello se creo el siguiente path:
 
@@ -123,10 +124,11 @@ Para poder filtrar los tipos de recursos se utiliza el parámetro ``resources`` 
 - vz: Visualizaciones
 - db: Tableros.
 
-En los resultados se agrega el parametro ``type`` para identificar el resurso
+En los resultados se agrega el parametro ``type`` para identificar el recurso
 
 
 Versiones
-============
+=========
 
 Actualmente la api se encuentra en su version 2. Para obtener información de la versión 1 ingresar a http://wiki.junar.com/index.php/API
+
