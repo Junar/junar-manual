@@ -89,7 +89,7 @@
 <li class="toctree-l1"><a class="reference internal" href="#paginacion">Paginación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#ordenamiento">Ordenamiento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#filtros">Filtros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#busquedas-multiples">Busquedas Multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#busquedas-multiples">Busquedas Múltiples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#versiones">Versiones</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recursos</span></p>
@@ -120,7 +120,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -173,6 +173,7 @@
 <li>UnsupportedMediaType: Se intenta subir un tipo de dato que no es válido &#8220;415 Unsupported Media Type&#8221;.</li>
 <li>Throttled: Se super el límite de accesos &#8220;429 Too Many Requests&#8221;.</li>
 <li>ValidationError: Parametros inválidos &#8220;400 Bad Request&#8221;.</li>
+<li>UnexpectedError: Error inesperado &#8220;500 internal Server&#8221;.</li>
 </ul>
 </div>
 <div class="section" id="paginacion">
@@ -190,7 +191,7 @@
 <li>result: el listado de resultados.</li>
 </ul>
 <p>Un ejemplo de respuesta con limit igual a 2 podría ser</p>
-<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">{</span>
   <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
   <span class="nt">&quot;next&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.dev:8080/api/v2/datasets/?auth_key=576bba0dd5a27df9aaac12d1d7ec25c8411fe29e&amp;limit=2&amp;offset=2&quot;</span><span class="p">,</span>
   <span class="nt">&quot;previous&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -244,7 +245,7 @@
 <p>Las búsquedas se realizan utilizando el parámetro <code class="docutils literal"><span class="pre">query</span></code> y actualmente se puede filtrar por categorias utilizando el parmaetro <code class="docutils literal"><span class="pre">categories</span></code> que recibe los nombres de las categorias separadas por coma.</p>
 </div>
 <div class="section" id="busquedas-multiples">
-<h1>Busquedas Multiples<a class="headerlink" href="#busquedas-multiples" title="Permalink to this headline">¶</a></h1>
+<h1>Busquedas Múltiples<a class="headerlink" href="#busquedas-multiples" title="Permalink to this headline">¶</a></h1>
 <p>Existe la posibilidad de tener un listado de múltiples recursos y para ello se creo el siguiente path:</p>
 <p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/api/v2/resources</span></code></p>
 <p>Para poder filtrar los tipos de recursos se utiliza el parámetro <code class="docutils literal"><span class="pre">resources</span></code> que puede tener mas de un de los siguientes valores separados por coma.</p>
@@ -254,7 +255,7 @@
 <li>vz: Visualizaciones</li>
 <li>db: Tableros.</li>
 </ul>
-<p>En los resultados se agrega el parametro <code class="docutils literal"><span class="pre">type</span></code> para identificar el resurso</p>
+<p>En los resultados se agrega el parametro <code class="docutils literal"><span class="pre">type</span></code> para identificar el recurso</p>
 </div>
 <div class="section" id="versiones">
 <h1>Versiones<a class="headerlink" href="#versiones" title="Permalink to this headline">¶</a></h1>

@@ -88,7 +88,7 @@
 <li class="toctree-l1"><a class="reference internal" href="topicos.html#paginacion">Paginación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="topicos.html#ordenamiento">Ordenamiento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="topicos.html#filtros">Filtros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="topicos.html#busquedas-multiples">Busquedas Multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#busquedas-multiples">Busquedas Múltiples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="topicos.html#versiones">Versiones</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recursos</span></p>
@@ -100,7 +100,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#visualizaciones">Visualizaciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#dashboards">Dashboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#colecciones">Colecciones</a></li>
 </ul>
 
             
@@ -123,7 +123,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -148,7 +148,7 @@
   <div class="section" id="conjunto-de-datos">
 <h1>Conjunto de Datos<a class="headerlink" href="#conjunto-de-datos" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datasets.json
+<div class="highlight-python"><div class="highlight"><pre>GET   /api/v2/datasets.json
 GET   /api/v2/datasets/{guid}.json
 POST  /api/v2/datasets.json
 PUT   /api/v2/datasets/:guid.json
@@ -176,11 +176,27 @@ PATCH /api/v2/datasets/:guid.json
 <li>created_at (L): Fecha de creación de la versión del recurso</li>
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
+<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datasets/{guid}.json</span></code> muestra los siguientes datos:</p>
+<div class="highlight-json"><div class="highlight"><pre>{
+  result: null,
+  endpoint: &quot;file://1995/46721/71341786542282142096488420671282999110&quot;,
+  description: &quot;res&quot;,
+  parameters: null,
+  tags: [ ],
+  created_at: &quot;2016-02-10T17:10:39&quot;,
+  title: &quot;resto&quot;,
+  link: null,
+  user: &quot;junarcity&quot;,
+  guid: &quot;RESTO&quot;,
+  category_name: &quot;Financial&quot;
+}
+</pre></div>
+</div>
 </div>
 <div class="section" id="vista">
 <h1>Vista<a class="headerlink" href="#vista" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datastreams.json
+<div class="highlight-python"><div class="highlight"><pre>GET   /api/v2/datastreams.json
 GET   /api/v2/datastreams/{guid}.json
 GET   /api/v2/datastreams/{guid}/data.{format}
 POST  /api/v2/datastreams.json
@@ -206,6 +222,22 @@ PATCH /api/v2/datastreams/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>El path que termine en data.{format} permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
+<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datastreams/{guid}.json</span></code> muestra los siguientes datos:</p>
+<div class="highlight-json"><div class="highlight"><pre>{
+  result: null,
+  endpoint: &quot;file://1995/46721/313214253556015558595838280659574174401&quot;,
+  description: &quot;prueba mesa copypaste&quot;,
+  parameters: [ ],
+  tags: [ ],
+  created_at: &quot;2016-02-23T10:34:42&quot;,
+  title: &quot;prueba&quot;,
+  link: null,
+  user: &quot;junarcity&quot;,
+  guid: &quot;PRUEB&quot;,
+  category_name: &quot;Financial&quot;
+}
+</pre></div>
+</div>
 <div class="section" id="estructura-json-de-los-datos-de-origen">
 <h2>Estructura JSON de los datos de Origen<a class="headerlink" href="#estructura-json-de-los-datos-de-origen" title="Permalink to this headline">¶</a></h2>
 <p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
@@ -234,7 +266,7 @@ PATCH /api/v2/datastreams/:guid.json
 <div class="section" id="visualizaciones">
 <h1>Visualizaciones<a class="headerlink" href="#visualizaciones" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">.</span><span class="n">json</span>
 <span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
@@ -251,11 +283,27 @@ PATCH /api/v2/datastreams/:guid.json
 <li>created_at (L): Fecha de creación de la versión del recurso</li>
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
+<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/visualizations/{guid}.json</span></code> muestra los siguientes datos:</p>
+<div class="highlight-json"><div class="highlight"><pre>{
+  result: null,
+  endpoint: null,
+  description: &quot;prueba apeso 2&quot;,
+  parameters: [ ],
+  tags: [ ],
+  created_at: &quot;2016-03-04T17:43:04&quot;,
+  title: &quot;prueba p&quot;,
+  link: null,
+  user: &quot;junarcity&quot;,
+  guid: &quot;PRUEB-P&quot;,
+  category_name: &quot;Financial&quot;
+}
+</pre></div>
 </div>
-<div class="section" id="dashboards">
-<h1>Dashboards<a class="headerlink" href="#dashboards" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="colecciones">
+<h1>Colecciones<a class="headerlink" href="#colecciones" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">.</span><span class="n">json</span>
 <span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
@@ -272,6 +320,61 @@ PATCH /api/v2/datastreams/:guid.json
 <li>created_at (L): Fecha de creación de la versión del recurso</li>
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
+<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/dashboards/{guid}.json</span></code> muestra los siguientes datos:</p>
+<div class="highlight-json"><div class="highlight"><pre>{
+  result: null,
+  endpoint: null,
+  description: &quot;ph&quot;,
+  parameters: null,
+  tags: [ ],
+  created_at: &quot;2016-02-11T09:07:19&quot;,
+  title: &quot;Prueba HTML&quot;,
+  link: null,
+  user: &quot;junarcity&quot;,
+  guid: &quot;PRUEB-HTML&quot;,
+  category_name: &quot;Category&quot;,
+  resources: [
+    {
+      doc_type: &quot;datastream&quot;,
+      w: 4,
+      parameters: &quot;&quot;,
+      h: 4,
+      last_revision: {
+      slug: &quot;api-publish-test&quot;,
+      modified_at: &quot;2016-02-11T09:08:08&quot;,
+      id: 211856,
+      parameters: [ ],
+      title: &quot;API Publish Test&quot;
+    },
+      order: 0,
+      link: &quot;http://junarcity.site.beta.junar.com/dataviews/225402/-/&quot;,
+      last_published_revision: {
+      slug: &quot;api-publish-test&quot;,
+      modified_at: &quot;2016-02-11T09:08:08&quot;,
+      id: 211856,
+      parameters: [ ],
+      title: &quot;API Publish Test&quot;
+    },
+      y: 0,
+      x: 0,
+      guid: &quot;API-PUBLI-TEST-50073&quot;,
+      type: &quot;ds&quot;,
+      id: 225402
+    },
+    {
+      parameters: &quot;&quot;,
+      h: 4,
+      html: &quot;&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/v2I9eSUTPjY&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;,
+      w: 4,
+      y: 0,
+      x: 4,
+      type: &quot;html&quot;,
+      order: 0
+    }
+  ]
+}
+</pre></div>
+</div>
 </div>
 
 
