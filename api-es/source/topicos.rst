@@ -122,7 +122,7 @@ Para poder filtrar los tipos de recursos se utiliza el parámetro ``resources`` 
 - dt: Conjunto de datos
 - ds: Vistas
 - vz: Visualizaciones
-- db: Tableros.
+- db: Colecciones
 
 En los resultados se agrega el parametro ``type`` para identificar el recurso
 
