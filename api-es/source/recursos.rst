@@ -1,7 +1,7 @@
 Conjunto de Datos
 ====================
 
-Las llamadas GET nos devuelve los siguientes parametros :
+Las llamadas GET nos devuelve los siguientes parámetros :
 
 ::
 
@@ -15,11 +15,11 @@ Las llamadas GET nos devuelve los siguientes parametros :
 - endpoint : Url apuntando al recurso con los datos (archivos o página web)
 - tags : Opcional. Tags separados por coma.
 - user : Usuario que publica el recurso.
-- parameters : Parametros que tiene el recurso.
+- parameters : Parámetros  que tiene el recurso.
 - created_at : Fecha de creación de la versión del recurso
 - link : Link a la vista del recurso en el portal
 
-Las llamadas POST/PUT/PATCH devuelven los siguientes parametros:
+Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros :
 
 ::
 
@@ -161,7 +161,7 @@ Nuevos tipos de salida se irán incluyendo con el tiempo.
 Visualizaciones
 ====================
 
-Las llamadas GET nos devuelve los siguientes parametros :
+Las llamadas GET nos devuelve los siguientes parámetros  :
 
 
 ::
@@ -170,7 +170,7 @@ Las llamadas GET nos devuelve los siguientes parametros :
   GET   /api/v2/visualizations/{guid}.json
 
 
-Y los parametros son los siguientes.
+Y los parámetros  son los siguientes.
 
 - guid: Identificador del recurso,
 - title: Título del recursos.
@@ -204,7 +204,7 @@ Por ejemplo el ``GET   /api/v2/visualizations/{guid}.json`` muestra los siguient
 Colecciones
 ===========
 
-Las llamadas GET nos devuelve los siguientes parametros :
+Las llamadas GET nos devuelve los siguientes parámetros  :
 
 
 ::
@@ -213,7 +213,7 @@ Las llamadas GET nos devuelve los siguientes parametros :
   GET   /api/v2/dashboards/{guid}.json
 
 
-Y los parametros son los siguientes.
+Y los parámetros  son los siguientes.
 
 - guid: Identificador del recurso,
 - title: Título del recurso
