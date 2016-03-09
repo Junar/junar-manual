@@ -177,19 +177,19 @@ PATCH /api/v2/datasets/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datasets/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre><span></span>{
-  result: null,
-  endpoint: &quot;file://1995/46721/71341786542282142096488420671282999110&quot;,
-  description: &quot;res&quot;,
-  parameters: null,
-  tags: [ ],
-  created_at: &quot;2016-02-10T17:10:39&quot;,
-  title: &quot;resto&quot;,
-  link: null,
-  user: &quot;junarcity&quot;,
-  guid: &quot;RESTO&quot;,
-  category_name: &quot;Financial&quot;
-}
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;file://1995/46721/71341786542282142096488420671282999110&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;res&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-10T17:10:39&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;resto&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;junarcity&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;RESTO&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Financial&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -223,19 +223,19 @@ PATCH /api/v2/datastreams/:guid.json
 </ul>
 <p>El path que termine en data.{format} permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datastreams/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre><span></span>{
-  result: null,
-  endpoint: &quot;file://1995/46721/313214253556015558595838280659574174401&quot;,
-  description: &quot;prueba mesa copypaste&quot;,
-  parameters: [ ],
-  tags: [ ],
-  created_at: &quot;2016-02-23T10:34:42&quot;,
-  title: &quot;prueba&quot;,
-  link: null,
-  user: &quot;junarcity&quot;,
-  guid: &quot;PRUEB&quot;,
-  category_name: &quot;Financial&quot;
-}
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;file://1995/46721/313214253556015558595838280659574174401&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;prueba mesa copypaste&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-23T10:34:42&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;prueba&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;junarcity&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;PRUEB&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Financial&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="estructura-json-de-los-datos-de-origen">
@@ -284,19 +284,19 @@ PATCH /api/v2/datastreams/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/visualizations/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre><span></span>{
-  result: null,
-  endpoint: null,
-  description: &quot;prueba apeso 2&quot;,
-  parameters: [ ],
-  tags: [ ],
-  created_at: &quot;2016-03-04T17:43:04&quot;,
-  title: &quot;prueba p&quot;,
-  link: null,
-  user: &quot;junarcity&quot;,
-  guid: &quot;PRUEB-P&quot;,
-  category_name: &quot;Financial&quot;
-}
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;prueba apeso 2&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-03-04T17:43:04&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;prueba p&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;junarcity&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;PRUEB-P&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Financial&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -321,58 +321,62 @@ PATCH /api/v2/datastreams/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/dashboards/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre><span></span>{
-  result: null,
-  endpoint: null,
-  description: &quot;ph&quot;,
-  parameters: null,
-  tags: [ ],
-  created_at: &quot;2016-02-11T09:07:19&quot;,
-  title: &quot;Prueba HTML&quot;,
-  link: null,
-  user: &quot;junarcity&quot;,
-  guid: &quot;PRUEB-HTML&quot;,
-  category_name: &quot;Category&quot;,
-  resources: [
-    {
-      doc_type: &quot;datastream&quot;,
-      w: 4,
-      parameters: &quot;&quot;,
-      h: 4,
-      last_revision: {
-      slug: &quot;api-publish-test&quot;,
-      modified_at: &quot;2016-02-11T09:08:08&quot;,
-      id: 211856,
-      parameters: [ ],
-      title: &quot;API Publish Test&quot;
-    },
-      order: 0,
-      link: &quot;http://junarcity.site.beta.junar.com/dataviews/225402/-/&quot;,
-      last_published_revision: {
-      slug: &quot;api-publish-test&quot;,
-      modified_at: &quot;2016-02-11T09:08:08&quot;,
-      id: 211856,
-      parameters: [ ],
-      title: &quot;API Publish Test&quot;
-    },
-      y: 0,
-      x: 0,
-      guid: &quot;API-PUBLI-TEST-50073&quot;,
-      type: &quot;ds&quot;,
-      id: 225402
-    },
-    {
-      parameters: &quot;&quot;,
-      h: 4,
-      html: &quot;&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/v2I9eSUTPjY&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;,
-      w: 4,
-      y: 0,
-      x: 4,
-      type: &quot;html&quot;,
-      order: 0
-    }
-  ]
-}
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;ph&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
+        <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-11T09:07:19&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Prueba HTML&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;junarcity&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;PRUEB-HTML&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Category&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;resources&quot;</span><span class="p">:</span>
+        <span class="p">[</span>
+                <span class="p">{</span>
+                        <span class="nt">&quot;doc_type&quot;</span><span class="p">:</span> <span class="s2">&quot;datastream&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;w&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;h&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                        <span class="nt">&quot;last_revision&quot;</span><span class="p">:</span>
+                        <span class="p">{</span>
+                                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;api-publish-test&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;modified_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-11T09:08:08&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">211856</span><span class="p">,</span>
+                                <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                                <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;API Publish Test&quot;</span>
+                        <span class="p">},</span>
+
+                        <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://junarcity.site.beta.junar.com/dataviews/225402/-/&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;last_published_revision&quot;</span><span class="p">:</span>
+                        <span class="p">{</span>
+                                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;api-publish-test&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;modified_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-11T09:08:08&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">211856</span><span class="p">,</span>
+                                <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                                <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;API Publish Test&quot;</span>
+                        <span class="p">},</span>
+                                <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                                <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                                <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;API-PUBLI-TEST-50073&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ds&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">225402</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                        <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;h&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                        <span class="nt">&quot;html&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;iframe width=&#39;420&#39; height=&#39;315&#39; src=&#39;https://www.youtube.com/embed/v2I9eSUTPjY&#39; frameborder=&#39;0&#39; allowfullscreen&gt;&lt;/iframe&gt;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;w&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                        <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="p">}</span>
+        <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
