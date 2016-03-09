@@ -123,7 +123,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -148,7 +148,7 @@
   <div class="section" id="conjunto-de-datos">
 <h1>Conjunto de Datos<a class="headerlink" href="#conjunto-de-datos" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre>GET   /api/v2/datasets.json
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datasets.json
 GET   /api/v2/datasets/{guid}.json
 POST  /api/v2/datasets.json
 PUT   /api/v2/datasets/:guid.json
@@ -177,7 +177,7 @@ PATCH /api/v2/datasets/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datasets/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre>{
+<div class="highlight-json"><div class="highlight"><pre><span></span>{
   result: null,
   endpoint: &quot;file://1995/46721/71341786542282142096488420671282999110&quot;,
   description: &quot;res&quot;,
@@ -196,7 +196,7 @@ PATCH /api/v2/datasets/:guid.json
 <div class="section" id="vista">
 <h1>Vista<a class="headerlink" href="#vista" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre>GET   /api/v2/datastreams.json
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datastreams.json
 GET   /api/v2/datastreams/{guid}.json
 GET   /api/v2/datastreams/{guid}/data.{format}
 POST  /api/v2/datastreams.json
@@ -223,7 +223,7 @@ PATCH /api/v2/datastreams/:guid.json
 </ul>
 <p>El path que termine en data.{format} permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datastreams/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre>{
+<div class="highlight-json"><div class="highlight"><pre><span></span>{
   result: null,
   endpoint: &quot;file://1995/46721/313214253556015558595838280659574174401&quot;,
   description: &quot;prueba mesa copypaste&quot;,
@@ -266,7 +266,7 @@ PATCH /api/v2/datastreams/:guid.json
 <div class="section" id="visualizaciones">
 <h1>Visualizaciones<a class="headerlink" href="#visualizaciones" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">.</span><span class="n">json</span>
 <span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">visualizations</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
@@ -284,7 +284,7 @@ PATCH /api/v2/datastreams/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/visualizations/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre>{
+<div class="highlight-json"><div class="highlight"><pre><span></span>{
   result: null,
   endpoint: null,
   description: &quot;prueba apeso 2&quot;,
@@ -303,7 +303,7 @@ PATCH /api/v2/datastreams/:guid.json
 <div class="section" id="colecciones">
 <h1>Colecciones<a class="headerlink" href="#colecciones" title="Permalink to this headline">¶</a></h1>
 <p>Los path con sus métodos existentes son</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">.</span><span class="n">json</span>
 <span class="n">GET</span>   <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span><span class="o">/</span><span class="n">dashboards</span><span class="o">/</span><span class="p">{</span><span class="n">guid</span><span class="p">}</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
@@ -321,7 +321,7 @@ PATCH /api/v2/datastreams/:guid.json
 <li>link (L): Link a la vista del recurso en el portal</li>
 </ul>
 <p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/dashboards/{guid}.json</span></code> muestra los siguientes datos:</p>
-<div class="highlight-json"><div class="highlight"><pre>{
+<div class="highlight-json"><div class="highlight"><pre><span></span>{
   result: null,
   endpoint: null,
   description: &quot;ph&quot;,
