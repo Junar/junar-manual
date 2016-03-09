@@ -1,38 +1,47 @@
 Conjunto de Datos
 ====================
 
-Los path con sus métodos existentes son
-
+Las llamadas GET nos devuelve los siguientes parametros :
 
 ::
 
-  GET   /api/v2/datasets.json
-  GET   /api/v2/datasets/{guid}.json
-  POST  /api/v2/datasets.json
-  PUT   /api/v2/datasets/:guid.json
-  PATCH /api/v2/datasets/:guid.json
+	GET   /api/v2/datasets.json
+	GET   /api/v2/datasets/{guid}.json
+
+- guid : Identificador del recurso,
+- title : Título del conjunto de datos
+- description : Descripción del conjunto de datos
+- category_name : Nombre de la categoría
+- endpoint : Url apuntando al recurso con los datos (archivos o página web)
+- tags : Opcional. Tags separados por coma.
+- user : Usuario que publica el recurso.
+- parameters : Parametros que tiene el recurso.
+- created_at : Fecha de creación de la versión del recurso
+- link : Link a la vista del recurso en el portal
+
+Las llamadas POST/PUT/PATCH devuelven los siguientes parametros:
+
+::
+
+	POST  /api/v2/datasets.json
+	PUT   /api/v2/datasets/:guid.json
+	PATCH /api/v2/datasets/:guid.json
 
 
-Y los parametros son los siguientes.
 
-- guid (L): Identificador del recurso,
-- title (E/L): Título del conjunto de datos
-- description (E/L): Descripción del conjunto de datos
-- category (E): Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta
-- category_name (L): Nombre de la categoría
-- notes (E): Opcional. Texto de la nota del conjunto de datos
-- end_point (E): Opcional. Url apuntando al recurso con los datos (archivos o página web).
-- endpoint (L): Url apuntando al recurso con los datos (archivos o página web)
-- file (E): Opcional. Archivo a subir a la plataforma
-- license (E): Opcional. Tipo de licencia que aplica sobre el conjunto de datos
-- spatial (E): Opcional. Zona geográfica a la cual aplica el conjunto de datos
-- frequency (E): Opcional. Frecuencia de actualiación del resucro
-- mbox (E): Opcional. Correo electronico de quien administra el conjunto de datos
-- tags (E/L): Opcional. Tags separados por coma.
-- user (L): Usuario que publica el recurso.
-- parameters (L): Parametros que tiene el recurso.
-- created_at (L): Fecha de creación de la versión del recurso
-- link (L): Link a la vista del recurso en el portal
+- title : Título del conjunto de datos
+- description : Descripción del conjunto de datos
+- category : Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta
+- notes : Opcional. Texto de la nota del conjunto de datos
+- end_point : Opcional. Url apuntando al recurso con los datos (archivos o página web)
+- file : Opcional. Archivo a subir a la plataforma
+- license : Opcional. Tipo de licencia que aplica sobre el conjunto de datos
+- spatial : Opcional. Zona geográfica a la cual aplica el conjunto de datos
+- frequency : Opcional. Frecuencia de actualiación del resucro
+- mbox : Opcional. Correo electronico de quien administra el conjunto de datos
+- tags : Opcional. Tags separados por coma.
+
+
 
 Por ejemplo el ``GET   /api/v2/datasets/{guid}.json`` muestra los siguientes datos:
 
@@ -55,38 +64,45 @@ Por ejemplo el ``GET   /api/v2/datasets/{guid}.json`` muestra los siguientes dat
 Vista
 =====
 
-Los path con sus métodos existentes son
-
+Las llamadas GET nos devuelven los siguientes parámetros :
 
 ::
 
   GET   /api/v2/datastreams.json
   GET   /api/v2/datastreams/{guid}.json
   GET   /api/v2/datastreams/{guid}/data.{format}
+  
+
+- guid : Identificador del recurso,
+- title : Título del recurso
+- description : Descripción del recurso
+- category_name : Nombre de la categoría
+- tags : Opcional. Tags separados por coma.
+- user : Usuario que publica el recurso.
+- parameters : Parametros que tiene el recurso.
+- created_at : Fecha de creación de la versión del recurso
+- link : Link a la vista del recurso en el portal
+
+
+Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros:
+
+::  
+  
   POST  /api/v2/datastreams.json
   PUT   /api/v2/datastreams/:guid.json
   PATCH /api/v2/datastreams/:guid.json
-
-
-Y los parametros son los siguientes.
-
-
-- guid (L): Identificador del recurso,
-- title (E/L): Título del recurso
-- description (E/L): Descripción del recurso
-- category (E): Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta
-- category_name (L): Nombre de la categoría
-- notes (E): Opcional. Texto de la nota del conjunto de datos
-- dataset (E): GUID del conjunto de dataos asociado a la vista.
-- header_row (E): Opcional. Indice númerico de la fila a usar como cabecera de la tabla comenzando de cero. Por defecto es vacio
-- table_id (E): Opcional Indice numérico de la tabla en el conjunto de datos, comenzando de cero
-- tags (E/L): Opcional. Tags separados por coma.
-- user (L): Usuario que publica el recurso.
-- parameters (L): Parametros que tiene el recurso.
-- created_at (L): Fecha de creación de la versión del recurso
-- link (L): Link a la vista del recurso en el portal
+  
+- title : Título del recurso
+- description : Descripción del recurso
+- category : Slug de la categoría para clasificar los recursos. Debe coincidir con alguna de las categorías de la cuenta  
+- notes : Opcional. Texto de la nota del conjunto de datos
+- dataset : GUID del conjunto de dataos asociado a la vista.
+- header_row : Opcional. Indice númerico de la fila a usar como cabecera de la tabla comenzando de cero. Por defecto es vacio
+- table_id : Opcional Indice numérico de la tabla en el conjunto de datos, comenzando de cero
+- tags : Opcional. Tags separados por coma.
 
 El path que termine en data.{format} permite retornar un nuevo campo ``result``: donde están los datos del origen del recurso 
+
 
 Por ejemplo el ``GET   /api/v2/datastreams/{guid}.json`` muestra los siguientes datos: 
 
@@ -105,6 +121,7 @@ Por ejemplo el ``GET   /api/v2/datastreams/{guid}.json`` muestra los siguientes 
     "guid": "PRUEB",
     "category_name": "Financial"
   }
+
 
 
 Estructura JSON de los datos de Origen
@@ -144,7 +161,7 @@ Nuevos tipos de salida se irán incluyendo con el tiempo.
 Visualizaciones
 ====================
 
-Los path con sus métodos existentes son
+Las llamadas GET nos devuelve los siguientes parametros :
 
 
 ::
@@ -160,11 +177,11 @@ Y los parametros son los siguientes.
 - description: Descripción del recursos.
 - category_name: Nombre de la categoría.
 - endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos
-- tags (E/L): Opcional. Tags separados por coma.
-- user (L): Usuario que publica el recurso.
-- parameters (L): Viene en null y se utiliza para concoordar con otros recursosde datos
-- created_at (L): Fecha de creación de la versión del recurso
-- link (L): Link a la vista del recurso en el portal
+- tags : Opcional. Tags separados por coma.
+- user : Usuario que publica el recurso.
+- parameters : Viene en null y se utiliza para concoordar con otros recursosde datos
+- created_at : Fecha de creación de la versión del recurso
+- link : Link a la vista del recurso en el portal
 
 Por ejemplo el ``GET   /api/v2/visualizations/{guid}.json`` muestra los siguientes datos: 
 
@@ -187,7 +204,7 @@ Por ejemplo el ``GET   /api/v2/visualizations/{guid}.json`` muestra los siguient
 Colecciones
 ===========
 
-Los path con sus métodos existentes son
+Las llamadas GET nos devuelve los siguientes parametros :
 
 
 ::
@@ -203,11 +220,11 @@ Y los parametros son los siguientes.
 - description: Descripción del recurso
 - category_name: Nombre de la categoría
 - endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos
-- tags (E/L): Opcional. Tags separados por coma.
-- user (L): Usuario que publica el recurso.
-- parameters (L): Viene en null y se utiliza para concoordar con otros recursosde datos
-- created_at (L): Fecha de creación de la versión del recurso
-- link (L): Link a la vista del recurso en el portal
+- tags : Opcional. Tags separados por coma.
+- user : Usuario que publica el recurso.
+- parameters : Viene en null y se utiliza para concoordar con otros recursosde datos
+- created_at : Fecha de creación de la versión del recurso
+- link : Link a la vista del recurso en el portal
 
 Por ejemplo el ``GET   /api/v2/dashboards/{guid}.json`` muestra los siguientes datos: 
 
@@ -269,6 +286,13 @@ Por ejemplo el ``GET   /api/v2/dashboards/{guid}.json`` muestra los siguientes d
 			}
 		]
 	}
+
+
+
+
+
+
+
 
 
 
