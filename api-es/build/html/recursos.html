@@ -96,7 +96,6 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">Conjunto de Datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#vista">Vista</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#estructura-json-de-los-datos-de-origen">Estructura JSON de los datos de Origen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#modificar-el-formato-de-salida">Modificar el formato de salida</a></li>
 </ul>
 </li>
@@ -184,7 +183,7 @@ PATCH /api/v2/datasets/:guid.json
 <li>mbox : Opcional. Correo electronico de quien administra el conjunto de datos</li>
 <li>tags : Opcional. Tags separados por coma.</li>
 </ul>
-<p>Todas las llamadas en caso de éxito devuelven lo mismo,         por ejemplo:</p>
+<p>Todas las llamadas en caso de éxito devuelven lo mismo, por ejemplo:</p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
   <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;file://1995/46721/71341786542282142096488420671282999110&quot;</span><span class="p">,</span>
@@ -251,17 +250,6 @@ PATCH /api/v2/datastreams/:guid.json
   <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Financial&quot;</span>
 <span class="p">}</span>
 </pre></div>
-</div>
-<div class="section" id="estructura-json-de-los-datos-de-origen">
-<h2>Estructura JSON de los datos de Origen<a class="headerlink" href="#estructura-json-de-los-datos-de-origen" title="Permalink to this headline">¶</a></h2>
-<p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
-<p>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</p>
-<p>Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.</p>
-<p>Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.</p>
-<p>Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.</p>
-<p>Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.</p>
-<p>Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.</p>
-<p>Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue <strong>accedida la fuente de datos</strong> de forma exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.</p>
 </div>
 <div class="section" id="modificar-el-formato-de-salida">
 <h2>Modificar el formato de salida<a class="headerlink" href="#modificar-el-formato-de-salida" title="Permalink to this headline">¶</a></h2>
