@@ -90,7 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="#ordenamiento">Ordenamiento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#filtros">Filtros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#busquedas-multiples">Busquedas Múltiples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#vista-de-datos">Vista de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vista-de-datos">Vista de datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-json-de-los-datos-de-origen">Estructura JSON de los datos de Origen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="#versiones">Versiones</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recursos</span></p>
@@ -260,6 +263,17 @@
 </div>
 <div class="section" id="vista-de-datos">
 <h1>Vista de datos<a class="headerlink" href="#vista-de-datos" title="Permalink to this headline">¶</a></h1>
+<p>Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso.</p>
+<div class="section" id="estructura-json-de-los-datos-de-origen">
+<h2>Estructura JSON de los datos de Origen<a class="headerlink" href="#estructura-json-de-los-datos-de-origen" title="Permalink to this headline">¶</a></h2>
+<p>El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:</p>
+<p>fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.</p>
+<p>Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.</p>
+<p>Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.</p>
+<p>Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.</p>
+<p>Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.</p>
+<p>Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.</p>
+<p>Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue <strong>accedida la fuente de datos</strong> de forma exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.</p>
 <p>En el recurso vista existe una llamada especial para mostrar todos sus datos:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datastreams/{guid}/data.{format}
 </pre></div>
@@ -565,6 +579,7 @@ Ejemplo sobre el retorno de data.xls
   &quot;fType&quot;: &quot;REDIRECT&quot;
 }
 </pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="versiones">

@@ -43,7 +43,7 @@ Las llamadas POST/PUT/PATCH recibe los siguientes parámetros :
 
 
 
-Todas las llamadas en caso de éxito devuelven lo mismo,		por ejemplo:
+Todas las llamadas en caso de éxito devuelven lo mismo,	por ejemplo:
 
 .. code-block:: json
 
@@ -123,25 +123,6 @@ Todas las llamadas en caso de éxito devuelven lo mismo,	por ejemplo:
   }
 
 
-
-Estructura JSON de los datos de Origen
---------------------------------------
-
-El resultado es un objeto Argument, el cual es una estructura recursiva de datos que contiene las siguientes propiedades:
-
-fType: Indica el tipo de dato del Argument. Sus valores pueden ser ARRAY | TEXT | NUMBER | DATE. El tipo ARRAY indica que el argumento contiene una TABLA.
-
-Cuando el tipo de datos es un ARRAY fRows y fCols indican el número de filas y columnas de la TABLA. De la misma manera, fArray contiene los datos de la TABLA como un arreglo de objetos Argument.
-
-Cuando el tipo de datos es TEXT el valor está contenido en fStr. Para un tipo de dato NUMBER el valor esta contenido en fNum. Para un tipo de dato DATE el valor está contenido en fNum como epoch time.
-
-Un Argument puede contener un enlace LINK. En esos casos, fType contiene LINK, la uri correspondiente viene en fUri y el texto a mostrar está contenido en fStr.
-
-Cuando el tipo de datos es ERROR, ocurrió un error al ejecutar la vista de datos. El mensaje de error estará contenido en fStr.
-
-Cuando un error ocurre, el resultado es reemplazado con el último resultado que fue ejecutado correctamente.
-
-Para reconocer si el resultado está actualizado, existe una propiedad adicional llamada fTimestamp. Contiene el tiempo POSIX de cuando fue **accedida la fuente de datos** de forma exitosamente por última vez. Si fTimestamp tiene un valor igual a 0, significa que el resultado fue obtenido en ese instante.
 
 Modificar el formato de salida
 -----------------------------
@@ -287,7 +268,10 @@ Por ejemplo el ``GET   /api/v2/dashboards/{guid}.json`` muestra los siguientes d
 			}
 		]
 	}
-
+	
+	
+	
+	
 
 
 
