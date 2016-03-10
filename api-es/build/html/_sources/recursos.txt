@@ -19,7 +19,7 @@ Las llamadas GET nos devuelve los siguientes parámetros :
 - created_at : Fecha de creación de la versión del recurso
 - link : Link a la vista del recurso en el portal
 
-Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros :
+Las llamadas POST/PUT/PATCH recibe los siguientes parámetros :
 
 ::
 
@@ -43,7 +43,7 @@ Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros :
 
 
 
-Por ejemplo el ``GET   /api/v2/datasets/{guid}.json`` muestra los siguientes datos:
+Todas las llamadas en caso de éxito devuelven lo mismo,		por ejemplo:
 
 .. code-block:: json
 
@@ -84,7 +84,7 @@ Las llamadas GET nos devuelven los siguientes parámetros :
 - link : Link a la vista del recurso en el portal
 
 
-Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros:
+Las llamadas POST/PUT/PATCH recibe los siguientes parámetros:
 
 ::  
   
@@ -104,7 +104,7 @@ Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros:
 El path que termine en data.{format} permite retornar un nuevo campo ``result``: donde están los datos del origen del recurso 
 
 
-Por ejemplo el ``GET   /api/v2/datastreams/{guid}.json`` muestra los siguientes datos: 
+Todas las llamadas en caso de éxito devuelven lo mismo,	por ejemplo:
 
 .. code-block:: json
 
@@ -150,10 +150,11 @@ Puede modificarse el formato de salida de la API cambiando la extensión del arg
 
 - data.json: Trae los datos como json
 - data.ajson : Trae los datos como un array json.
-- data.ajson : Trae los datos como un json formateado.
+- data.pjson : Trae los datos como un json formateado.
 - data.xml : Trae los datos como una estructura XML
 - data.csv : Trae los datos como un documento CSV
 - data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS
+
 
 Nuevos tipos de salida se irán incluyendo con el tiempo.
 
@@ -176,10 +177,10 @@ Y los parámetros  son los siguientes.
 - title: Título del recursos.
 - description: Descripción del recursos.
 - category_name: Nombre de la categoría.
-- endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos
+- endpoint: Viene en null y se utiliza para concoordar con otros recursos de datos
 - tags : Opcional. Tags separados por coma.
 - user : Usuario que publica el recurso.
-- parameters : Viene en null y se utiliza para concoordar con otros recursosde datos
+- parameters : Viene en null y se utiliza para concoordar con otros recursos de datos
 - created_at : Fecha de creación de la versión del recurso
 - link : Link a la vista del recurso en el portal
 
@@ -219,7 +220,7 @@ Y los parámetros  son los siguientes.
 - title: Título del recurso
 - description: Descripción del recurso
 - category_name: Nombre de la categoría
-- endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos
+- endpoint: Viene en null y se utiliza para concoordar con otros recursos de datos
 - tags : Opcional. Tags separados por coma.
 - user : Usuario que publica el recurso.
 - parameters : Viene en null y se utiliza para concoordar con otros recursosde datos
