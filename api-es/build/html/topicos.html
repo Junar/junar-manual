@@ -90,6 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="#ordenamiento">Ordenamiento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#filtros">Filtros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#busquedas-multiples">Busquedas Múltiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vista-de-datos">Vista de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#versiones">Versiones</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recursos</span></p>
@@ -150,7 +151,7 @@
 <li>Luego se intenta identificar la auth_key que debe coincidir con una de las auth_key dentro de las habilitadas en la cuenta.</li>
 <li>Por último, se trata de identificar el usuario y en caso negativo se lo considera un usuario anónimo.</li>
 </ol>
-<p>El sistema tiene dos tipos de auth_key; públicas y privadas. Las privadas las emite cada cuenta a travez de su configuración y las publicas entrando al path <code class="docutils literal"><span class="pre">/developers</span></code> dentro del portal de la cuenta.</p>
+<p>El sistema tiene dos tipos de auth_key; públicas y privadas. Las privadas las emite cada cuenta a través de su configuración y las publicas entrando al path <code class="docutils literal"><span class="pre">/developers</span></code> dentro del portal de la cuenta.</p>
 </div>
 <div class="section" id="autorizacion">
 <h1>Autorización<a class="headerlink" href="#autorizacion" title="Permalink to this headline">¶</a></h1>
@@ -172,7 +173,7 @@
 <li>NotAcceptable: Se pide que se devuelva la inforamción en un tipo de dato que no es válido &#8220;406 Not Acceptable&#8221;.</li>
 <li>UnsupportedMediaType: Se intenta subir un tipo de dato que no es válido &#8220;415 Unsupported Media Type&#8221;.</li>
 <li>Throttled: Se super el límite de accesos &#8220;429 Too Many Requests&#8221;.</li>
-<li>ValidationError: Parametros inválidos &#8220;400 Bad Request&#8221;.</li>
+<li>ValidationError: Parámetros inválidos &#8220;400 Bad Request&#8221;.</li>
 <li>UnexpectedError: Error inesperado &#8220;500 internal Server&#8221;.</li>
 </ul>
 </div>
@@ -181,9 +182,9 @@
 <p>Todos los métodos de listado de recursos de la API tienen el funcionamiento de paginado. Cualquiera puede recibir los siguientes parámetros:</p>
 <ul class="simple">
 <li>limit: cantidad de resultados por búsqueda</li>
-<li>offset: número de resultado a partir del cual se realiza la busqueda.</li>
+<li>offset: número de resultado a partir del cual se realiza la búsqueda.</li>
 </ul>
-<p>Cuando aparecen estos parametros la respuesta se ordena de otra manera y agrega los siguientes campos</p>
+<p>Cuando aparecen estos parámetros la respuesta se ordena de otra manera y agrega los siguientes campos</p>
 <ul class="simple">
 <li>count: la cantidad todal de resultados</li>
 <li>next: un link a la llamada siguiente</li>
@@ -241,8 +242,8 @@
 </div>
 <div class="section" id="filtros">
 <h1>Filtros<a class="headerlink" href="#filtros" title="Permalink to this headline">¶</a></h1>
-<p>Los filtros aplican tambien a los listdos de todos los recursos de la API.</p>
-<p>Las búsquedas se realizan utilizando el parámetro <code class="docutils literal"><span class="pre">query</span></code> y actualmente se puede filtrar por categorias utilizando el parmaetro <code class="docutils literal"><span class="pre">categories</span></code> que recibe los nombres de las categorias separadas por coma.</p>
+<p>Los filtros aplican también a los listados de todos los recursos de la API.</p>
+<p>Las búsquedas se realizan utilizando el parámetro <code class="docutils literal"><span class="pre">query</span></code> y actualmente se puede filtrar por categorias utilizando el parámetro <code class="docutils literal"><span class="pre">categories</span></code> que recibe los nombres de las categorias separadas por coma.</p>
 </div>
 <div class="section" id="busquedas-multiples">
 <h1>Busquedas Múltiples<a class="headerlink" href="#busquedas-multiples" title="Permalink to this headline">¶</a></h1>
@@ -255,11 +256,308 @@
 <li>vz: Visualizaciones</li>
 <li>db: Colecciones</li>
 </ul>
-<p>En los resultados se agrega el parametro <code class="docutils literal"><span class="pre">type</span></code> para identificar el recurso</p>
+<p>En los resultados se agrega el parámetro <code class="docutils literal"><span class="pre">type</span></code> para identificar el recurso</p>
+</div>
+<div class="section" id="vista-de-datos">
+<h1>Vista de datos<a class="headerlink" href="#vista-de-datos" title="Permalink to this headline">¶</a></h1>
+<p>En el recurso vista existe una llamada especial para mostrar todos sus datos:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET   /api/v2/datastreams/{guid}/data.{format}
+</pre></div>
+</div>
+<p>El path que termina en data. <code class="docutils literal"><span class="pre">{format}</span></code>  permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
+<p>El <code class="docutils literal"><span class="pre">{format}</span></code>  puede contener lo siguiente:</p>
+<ul class="simple">
+<li>json</li>
+<li>ajson</li>
+<li>pjson</li>
+</ul>
+<p>Ejemplo sobre el retorno de data.json</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fLength&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;ARRAY&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fTimestamp&quot;</span><span class="p">:</span> <span class="mi">1457102225405</span><span class="p">,</span>
+        <span class="nt">&quot;fArray&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Congreso Nacional - Biblioteca del Congreso&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Cifras en miles de $&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Código BIP&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Nombre de Proyecto&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Monto Identificado&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Remodelación Administración Valparaíso&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;26,505&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fHeader&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Bóveda y sala preservación colecciones valiosas&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fHeader&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;111,564&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fHeader&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Raparaciones daños terremoto, Sector Biblioteca&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;66,440&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Proyectos de climatización en Santiago y Valparaíso&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;62,101&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;TOTAL IDENTIFICADO&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;266,610&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;fRows&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="nt">&quot;fCols&quot;</span><span class="p">:</span> <span class="mi">3</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.dipres.gob.cl/574/articles-74267_doc_xls.xls&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversiones BCN durante el año 2011 según art. 24 de Ley de Presupuestos N° 18.482&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nóminas de Iniciativas de Inversión (M$) Biblioteca del Congreso Nacional&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NOMIN-DE-BIBLI-DEL-12877&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Finanzas&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Ejemplo sobre el retorno de data.pjson</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;Cifras en miles de $&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;Monto Identificado&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;26,505&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;111,564&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;66,440&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;62,101&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;null&quot;</span><span class="p">:</span> <span class="s2">&quot;266,610&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="mi">1457102225405</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">8</span>
+        <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.dipres.gob.cl/574/articles-74267_doc_xls.xls&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversiones BCN durante el año 2011 según art. 24 de Ley de Presupuestos N° 18.482&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nóminas de Iniciativas de Inversión (M$) Biblioteca del Congreso Nacional&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NOMIN-DE-BIBLI-DEL-12877&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Finanzas&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Ejemplo sobre el retorno de data.ajson</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;Congreso Nacional - Biblioteca del Congreso&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Cifras en miles de $&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;Código BIP&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Nombre de Proyecto&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Monto Identificado&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Remodelación Administración Valparaíso&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;26,505&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Bóveda y sala preservación colecciones valiosas&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;111,564&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Raparaciones daños terremoto, Sector Biblioteca&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;66,440&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;Proyectos de climatización en Santiago y Valparaíso&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;62,101&quot;</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="s2">&quot;TOTAL IDENTIFICADO&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;266,610&quot;</span>
+        <span class="p">]</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.dipres.gob.cl/574/articles-74267_doc_xls.xls&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inversiones BCN durante el año 2011 según art. 24 de Ley de Presupuestos N° 18.482&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-06-04T14:12:52&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nóminas de Iniciativas de Inversión (M$) Biblioteca del Congreso Nacional&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;publicador&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;guid&quot;</span><span class="p">:</span> <span class="s2">&quot;NOMIN-DE-BIBLI-DEL-12877&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Finanzas&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Ejemplo sobre el retorno de data.xml</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;table&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Congreso Nacional - Biblioteca del Congreso<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Cifras en miles de $<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Código BIP<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Nombre de Proyecto<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Monto Identificado<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Remodelación Administración Valparaíso<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>26,505<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Bóveda y sala preservación colecciones valiosas<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>111,564<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Raparaciones daños terremoto, Sector Biblioteca<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>66,440<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>Proyectos de climatización en Santiago y Valparaíso<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column&gt;</span>62,101<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+        <span class="nt">&lt;row&gt;</span>
+                <span class="nt">&lt;column&gt;</span>TOTAL IDENTIFICADO<span class="nt">&lt;/column&gt;</span>
+                <span class="nt">&lt;column/&gt;</span>
+                <span class="nt">&lt;column&gt;</span>266,610<span class="nt">&lt;/column&gt;</span>
+        <span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+</div>
+<p>Ejemplo sobre el retorno de data.csv</p>
+<div class="highlight-csv"><div class="highlight"><pre><span></span>&quot;Congreso Nacional - Biblioteca del Congreso&quot;,&quot;&quot;,&quot;&quot;
+&quot;&quot;,&quot;&quot;,&quot;Cifras en miles de $&quot;
+&quot;Código BIP&quot;,&quot;Nombre de Proyecto&quot;,&quot;Monto Identificado&quot;
+&quot;&quot;,&quot;Remodelación Administración Valparaíso&quot;,&quot;26,505&quot;
+&quot;&quot;,&quot;Bóveda y sala preservación colecciones valiosas&quot;,&quot;111,564&quot;
+&quot;&quot;,&quot;Raparaciones daños terremoto, Sector Biblioteca&quot;,&quot;66,440&quot;
+&quot;&quot;,&quot;Proyectos de climatización en Santiago y Valparaíso&quot;,&quot;62,101&quot;
+&quot;TOTAL IDENTIFICADO&quot;,&quot;&quot;,&quot;266,610&quot;
+</pre></div>
+</div>
 </div>
 <div class="section" id="versiones">
 <h1>Versiones<a class="headerlink" href="#versiones" title="Permalink to this headline">¶</a></h1>
-<p>Actualmente la api se encuentra en su version 2. Para obtener información de la versión 1 ingresar a <a class="reference external" href="http://wiki.junar.com/index.php/API">http://wiki.junar.com/index.php/API</a></p>
+<p>Actualmente la api se encuentra en su versión 2.</p>
+<p>Para obtener información de la versión 1 ingresar a <a class="reference external" href="http://wiki.junar.com/index.php/API">http://wiki.junar.com/index.php/API</a></p>
 </div>
 
 
