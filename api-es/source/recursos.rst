@@ -123,20 +123,6 @@ Todas las llamadas en caso de éxito devuelven lo mismo,	por ejemplo:
   }
 
 
-
-Modificar el formato de salida
------------------------------
-
-Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:
-
-- data.json: Trae los datos como json
-- data.ajson : Trae los datos como un array json.
-- data.pjson : Trae los datos como un json formateado.
-- data.xml : Trae los datos como una estructura XML
-- data.csv : Trae los datos como un documento CSV
-- data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS
-
-
 Nuevos tipos de salida se irán incluyendo con el tiempo.
 
 
