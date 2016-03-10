@@ -165,7 +165,7 @@
 <li>created_at : Fecha de creación de la versión del recurso</li>
 <li>link : Link a la vista del recurso en el portal</li>
 </ul>
-<p>Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros :</p>
+<p>Las llamadas POST/PUT/PATCH recibe los siguientes parámetros :</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>POST  /api/v2/datasets.json
 PUT   /api/v2/datasets/:guid.json
 PATCH /api/v2/datasets/:guid.json
@@ -184,7 +184,7 @@ PATCH /api/v2/datasets/:guid.json
 <li>mbox : Opcional. Correo electronico de quien administra el conjunto de datos</li>
 <li>tags : Opcional. Tags separados por coma.</li>
 </ul>
-<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datasets/{guid}.json</span></code> muestra los siguientes datos:</p>
+<p>Todas las llamadas en caso de éxito devuelven lo mismo,         por ejemplo:</p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
   <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;file://1995/46721/71341786542282142096488420671282999110&quot;</span><span class="p">,</span>
@@ -219,7 +219,7 @@ PATCH /api/v2/datasets/:guid.json
 <li>created_at : Fecha de creación de la versión del recurso</li>
 <li>link : Link a la vista del recurso en el portal</li>
 </ul>
-<p>Las llamadas POST/PUT/PATCH devuelven los siguientes parámetros:</p>
+<p>Las llamadas POST/PUT/PATCH recibe los siguientes parámetros:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>POST  /api/v2/datastreams.json
 PUT   /api/v2/datastreams/:guid.json
 PATCH /api/v2/datastreams/:guid.json
@@ -236,7 +236,7 @@ PATCH /api/v2/datastreams/:guid.json
 <li>tags : Opcional. Tags separados por coma.</li>
 </ul>
 <p>El path que termine en data.{format} permite retornar un nuevo campo <code class="docutils literal"><span class="pre">result</span></code>: donde están los datos del origen del recurso</p>
-<p>Por ejemplo el <code class="docutils literal"><span class="pre">GET</span>&nbsp;&nbsp; <span class="pre">/api/v2/datastreams/{guid}.json</span></code> muestra los siguientes datos:</p>
+<p>Todas las llamadas en caso de éxito devuelven lo mismo, por ejemplo:</p>
 <div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
   <span class="nt">&quot;endpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;file://1995/46721/313214253556015558595838280659574174401&quot;</span><span class="p">,</span>
@@ -269,7 +269,7 @@ PATCH /api/v2/datastreams/:guid.json
 <ul class="simple">
 <li>data.json: Trae los datos como json</li>
 <li>data.ajson : Trae los datos como un array json.</li>
-<li>data.ajson : Trae los datos como un json formateado.</li>
+<li>data.pjson : Trae los datos como un json formateado.</li>
 <li>data.xml : Trae los datos como una estructura XML</li>
 <li>data.csv : Trae los datos como un documento CSV</li>
 <li>data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS</li>
@@ -290,10 +290,10 @@ PATCH /api/v2/datastreams/:guid.json
 <li>title: Título del recursos.</li>
 <li>description: Descripción del recursos.</li>
 <li>category_name: Nombre de la categoría.</li>
-<li>endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>endpoint: Viene en null y se utiliza para concoordar con otros recursos de datos</li>
 <li>tags : Opcional. Tags separados por coma.</li>
 <li>user : Usuario que publica el recurso.</li>
-<li>parameters : Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>parameters : Viene en null y se utiliza para concoordar con otros recursos de datos</li>
 <li>created_at : Fecha de creación de la versión del recurso</li>
 <li>link : Link a la vista del recurso en el portal</li>
 </ul>
@@ -327,7 +327,7 @@ PATCH /api/v2/datastreams/:guid.json
 <li>title: Título del recurso</li>
 <li>description: Descripción del recurso</li>
 <li>category_name: Nombre de la categoría</li>
-<li>endpoint: Viene en null y se utiliza para concoordar con otros recursosde datos</li>
+<li>endpoint: Viene en null y se utiliza para concoordar con otros recursos de datos</li>
 <li>tags : Opcional. Tags separados por coma.</li>
 <li>user : Usuario que publica el recurso.</li>
 <li>parameters : Viene en null y se utiliza para concoordar con otros recursosde datos</li>

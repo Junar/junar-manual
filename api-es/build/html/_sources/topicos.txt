@@ -146,6 +146,12 @@ El ``{format}``  puede contener lo siguiente:
 
 -	pjson
 
+-	csv
+
+-	xml
+
+-	xls
+
 
 
 Ejemplo sobre el retorno de data.json
@@ -445,6 +451,17 @@ Ejemplo sobre el retorno de data.csv
 	"","Raparaciones daños terremoto, Sector Biblioteca","66,440"
 	"","Proyectos de climatización en Santiago y Valparaíso","62,101"
 	"TOTAL IDENTIFICADO","","266,610"
+	
+
+	Ejemplo sobre el retorno de data.xls
+
+.. code-block:: xls
+
+	{
+	  "fUri": "http://datastore.dev:8888/resources/datal_temp/2016-03-10/temp_1386265881861839185.xlsx",
+	  "fNum": 302,
+	  "fType": "REDIRECT"
+	}
 
 
 Versiones
