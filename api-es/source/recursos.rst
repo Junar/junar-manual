@@ -70,7 +70,7 @@ Las llamadas GET nos devuelven los siguientes parámetros :
 
   GET   /api/v2/datastreams.json
   GET   /api/v2/datastreams/{guid}.json
-  GET   /api/v2/datastreams/{guid}/data.{format}
+  
   
 
 - guid : Identificador del recurso,
