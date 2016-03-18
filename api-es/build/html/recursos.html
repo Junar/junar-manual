@@ -95,10 +95,7 @@
 <p class="caption"><span class="caption-text">Recursos</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">Conjunto de Datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#vista">Vista</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#modificar-el-formato-de-salida">Modificar el formato de salida</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="#vista">Vista</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#visualizaciones">Visualizaciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#colecciones">Colecciones</a></li>
 </ul>
@@ -251,19 +248,7 @@ PATCH /api/v2/datastreams/:guid.json
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="section" id="modificar-el-formato-de-salida">
-<h2>Modificar el formato de salida<a class="headerlink" href="#modificar-el-formato-de-salida" title="Permalink to this headline">¶</a></h2>
-<p>Puede modificarse el formato de salida de la API cambiando la extensión del argumento data en la llamada realizada al recurso. Por defecto el argumento data es llamado como data.json, lo que trae un objeto JSON con la estructura anterior. Otros formatos posibles son:</p>
-<ul class="simple">
-<li>data.json: Trae los datos como json</li>
-<li>data.ajson : Trae los datos como un array json.</li>
-<li>data.pjson : Trae los datos como un json formateado.</li>
-<li>data.xml : Trae los datos como una estructura XML</li>
-<li>data.csv : Trae los datos como un documento CSV</li>
-<li>data.xls : Trae una url dentro de un json para redireccionar hacia un documento XLS</li>
-</ul>
 <p>Nuevos tipos de salida se irán incluyendo con el tiempo.</p>
-</div>
 </div>
 <div class="section" id="visualizaciones">
 <h1>Visualizaciones<a class="headerlink" href="#visualizaciones" title="Permalink to this headline">¶</a></h1>
