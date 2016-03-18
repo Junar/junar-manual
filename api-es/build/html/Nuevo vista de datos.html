@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Consumiendo una vista con parámetros &mdash; Datal API  1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Datal API  1.0.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Datal API 
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Topicos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html">Autenticación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#autorizacion">Autorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#errores">Errores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#paginacion">Paginación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#ordenamiento">Ordenamiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#filtros">Filtros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#busquedas-multiples">Busquedas Múltiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#vista-de-datos">Vista de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#consumiendo-una-vista-con-parametros">Consumiendo una vista con parámetros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#filtrar-los-resultados-de-una-vista">Filtrar los resultados de una vista</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#formateo-de-datos">Formateo de Datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topicos.html#versiones">Versiones</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recursos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recursos.html">Conjunto de Datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos.html#vista">Vista</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos.html#visualizaciones">Visualizaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos.html#colecciones">Colecciones</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Datal API </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Consumiendo una vista con parámetros</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Nuevo vista de datos.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="consumiendo-una-vista-con-parametros">
+<h1>Consumiendo una vista con parámetros<a class="headerlink" href="#consumiendo-una-vista-con-parametros" title="Permalink to this headline">¶</a></h1>
+<p>Una vista de datos puede contener parámetros. Los parámetros pueden agregarse a la vista de datos solamente durante el proceso de creación. Estos parámetros pueden estar mapeados contra un formulario en un sitio web, directamente contra la URL de la fuente de datos o contra columnas de datos dentro de la tabla sobre la cual se crea la vista. La sintaxis apropiada para agregar parámetros en una solicitud API es
+pArgumentN=X
+Donde N es la posición del parámetro en la vista, empezando desde cero y X es el valor que tendrá dicho parámetro.</p>
+<p>Ejemplo</p>
+<p><a class="reference external" href="http://lima.cloudapi.junar.com/dataviews/invoke/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY&amp;pArgument0=MAIZ">http://lima.cloudapi.junar.com/dataviews/invoke/VOLUM-DE-PRODU-INGRE-POR?auth_key=YOUR_AUTH_KEY&amp;pArgument0=MAIZ</a></p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;VOLUM-DE-PRODU-INGRE-POR&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Volumen de Productos Ingresados - Por Producto&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Detalla el volumen de productos ingresados por producto seleccionado.&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;Lima&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;result&quot;</span><span class="p">:{</span>
+          <span class="nt">&quot;fArray&quot;</span><span class="p">:[</span>
+                 <span class="p">{</span>
+                        <span class="nt">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;AÑO&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fHeader&quot;</span><span class="p">:</span><span class="kc">true</span>
+                 <span class="p">},</span>
+
+                 <span class="p">{</span>
+                        <span class="nt">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
+                 <span class="p">},</span>
+                 <span class="p">{</span>
+                        <span class="nt">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
+                 <span class="p">},</span>
+                 <span class="p">{</span>
+                        <span class="nt">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
+                 <span class="p">},</span>
+                 <span class="p">{</span>
+                        <span class="nt">&quot;fStr&quot;</span><span class="p">:</span><span class="s2">&quot;16477&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;TEXT&quot;</span>
+                 <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;fRows&quot;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+          <span class="nt">&quot;fCols&quot;</span><span class="p">:</span><span class="mi">16</span><span class="p">,</span>
+          <span class="nt">&quot;fType&quot;</span><span class="p">:</span><span class="s2">&quot;ARRAY&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;fTimestamp&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+          <span class="nt">&quot;fLength&quot;</span><span class="p">:</span><span class="mi">0</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;tags&quot;</span><span class="p">:[</span>
+          <span class="s2">&quot;Volumen&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;productos&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;ingresados&quot;</span>
+   <span class="p">],</span>
+   <span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="s2">&quot;2012-10-24 10:49:24&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="s2">&quot;Volumen_de_productos_ingresados.xls&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="s2">&quot;http://lima.opendata.junar.com/dataviews/75010/volumen-de-productos-ingresados-por-producto/&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;parameters&quot;</span><span class="p">:[</span>
+          <span class="p">{</span>
+                 <span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Producto&quot;</span><span class="p">,</span>
+                 <span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Producto&quot;</span>
+          <span class="p">}</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="filtrar-los-resultados-de-una-vista">
+<h1>Filtrar los resultados de una vista<a class="headerlink" href="#filtrar-los-resultados-de-una-vista" title="Permalink to this headline">¶</a></h1>
+<p>La API de Datos Abiertos de Junar permite a sus usuarios filtrar los resultados obtenidos durante la solicitud de una vista de datos utilizando la siguiente sintaxis:</p>
+<p><a class="reference external" href="http://lasvegas.cloudapi.junar.com/datastreams/invoke/DEVEL-SERVI-PROJE-INSPE?auth_key=YOUR_AUTH_KEY&amp;filter0=column4[contains]GAS&amp;filter1=column7[==]RANDOLPH&amp;where=(filter0andfilter1">http://lasvegas.cloudapi.junar.com/datastreams/invoke/DEVEL-SERVI-PROJE-INSPE?auth_key=YOUR_AUTH_KEY&amp;filter0=column4[contains]GAS&amp;filter1=column7[==]RANDOLPH&amp;where=(filter0andfilter1</a>)</p>
+<p>Esto retornaría todos los datos que contengan la palabra GAS en la columna 4 y la palabra RANDOLPH en la columna 7.
+Los filtros pueden ir desde 0 a N (filter0, filter1...filterN) y tienen la siguiente sintaxis
+operando0 | operador lógico | operando1
+Los operandos pueden ser : rownum (número de fila), columnN (columna N, donde N es un entero que va desde 0 a N) o una cadena de texto
+Los Operadores Lógicos pueden ser [==], [&gt;], [&lt;], [!=], [contains], [&gt;=], [&lt;=]. Los corchetes [] deben ser incluidos. Si el contenido es una cadena de texto son sensibles a mayúsculas.
+La operación where tiene una expresión lógica para unir filtros de manera similar al select_statement. En este caso, se utilizaría (filter0 and filter1). Las expresiones and y or sirven para diferenciar la relación entre los filtros y pueden concatenarse tanto como fuera necesario para cumplir una cierta condicion por ejemplo: (filter0 and filter1) or filter2.
+Cuando se agrega una fecha como parámetro debe incluirse utilizando el formato MM/dd/aaaa.</p>
+</div>
+<div class="section" id="formateo-de-datos">
+<h1>Formateo de Datos<a class="headerlink" href="#formateo-de-datos" title="Permalink to this headline">¶</a></h1>
+<p>Permite a los desarrolladores el dar formato a columnas de datos con un tipo y formato que afectará cómo son devueltos los datos de la consulta. Usa la siguiente sintaxis y debe aplicarse a una columna que ya haya sido objeto de un filtro :</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;table&quot;</span><span class="p">:[{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;column10&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;DATE&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;ES&quot;</span><span class="p">,</span> <span class="s2">&quot;lang&quot;</span><span class="p">:</span><span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;dd/MM/yyyy&quot;</span><span class="p">}}]}</span>
+</pre></div>
+</div>
+<p>Donde :</p>
+<ul class="simple">
+<li>id : Corresponde a la posición de la columna a filtrar. Esta columna debe haber sido objeto de un filtro para poder ser formateada.</li>
+<li>type: El tipo de dato que contiene la columna. Por defecto todas las columnas se consideran de tipo texto (TEXT), pero pueden cambiarse a fecha (DATE) o número (NUMBER).</li>
+<li>format : Dependiendo del tipo elegido puede requerir la siguiente información.</li>
+</ul>
+<p>El formato DATE requiere country (país), lang (idioma) y style (estilo). Los valores de country y lang corresponden al formato ISO, mientras que posibles valores de style pueden encontrarse aquí:</p>
+<p><a class="reference external" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html</a></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>{&quot;table&quot;:[{&quot;id&quot;:&quot;column10&quot;, &quot;type&quot;:&quot;DATE&quot;, &quot;format&quot;:{&quot;country&quot;:&quot;CL&quot;, &quot;lang&quot;:&quot;es&quot;, &quot;style&quot;: &quot;dd/MM/yyyy&quot;}}]}
+El formato NUMBER requiere country (país), lang (idioma) y pattern (patrón). Los patrones permiten definir cómo se separarán los miles y los decimales o si las cifran irán agrupadas de acuerdo a estándares asociados al país e idioma elegidos
+{&quot;table&quot;:[{&quot;id&quot;:&quot;column4&quot;, &quot;type&quot;:&quot;NUMBER&quot;, &quot;format&quot;:{&quot;country&quot;:&quot;US&quot;, &quot;lang&quot;:&quot;es&quot;, &quot;pattern&quot;:&quot;&quot;, &quot;decimals&quot;:&quot;&quot;, &quot;thousands&quot;:&quot;&quot;}}]}
+</pre></div>
+</div>
+<p>Ejemplo</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>..../invoke/SACRA-ANNUA-CRIME-STATS?...&amp;filter0=column0[==]Homicide&amp;filter1=column4[&gt;]0&amp;where=(filter0 or filter1)&amp;format=
+        {&quot;table&quot;:[{&quot;id&quot;:&quot;column4&quot;, &quot;type&quot;:&quot;NUMBER&quot;, &quot;format&quot;:&quot;format&quot;:{&quot;country&quot;:&quot;US&quot;, &quot;lang&quot;:&quot;es&quot;, &quot;pattern&quot;:&quot;&quot;, &quot;decimals&quot;:&quot;&quot;, &quot;thousands&quot;:&quot;&quot;}}]}
+</pre></div>
+</div>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SACRA-ANNUA-CRIME-STATI&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Sacramento Annual Crime Statistics&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Year to date information on different types of crimes and variation 2012 2013&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;sacramento&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;ARRAY&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fArray&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Homicide&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;7&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;42.9%&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Robbery&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;275&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;309&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">34.0</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;12.4%&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;Burglary&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;944&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;1,084&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fNum&quot;</span><span class="p">:</span> <span class="mf">140.0</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;NUMBER&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+                <span class="nt">&quot;fStr&quot;</span><span class="p">:</span> <span class="s2">&quot;14.8%&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fType&quot;</span><span class="p">:</span> <span class="s2">&quot;TEXT&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;fRows&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;fCols&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="nt">&quot;fTimestamp&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;fLength&quot;</span><span class="p">:</span> <span class="mi">0</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;Sacramento&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;POLICE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;crime&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2013-05-28 00:27:27&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.sacpd.org/crime/stats/&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;http://sacramento.opendata.junar.com/datastreams/77447/sacramento-annual-crime-statistics/&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Junar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

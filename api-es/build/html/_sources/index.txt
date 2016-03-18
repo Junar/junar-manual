@@ -17,6 +17,7 @@ Introducción
   :maxdepth: 4
 
   Rescursos <recursos.rst>
+  
 
 La API de DATAL está organizada en base a los conceptos REST. Es decir, la API está orientada a recursos y utiliza códigos de respuestas HTTP para indicar errores. Además se utilizan los verbos HTTP como GET, POST, PUT, PATCH, DELETE para las correspondientes acciones. La mayoría de las respuestas son en JSON salvo algunos casos particulares que se detallan mas adelante. 
 
