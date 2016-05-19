@@ -9,3 +9,9 @@ Junar ofrece la plataforma de datos abiertos basada en la nube más fácil de us
 Con Junar puede abrir datos rápidamente, decidir qué se conserva para uso interno y qué se hace público, y optimizar el uso de los datos mediante la adición de metadatos que promueven la optimización de motores de búsqueda.
 
 Desde el lanzamiento de la plataforma Junar, organizaciones innovadoras en todo el mundo han puesto en marcha sitios de datos abiertos para maximizar transparencia, unificar intereses, y mejorar eficiencia.
+
+Junar ofrece todo lo necesario para abrir sus datos con confianza. Está construido para escalar masivamente y apoya a las organizaciones basadas en datos locales y globales. Con Junar, usted puede elegir qué datos se recolectan, cómo quiere que se presenten, y cuando deberían ponerse a disposición del público. También puede determinar qué conjuntos de datos están disponibles al público y cuáles sólo son para su uso interno. Piense en ello como un sistema de gestión de datos del futuro para fomentar el intercambio de información.
+
+Sin importar si usted quiere integrar sus datos a su sitio web o que nosotros se los alojemos, Junar proporciona un espacio de trabajo simple que le permite colaborar con sus colegas y gestionar todo el proyecto de datos abiertos.
+
+La plataforma de datos abiertos Junar es el servicio que usted necesita para:
