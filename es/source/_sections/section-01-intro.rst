@@ -36,7 +36,7 @@ Si desea solicitar una demostración, por favor complete nuestro formulario en h
   :target: http://data.sanjoseca.gov/home/
 
 .. |bb| image:: ../_static/images/lg_BB.gif
-  :target: http://bahiablanca.opendata.junar.com/home/?lang=es
+  :target: http://bahiablanca.opendata.junar.com/home/
 
 .. |pa| image:: ../_static/images/lg_PA.gif
   :target: http://data.cityofpaloalto.org/home/
