@@ -23,3 +23,8 @@ La plataforma de datos abiertos Junar es el servicio que usted necesita para:
 + Compartir: Los medios sociales continuan cambiando cómo las organizaciones se comunican con el mundo. La plataforma de datos abiertos Junar ofrece un diseño de conjunto de datos intuitivo con funciones sociales que hacen que la navegación y la gestión de datos sea simple y atractiva. Usted puede compartir datos a través de redes sociales como Twitter, Facebook, y la Comunidad Junar.
 
 + Analizar: Usted necesita saber cómo sus datos estan siendo vistos y usados para obtener el máximo provecho de su proyecto de datos abiertos. Los reportes de Junar le indican cuales son las vistas de datos, visualizaciones y conjuntos de datos que son más populares e incluso presentan los datos que se consumen a través de la API de Junar. Los informes incluyen métricas en tiempo real y proporcionan la información más importante acerca del trafico de sus iniciativas de datos abiertos y de sus conjuntos de datos.
+
+Si aún no está seguro por dónde comenzar con datos abiertos, por favor complete el formulario para solicitar nuestro e-book en http://junar.com/e-book/ 
+
+Si desea solicitar una demostración, por favor complete nuestro formulario en http://junar.com/solicitar-demo/
+
