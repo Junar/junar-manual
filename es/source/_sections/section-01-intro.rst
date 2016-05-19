@@ -29,3 +29,22 @@ Si aún no está seguro por dónde comenzar con datos abiertos, por favor comple
 Si desea solicitar una demostración, por favor complete nuestro formulario en http://junar.com/solicitar-demo/
 
 ¡Ellos comenzaron solicitando una demostración!
+
+|sj| |bb| |pa| |tu| |sa|
+
+.. |sj| image:: ../_static/images/lg_sanjose.gif
+  :target: http://data.sanjoseca.gov/home/
+
+.. |bb| image:: ../_static/images/lg_BB.gif
+  :target: http://bahiablanca.opendata.junar.com/home/?lang=es
+
+.. |pa| image:: ../_static/images/lg_PA.gif
+  :target: http://data.cityofpaloalto.org/home/
+
+.. |tu| image:: ../_static/images/Muni-Tuluá-Logo.jpeg
+  :target: http://datos.tulua.gov.co/home/
+
+.. |sa| image:: ../_static/images/City-of-Sacramento-Logo.jpeg
+  :target: http://data.cityofsacramento.org/home/
+
+En el siguiente documento se detallan las funcionalidades que soporta la implementación de la Plataforma Junar de Datos Abiertos. Las funcionalidades de la plataforma se categorizan bajo los siguientes temas:
