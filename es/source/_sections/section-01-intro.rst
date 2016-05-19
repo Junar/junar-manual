@@ -36,12 +36,12 @@ Si desea solicitar una demostración, por favor complete nuestro formulario en h
   :target: http://data.sanjoseca.gov/home/
 
 .. |bb| image:: ../_static/images/lg_BB.gif
-  :target: http://bahiablanca.opendata.junar.com/home/
+  :target: http://bahiablanca.opendata.junar.com/home/?lang=es
 
 .. |pa| image:: ../_static/images/lg_PA.gif
   :target: http://data.cityofpaloalto.org/home/
 
-.. |tu| image:: ../_static/images/Muni-Tuluá-Logo.jpeg
+.. |tu| image:: ../_static/images/Muni-Tulua-Logo.jpeg
   :target: http://datos.tulua.gov.co/home/
 
 .. |sa| image:: ../_static/images/City-of-Sacramento-Logo.jpeg
