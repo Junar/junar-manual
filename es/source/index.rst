@@ -6,9 +6,9 @@ Contenido
 .. toctree::
    :maxdepth: 2
 
-   1. Introduccion <../_sections/section-01-intro>
+   1. Introducción <../_sections/section-01-intro>
 
-   2. Flujo de publicacion <../_sections/section-02-flujo>
+   2. Flujo de publicación <../_sections/section-02-flujo>
 
    3. Accesibilidad <../_sections/section-02-accesibilidad>
 
