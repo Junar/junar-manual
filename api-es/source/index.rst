@@ -6,14 +6,6 @@ Introducción
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :caption: Documentación Base
-    :hidden:
-  
-  Principios Básicos <topicos.rst>
-
-.. toctree::
-    :maxdepth: 2
-    :numbered:
     :titlesonly:
     :caption: Recursos de Datos
     :hidden:
