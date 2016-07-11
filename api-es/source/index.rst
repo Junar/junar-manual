@@ -18,6 +18,7 @@ Introducción
     :caption: Recursos de Datos
     :hidden:
 
+  Introducción <index.rst>
   Conjuntos de datos<datasets.rst>
   Vistas de Datos <datastreams.rst>
   Visualizaciones <visualizations.rst>
