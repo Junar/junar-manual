@@ -1,0 +1,38 @@
+|logo|
+
+Content
+*********
+
+.. toctree::
+   :maxdepth: 2
+
+   1. Intro <../_sections/section-01-intro.rst>
+
+   2. Accessing the Junar Platform <../_sections/section-02-accessibility.rst>
+
+   3. Platform Sections <../_sections/section-03-sections>
+
+   4. Creating a Dataset <../_sections/section-04-datasets>
+
+   5. Creating a Data View <../_sections/section-05-views>
+
+   6. Creating a Visualization <../_sections/section-06-visualizations>
+
+   7. Creating a Dashboard <../_sections/section-07-dashboards>
+
+   8. Account Configuration <../_sections/section-08-accounts>
+
+   9. Open Data Portal <../_sections/section-09-portal>
+
+   
+
+   
+
+   
+
+We hope you enjoy and successfully use the Open Data platform.
+
+ Junar Team
+
+
+.. |logo| image:: _static/images/logo.png

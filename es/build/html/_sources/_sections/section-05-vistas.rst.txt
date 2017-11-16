@@ -1,4 +1,4 @@
-6. Creación de una Vista
+5. Creación de una Vista
 ========================
 Acceso directo desde:
 
@@ -71,7 +71,7 @@ El sistema visualiza la Vista previa antes de guardar.
 También puede crear una Vista editando un Conjunto de Datos, vaya a la sección Conjuntos de datos, haga click sobre un Conjunto de Datos y presione el botón Crear Vista.
 
 
-6.1 Edición de una Vista
+5.1 Edición de una Vista
 ------------------------
 Una vez creada la Vista, se visualiza la misma en un listado, este listado cuenta con una paginación al igual que el listado de Conjuntos de Datos. Para esto se dirige a la sección → Vistas
 
@@ -113,7 +113,7 @@ Cuando la Vista se encuentra en **Revisión**:
   .. image:: ../_static/images/img038.png
 
 
-6.2 Publicación de una Vista
+5.2 Publicación de una Vista
 ----------------------------
 
 Para publicar una Vista, el Conjunto de Datos asociado debe estar previamente **Publicado**. En el caso que la Vista esté en **Revisión**, esta deberá ser **Aceptada** para luego ser **Publicada**, haga click sobre el botón **Publicar**.
@@ -125,7 +125,7 @@ Para acceder al portal de datos abiertos y visualizar la Vista publicada |icono-
 .. image:: ../_static/images/img040.png
 
 
-6.3 Eliminación de una Vista
+5.3 Eliminación de una Vista
 ----------------------------
 
 Para eliminar una Vista, hay dos opciones:

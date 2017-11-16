@@ -1,4 +1,4 @@
-4. Secciones de la Plataforma
+3. Secciones de la Plataforma
 =============================
 
 .. image:: ../_static/images/img002.png

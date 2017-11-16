@@ -1,4 +1,4 @@
-7. Creación de una Visualización
+6. Creación de una Visualización
 ================================
 Acceso directo desde:
 
@@ -73,7 +73,7 @@ El sistema muestra el gráfico con la información del mismo.
 También puede crear una Visualización editando una Vista, vaya a la sección de Vistas, haga click sobre una Vista y presione el botón **Crear Visualización**.
 
 
-7.1 Edición de una Visualización
+6.1 Edición de una Visualización
 --------------------------------
 Antes de Guardar la Visualización o sea antes de presionar el botón **Guardar**, puede editar el gráfico presionando el botón |icono-editar-2|, esta acción le permite seleccionar nuevamente los datos a graficar. También puede editar la información de la Visualización presionado el |icono-editar-2| ubicado el margen izquierdo de la pantalla.
 
@@ -105,7 +105,7 @@ Cuando la Visualización se encuentra en **Revisión**:
 
   .. image:: ../_static/images/img064.png
 
-7.2 Publicación de una Visualización
+6.2 Publicación de una Visualización
 ------------------------------------
 Para publicar una Visualización, la Vista y el Conjunto de Datos asociados deben estar previamente **Publicados**. En el caso que la Visualización esté en **Revisión**, esta deberá ser **Aceptada** para posteriormente ser **Publicada**, haga click sobre el botón **Publicar**.
 
@@ -116,7 +116,7 @@ Para acceder al portal de datos abiertos y ver la Visualización publicada |icon
 
 .. image:: ../_static/images/img067.png
 
-7.3 Eliminación de una Visualización
+6.3 Eliminación de una Visualización
 ------------------------------------
 Para eliminar una Visualización, hay dos opciones:
 

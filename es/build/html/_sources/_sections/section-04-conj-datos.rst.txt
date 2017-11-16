@@ -1,4 +1,4 @@
-5. Creación de un Conjunto de Datos
+4. Creación de un Conjunto de Datos
 ===================================
 
 Acceso directo desde:
@@ -24,7 +24,7 @@ Seleccione una opción de recolección de datos →
   :align: center
 
 
-5.1 Desde un Archivo
+4.1 Desde un Archivo
 --------------------
 
 .. image:: ../_static/images/img007.png
@@ -33,7 +33,7 @@ Seleccione una opción de recolección de datos →
 La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su computador como Conjunto de Datos, cargarlos  a la plataforma y convertirlos en  recursos de datos abiertos. Seleccione el archivo desde su computador, haga click sobre “Seleccionar”, el sistema adjunta el archivo elegido. La recolección de datos consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. Luego de completar los campos requeridos, presione el botón Continuar.
 
 
-5.2 Desde una URL o sitio web
+4.2 Desde una URL o sitio web
 -----------------------------
 
 .. image:: ../_static/images/img008.png
@@ -47,7 +47,7 @@ También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archiv
 .. image:: ../_static/images/img009.png
   :align: center
 
-5.3 Desde un Servicio Web
+4.3 Desde un Servicio Web
 -------------------------
 
 .. image:: ../_static/images/img010.png
@@ -82,7 +82,7 @@ El sistema visualiza la siguiente pantalla, complete los campos requeridos (*), 
 .. image:: ../_static/images/img012.png
 
 
-5.4 Desde archivos alojados en Dropbox
+4.4 Desde archivos alojados en Dropbox
 --------------------------------------
 
 Junar permite recoletar datos desde archivos alojados en Dropbox. La ventaja de este conjunto de datos es que al modificarse el archivo alojado en Dropbox, la plataforma detectará el cambio y actualiará los recursos de manera automática, sin necesidad de editar los recursos desde el espacio de trabajo. 
@@ -135,7 +135,7 @@ Esa ruta, debe escribirla en el siguiente campo:
 Luego, deberá completar los metadatos como en cualquier otro caso.
 
 
-5.5 Edición de un Conjunto de Datos
+4.5 Edición de un Conjunto de Datos
 -----------------------------------
 Una vez creado el Conjunto de Datos, se  visualiza el mismo en un listado, este listado cuenta con una paginación, es decir que se puede ir avanzando página por página dentro del listado o bien presionando la página correspondiente a la que desea acceder, de esta manera esa página es mostrada en el listado de Conjuntos de Datos correspondiente. Para esto se dirige a la sección → Conjuntos de Datos
 
@@ -170,7 +170,7 @@ Cuando el Conjunto de Datos se encuentra En revisión:
 
   .. image:: ../_static/images/img018.png
 
-5.6 Publicación de un Conjunto de Datos
+4.6 Publicación de un Conjunto de Datos
 ---------------------------------------
 Para publicar un Conjunto de Datos en el portal de datos abiertos, haga click sobre el botón Publicar.
 
@@ -180,7 +180,7 @@ Para acceder al portal de datos abiertos y visualizar el Conjunto de Datos publi
 
 .. image:: ../_static/images/img020.png
 
-5.7 Eliminación de un Conjunto de Datos
+4.7 Eliminación de un Conjunto de Datos
 ---------------------------------------
 
 Para eliminar un Conjunto de Datos, hay dos opciones:

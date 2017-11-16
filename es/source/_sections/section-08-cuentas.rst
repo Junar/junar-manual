@@ -1,4 +1,4 @@
-9. Creación y Configuración de una Cuenta
+8. Creación y Configuración de una Cuenta
 =========================================
 
 Ingrese a la sección → Configuraciones
