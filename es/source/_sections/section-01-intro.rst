@@ -63,7 +63,7 @@ Una colección es un grupo de conjuntos de datos, vistas, visualizaciones y widg
 
 Una colección generalmente aborda un tema específico elegido por el usuario y agrupa tantos recursos como el usuario quisiera compartir.
 
-1.4 Qué es una Historia de Datos
+1.5 Qué es una Historia de Datos
 --------------------------------
 
 Una historia con datos es un relato basado en recursos sobre un hecho o tema particular que tiene el objetivo de comunicar de maanera clara los datos a públicos no especializados. Está formada por capítulos que contienen vistas, visualizaciones y recursos complementarios (textos, imágenes, videos).

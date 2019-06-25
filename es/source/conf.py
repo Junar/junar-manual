@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Manual de Usuario'
-copyright = u'2015, Junar'
+copyright = u'2019, Junar'
 author = u'Junar'
 
 # The version info for the project you're documenting, acts as replacement for
