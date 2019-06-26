@@ -16,15 +16,15 @@ Sin importar si usted quiere integrar sus datos a su sitio web o que nosotros se
 
 La plataforma de datos abiertos Junar es el servicio que usted necesita para:
 
-+ Mejorar: La plataforma de datos abiertos Junar le ofrece la posibilidad de transformar conjuntos de datos en productivos recursos informativos a los que las personas podrán acceder, compartir y reutilizar a través de gráficos, tablas y mapas.
++ **Mejorar**: La plataforma de datos abiertos Junar le ofrece la posibilidad de transformar conjuntos de datos en productivos recursos informativos a los que las personas podrán acceder, compartir y reutilizar a través de gráficos, tablas y mapas.
 
-+ Publicar: Publicar datos en formatos convincentes es esencial para crear la mayor valoración. Hemos creado un flujo de trabajo para ayudarle a gestionar la forma en la cual usted publica sus datos – teniendo en cuenta que tienen procesos internos específicos y ciclos de aprobación.
++ **Publicar**: Publicar datos en formatos convincentes es esencial para crear la mayor valoración. Hemos creado un flujo de trabajo para ayudarle a gestionar la forma en la cual usted publica sus datos – teniendo en cuenta que tienen procesos internos específicos y ciclos de aprobación.
 
-+ Compartir: Los medios sociales continuan cambiando cómo las organizaciones se comunican con el mundo. La plataforma de datos abiertos Junar ofrece un diseño de conjunto de datos intuitivo con funciones sociales que hacen que la navegación y la gestión de datos sea simple y atractiva. Usted puede compartir datos a través de redes sociales como Twitter, Facebook, y la Comunidad Junar.
++ **Compartir**: Los medios sociales continuan cambiando cómo las organizaciones se comunican con el mundo. La plataforma de datos abiertos Junar ofrece un diseño de conjunto de datos intuitivo con funciones sociales que hacen que la navegación y la gestión de datos sea simple y atractiva. Usted puede compartir datos a través de redes sociales como Twitter, Facebook, y la Comunidad Junar.
 
-+ Analizar: Usted necesita saber cómo sus datos estan siendo vistos y usados para obtener el máximo provecho de su proyecto de datos abiertos. Los reportes de Junar le indican cuales son las vistas de datos, visualizaciones y conjuntos de datos que son más populares e incluso presentan los datos que se consumen a través de la API de Junar. Los informes incluyen métricas en tiempo real y proporcionan la información más importante acerca del trafico de sus iniciativas de datos abiertos y de sus conjuntos de datos.
++ **Analizar**: Usted necesita saber cómo sus datos estan siendo vistos y usados para obtener el máximo provecho de su proyecto de datos abiertos. Los reportes de Junar le indican cuales son las vistas de datos, visualizaciones y conjuntos de datos que son más populares e incluso presentan los datos que se consumen a través de la API de Junar. Los informes incluyen métricas en tiempo real y proporcionan la información más importante acerca del trafico de sus iniciativas de datos abiertos y de sus conjuntos de datos.
 
-Si aún no está seguro por dónde comenzar con datos abiertos, por favor complete el formulario para solicitar nuestro e-book en http://junar.com/e-book/ 
+Si aún no está seguro por dónde comenzar con datos abiertos, por favor complete el formulario para solicitar nuestro e-book en http://junar.com/e-book/
 
 Si desea solicitar una demostración, por favor complete nuestro formulario en http://junar.com/solicitar-demo/
 
@@ -68,7 +68,7 @@ Actualmente nuestra plataforma soporta los siguientes tipos de formatos para ser
 -----------------------------
 
 Una vista de datos o Vista es un recurso generado a partir de un Conjunto de Datos, el cual puede estar compuesto por  una celda, una combinación de filas y columnas, o incluso de tablas enteras. Las Vistas son actualizadas cada vez que se realizan modificaciones al  Conjunto de Datos de origen.
- 
+
 Las Vistas  funcionan de manera independiente del Conjunto de Datos, por lo que puede invocarse a través de la API, descargarse en distintos formatos, generar visualizaciones a partir de ella, incrustarse en otros sitios, compartirse a través de distintas redes sociales, etc.
 
 1.3 Qué es una Visualización
@@ -79,6 +79,6 @@ Una visualización es una representación gráfica de una selección de datos el
 1.4 Qué es una Colección
 ------------------------
 
-Una colección es un grupo de vistas y visualizaciones que es posible de ser publicado dentro de un portal de Datos Abiertos además de ser compartido de manera directa a través de redes sociales, descargable, usable vía API, etc. 
+Una colección es un grupo de vistas y visualizaciones que es posible de ser publicado dentro de un portal de Datos Abiertos además de ser compartido de manera directa a través de redes sociales, descargable, usable vía API, etc.
 
 Una colección generalmente aborda un tema específico elegido por el usuario y agrupa tantos recursos como el usuario quisiera compartir.
