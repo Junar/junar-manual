@@ -1,7 +1,7 @@
 10. Portal de datos abiertos
 ============================
 
-Ingrese a la URL `http://microsites.dev:8080/home <http://microsites.dev:8080/home/>`_ 
+Ingrese a la URL que haya definido para su portal de datos abiertos.
 
 
 .. image:: ../_static/images/img097.png
