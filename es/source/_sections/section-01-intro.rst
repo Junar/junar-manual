@@ -4,38 +4,39 @@
 Bienvenido
 ----------
 
-Junar ofrece la plataforma de datos abiertos basada en la nube mas fácil de usar, que permite a las empresas, gobiernos, ONG y el mundo académico liberar sus datos para impulsar nuevas oportunidades, la colaboración y la transparencia. Algunas de las principales empresas del mundo confían a Junar sus recursos más valiosos: sus datos y los usuarios finales que lo utilizan.
+Junar ofrece la plataforma de datos abiertos basada en la nube mas fácil de usar, que permite a las empresas, gobiernos, ONGs y al mundo académico liberar sus datos para impulsar la colaboración, nuevas oportunidades y la transparencia. Algunas de las principales empresas del mundo confían a Junar sus recursos más valiosos: los datos, compartiendo su uso a usuarios de todo el mundo.
 
-Con Junar puede abrir datos rápidamente, decidir qué se conserva para uso interno y qué se hace público, y optimizar el uso de los datos mediante la adición de metadatos que promueven la optimización de motores de búsqueda.
+Con Junar se puede abrir datos rápidamente, decidir qué se conserva para uso interno, qué se hace público y optimizar el uso de los datos mediante la adición de metadatos que promueven la optimización de motores de búsqueda.
 
-Desde el lanzamiento de la plataforma Junar, organizaciones innovadoras en todo el mundo han puesto en marcha sitios de datos abiertos para maximizar transparencia, unificar intereses, y mejorar eficiencia.
+Desde el lanzamiento de la plataforma Junar, gobiernos y empresas innovadoras en todo el mundo han puesto en marcha sitios de datos abiertos para maximizar transparencia, unificar intereses, y mostrar la información de una manera mas eficiente.
 
-Junar ofrece todo lo necesario para abrir sus datos con confianza. Está construido para escalar masivamente y apoya a las organizaciones basadas en datos locales y globales. Con Junar, usted puede elegir qué datos se recolectan, cómo quiere que se presenten, y cuando deberían ponerse a disposición del público. También puede determinar qué conjuntos de datos están disponibles al público y cuáles sólo son para su uso interno. Piense en ello como un sistema de gestión de datos del futuro para fomentar el intercambio de información.
+Junar ofrece todo lo necesario para abrir sus datos con confianza. Está construido para escalar masivamente y apoya a las organizaciones basadas en datos locales y globales. Con Junar, usted puede elegir qué datos se recolectan, cómo quiere que se presenten, y cuando deberían ponerse a disposición del público. También puede determinar qué conjuntos de datos están disponibles al público y cuáles sólo son para su uso interno.
 
 Sin importar si usted quiere integrar sus datos a su sitio web o que nosotros se los alojemos, Junar proporciona un espacio de trabajo simple que le permite colaborar con sus colegas y gestionar todo el proyecto de datos abiertos.
 
 La plataforma de datos abiertos Junar es el servicio que usted necesita para:
 
-+ **Recolectar**: Usted tiene probablemente los datos almacenados en un montón de lugares y en muchos formatos diferentes. La plataforma de datos abiertos Junar actúa como un puente para ayudar a recopilar y organizar todos los datos que desee abrir en un solo lugar.
++ **Recolectar**: La plataforma de datos abiertos Junar actúa como un puente para ayudar a recopilar y organizar todos los datos que desee abrir en un solo lugar.
 
 + **Mejorar**: La plataforma de datos abiertos Junar le ofrece la posibilidad de transformar conjuntos de datos en productivos recursos informativos a los que las personas podrán acceder, compartir y reutilizar a través de gráficos, tablas y mapas.
 
 + **Publicar**: Publicar datos en formatos convincentes es esencial para crear la mayor valoración. Hemos creado un flujo de trabajo para ayudarle a gestionar la forma en la cual usted publica sus datos – teniendo en cuenta que tienen procesos internos específicos y ciclos de aprobación.
 
-+ **Compartir**: Los medios sociales continuan cambiando cómo las organizaciones se comunican con el mundo. La plataforma de datos abiertos Junar ofrece un diseño de conjunto de datos intuitivo con funciones sociales que hacen que la navegación y la gestión de datos sea simple y atractiva. Usted puede compartir datos a través de redes sociales como Twitter, Facebook, y la Comunidad Junar.
++ **Compartir**: Los medios sociales continúan cambiando cómo las organizaciones se comunican con el mundo. La plataforma de datos abiertos Junar ofrece un diseño de conjunto de datos intuitivo con funciones que hacen que la navegación y la gestión de datos sea simple y atractiva. Usted puede compartir datos a través de redes sociales como Twitter, Facebook, y la Comunidad Junar.
 
-+ **Analizar**: Usted necesita saber cómo sus datos estan siendo vistos y usados para obtener el máximo provecho de su proyecto de datos abiertos. Los reportes de Junar le indican cuales son las vistas de datos, visualizaciones y conjuntos de datos que son más populares e incluso presentan los datos que se consumen a través de la API de Junar. Los informes incluyen métricas en tiempo real y proporcionan la información más importante acerca del trafico de sus iniciativas de datos abiertos y de sus conjuntos de datos.
++ **Analizar**: Los reportes de Junar le indican cuales son las vistas de datos, visualizaciones y conjuntos de datos que son más populares e incluso presentan los datos que se consumen a través de la API de Junar. Los informes incluyen métricas en tiempo real y proporcionan la información más importante acerca del trafico de sus iniciativas de datos abiertos y de sus conjuntos de datos.
 
 Si aún no está seguro por dónde comenzar con datos abiertos o desea solicitar una demostración, escríbanos a contact@junar.com
 
-En el siguiente documento se detallan las funcionalidades que soporta la implementación de la Plataforma Junar de Datos Abiertos. Las funcionalidades de la plataforma se categorizan bajo los siguientes temas:
+En el siguiente documento se detallan las funcionalidades que soporta la implementación de la Plataforma Junar de Datos Abiertos. Las funciones de la plataforma se categorizan bajo los siguientes temas:
 
 + Accesibilidad y Tipo de Usuarios.
-+ Creación, Edición, Publicación y Eliminación de Conjuntos de Datos.
-+ Creación, Edición, Publicación y Eliminación de Vistas.
-+ Creación, Edición, Publicación y Eliminación de Visualizaciones.
-+ Creación, Edición, Publicación y Eliminación de Colecciones.
-+ Creación, Edición, Publicación y Eliminación de Historias de Datos.
++ Crear, Editar, Publicar y Eliminar Conjuntos de Datos.
++ Crear, Editar, Publicar y Eliminar Vistas.
++ Crear, Editar, Publicar y Eliminar Visualizaciones.
++ Crear, Editar, Publicar y Eliminar Colecciones.
++ Crear, Editar, Publicar y Eliminar Historias de Datos.
++ Crear, Editar, Publicar y Eliminar APIs.
 + Creación y Configuración de una Cuenta.
 
 1.1 Qué es un Conjunto de Datos
@@ -67,3 +68,8 @@ Una colección generalmente aborda un tema específico elegido por el usuario y 
 --------------------------------
 
 Una historia con datos es un relato basado en recursos sobre un hecho o tema particular que tiene el objetivo de comunicar de maanera clara los datos a públicos no especializados. Está formada por capítulos que contienen vistas, visualizaciones y recursos complementarios (textos, imágenes, videos).
+
+1.6 Qué es una API
+--------------------------------
+
+Podemos entender la API como un código que indica a distintas aplicaciones cómo pueden mantener una correspondencia entre sí. Sirve para establecer una comunicación con una base de datos, un sistema operativo o un protocolo de comunicaciones lo que permite agregar diversas funciones a sitios web y aplicaciones. La plataforma Junar soporta tanto los protocolos REST como SOAP.

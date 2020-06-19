@@ -155,7 +155,8 @@ Para Editar un Conjunto de Datos, hay dos opciones:
 
   .. image:: ../_static/images/img016.png
     :align: center
-  + Crear Vista: Al hacer click sobre este botón puede crear una nueva Vista, tomando como referencia el Conjunto de datos seleccionado.
+
+  + Crear Vistas: Al hacer click sobre este botón puede crear una nueva Vista, tomando como referencia el Conjunto de datos seleccionado.
   + Editar: Al hacer click sobre este botón puede realizar cambios a la información del Conjunto de Datos.
   + Borrar: Al hacer click sobre este botón puede borrar los cambios recientes del Conjunto de datos o todos los cambios el Conjunto de datos.
   + Fuente/Descargar Original: Al hacer click sobre este botón accede a la página del recurso o descarga el archivo adjunto del Conjunto de Datos.

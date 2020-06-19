@@ -1,8 +1,7 @@
 ﻿
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,43 +11,47 @@
   
 
   
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="6. Creación de una Visualización" href="section-06-visualizaciones.html" />
     <link rel="prev" title="4. Creación de un Conjunto de Datos" href="section-04-conj-datos.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
-            <a href="../index.html" class="icon icon-home"> Manual de Usuario
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Manual de Usuario
           
 
           
@@ -66,7 +69,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -75,6 +78,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -102,6 +106,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -140,7 +145,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>5. Creación de una Vista</li>
     
@@ -148,7 +153,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/_sections/section-05-vistas.rst.txt" rel="nofollow"> Ver código fuente</a>
+            <a href="../_sources/_sections/section-05-vistas.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,23 +186,23 @@
 <p>Una vez seleccionados los datos tiene la opción de habilitar  el Modo Avanzado, para ello haga click en el botón <strong>“Habilitar Modo Avanzado”</strong>:</p>
 <img alt="../_images/img029.png" class="align-center" src="../_images/img029.png" />
 <ul class="simple">
-<li>Fijar Cabeceras: Haga click en Selecciona Cabeceras de la tabla, elija la fila que quiera fijar como cabecera y luego haga click en <strong>Listo abajo de las opciones avanzadas</strong>.</li>
-<li>Agregar un filtro: Seleccione un valor para la búsqueda ó ingrese los  parámetros necesarios, luego haga click en <strong>Listo</strong>.</li>
-<li>Agregar Aliases: Esta funcionalidad es de interés exclusivamente para los desarrolladores. Su objetivo es permitir a los usuarios dar aliases a las columnas de una Vista, con el beneficio de que esto les permita identificarlas más fácilmente a la hora de procesarlas a través de nuestra API .Seleccione la opción Alias, luego sobre cada columna aparecen cajas de texto, ingrese el nombre de Alias deseado y haga click en <strong>Listo</strong>.</li>
+<li><p>Fijar Cabeceras: Haga click en Selecciona Cabeceras de la tabla, elija la fila que quiera fijar como cabecera y luego haga click en <strong>Listo abajo de las opciones avanzadas</strong>.</p></li>
+<li><p>Agregar un filtro: Seleccione un valor para la búsqueda ó ingrese los  parámetros necesarios, luego haga click en <strong>Listo</strong>.</p></li>
+<li><p>Agregar Aliases: Esta funcionalidad es de interés exclusivamente para los desarrolladores. Su objetivo es permitir a los usuarios dar aliases a las columnas de una Vista, con el beneficio de que esto les permita identificarlas más fácilmente a la hora de procesarlas a través de nuestra API .Seleccione la opción Alias, luego sobre cada columna aparecen cajas de texto, ingrese el nombre de Alias deseado y haga click en <strong>Listo</strong>.</p></li>
 </ul>
 <p>Hay dos importantes opciones para los filtros:</p>
 <img alt="../_images/img030.png" class="align-center" src="../_images/img030.png" />
 <p>1.- Valores:</p>
 <ul class="simple">
-<li>Es igual a: Ingrese un valor que sea exactamente lo que aparece en la columna seleccionada.</li>
-<li>Es mayor que &amp; Es menor que: Ingrese valores numéricos, permite retornar valores más altos o más bajos que su consulta.</li>
-<li>No es igual a: Ingrese un valor que desea que se excluya de la consulta.</li>
-<li>Contiene: Ingrese un valor que sea similar a lo que aparece en la columna.</li>
+<li><p>Es igual a: Ingrese un valor que sea exactamente lo que aparece en la columna seleccionada.</p></li>
+<li><p>Es mayor que &amp; Es menor que: Ingrese valores numéricos, permite retornar valores más altos o más bajos que su consulta.</p></li>
+<li><p>No es igual a: Ingrese un valor que desea que se excluya de la consulta.</p></li>
+<li><p>Contiene: Ingrese un valor que sea similar a lo que aparece en la columna.</p></li>
 </ul>
 <p>2.- Seleccionar:</p>
 <ul class="simple">
-<li>Parámetro: Permite tener un cuadro de texto para que ingrese consultas.</li>
-<li>Valor fijo: Es un parámetro específico para la consulta.</li>
+<li><p>Parámetro: Permite tener un cuadro de texto para que ingrese consultas.</p></li>
+<li><p>Valor fijo: Es un parámetro específico para la consulta.</p></li>
 </ul>
 <p>Seleccionado los datos y personalizado con el Modo Avanzado, presione el botón Continuar.</p>
 <p>El sistema visualiza la siguiente pantalla, complete los campos requeridos (*), pudiendo omitirse los siguientes: Fuentes, Etiquetas y Notas de la Vista. Luego de completar los campos requeridos, presione el botón Continuar y luego el botón Guardar. La Vista se crea por defecto en estado Borrador.</p>
@@ -211,29 +216,29 @@
 <img alt="../_images/img033.png" src="../_images/img033.png" />
 <p>Para Editar una Vista, hay dos opciones:</p>
 <ul>
-<li><p class="first">Clic sobre la Vista: El sistema visualiza la información de la Vista
+<li><p>Clic sobre la Vista: El sistema visualiza la información de la Vista
 seleccionada, presione <img alt="icono-editar" src="../_images/icono-editar.png" /> e introduzca los cambios sobre la información
 de la Vista.</p>
 <img alt="../_images/img034.png" src="../_images/img034.png" />
 </li>
-<li><p class="first">Acercar el mouse sobre la Vista: Se visualizan las siguientes
+<li><p>Acercar el mouse sobre la Vista: Se visualizan las siguientes
 opciones:</p>
 <img alt="../_images/img035.png" class="align-center" src="../_images/img035.png" />
 <ul class="simple">
-<li>Crear Visualización: Al hacer click sobre este botón puede crear una nueva Visualización tomando como referencia la Vista seleccionada.</li>
-<li>Editar: Al hacer click sobre este botón puede realizar cambios a la información de la Vista</li>
-<li>Borrar: Al hacer click sobre este botón puede borrar los cambios recientes de la Vista o todos los cambios de la Vista.</li>
-<li>Ver conjunto de datos: Al hacer click sobre este botón puede acceder al Conjunto de Datos asociado.</li>
+<li><p>Crear Visualización: Al hacer click sobre este botón puede crear una nueva Visualización tomando como referencia la Vista seleccionada.</p></li>
+<li><p>Editar: Al hacer click sobre este botón puede realizar cambios a la información de la Vista</p></li>
+<li><p>Borrar: Al hacer click sobre este botón puede borrar los cambios recientes de la Vista o todos los cambios de la Vista.</p></li>
+<li><p>Ver conjunto de datos: Al hacer click sobre este botón puede acceder al Conjunto de Datos asociado.</p></li>
 </ul>
 </li>
 </ul>
 <p>Cuando la Vista se encuentra en <strong>Revisión</strong>:</p>
 <ul>
-<li><p class="first">Los usuarios con el rol de Editor pueden enviar la Vista a <strong>Revisión</strong>, la Vista en este estado no puede ser editada, su opción de Editar solo es posible cuando el recurso es <strong>Aprobado</strong> o <strong>Rechazado</strong>.</p>
+<li><p>Los usuarios con el rol de Editor pueden enviar la Vista a <strong>Revisión</strong>, la Vista en este estado no puede ser editada, su opción de Editar solo es posible cuando el recurso es <strong>Aprobado</strong> o <strong>Rechazado</strong>.</p>
 <img alt="../_images/img036.png" src="../_images/img036.png" />
 <img alt="../_images/img037.png" src="../_images/img037.png" />
 </li>
-<li><p class="first">Los usuarios con rol de Publicador o Administrador podrán <strong>Aceptar</strong> o <strong>Rechazar</strong> el recurso.</p>
+<li><p>Los usuarios con rol de Publicador o Administrador podrán <strong>Aceptar</strong> o <strong>Rechazar</strong> el recurso.</p>
 <img alt="../_images/img038.png" src="../_images/img038.png" />
 </li>
 </ul>
@@ -249,9 +254,8 @@ opciones:</p>
 <h2>5.3 Eliminación de una Vista<a class="headerlink" href="#eliminacion-de-una-vista" title="Permalink to this headline">¶</a></h2>
 <p>Para eliminar una Vista, hay dos opciones:</p>
 <ul>
-<li><p class="first">Dentro de la Vista, clic sobre <img alt="icono-eliminar" src="../_images/icono-eliminar.png" /></p>
-</li>
-<li><p class="first">En el listado de Vistas, seleccione una Vista y presione el botón <img alt="btn-borrar" src="../_images/btn-borrar.png" /></p>
+<li><p>Dentro de la Vista, clic sobre <img alt="icono-eliminar" src="../_images/icono-eliminar.png" /></p></li>
+<li><p>En el listado de Vistas, seleccione una Vista y presione el botón <img alt="btn-borrar" src="../_images/btn-borrar.png" /></p>
 <img alt="../_images/img041.png" src="../_images/img041.png" />
 <img alt="../_images/img042.png" class="align-center" src="../_images/img042.png" />
 </li>
@@ -271,10 +275,10 @@ opciones:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="section-06-visualizaciones.html" class="btn btn-neutral float-right" title="6. Creación de una Visualización" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="section-06-visualizaciones.html" class="btn btn-neutral float-right" title="6. Creación de una Visualización" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="section-04-conj-datos.html" class="btn btn-neutral" title="4. Creación de un Conjunto de Datos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+        <a href="section-04-conj-datos.html" class="btn btn-neutral float-left" title="4. Creación de un Conjunto de Datos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -283,11 +287,19 @@ opciones:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Junar.
+        
+        &copy; Copyright 2019, Junar
 
     </p>
   </div>
-  Construido con <a href="http://sphinx-doc.org/">Sphinx</a> usando una <a href="https://github.com/rtfd/sphinx_rtd_theme">plantilla</a> de <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -299,33 +311,16 @@ opciones:</p>
   </div>
   
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0.0',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
+  
  
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15500152-10"></script>
@@ -339,5 +334,4 @@ opciones:</p>
 
 
 </body>
-
 </html>
