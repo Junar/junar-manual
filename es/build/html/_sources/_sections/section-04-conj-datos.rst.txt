@@ -7,36 +7,32 @@ Posicionarse sobre el botón → Conjunto de datos
 
  Seleccionar una opcion para la recoleccion de datos como se muestra en la imagen a continuacion →
 
-## (MODIFICAR IMAGEN x 04-inicio-01)
-.. image:: ../_static/images/img004.png
+
+.. image:: ../_static/images/04-inicio-01.png
 Otra opción para poder acceder es:
 
 Ingresar a la sección → Conjuntos de Datos
 
 
-(MODIFICAR NUMERO x 04-conjuntodatos-02)
-.. image:: ../_static/images/img005.png
+.. image:: ../_static/images/04-conjuntodatos-02.png
   :align: center
 Presione el botón que se encuentra en la parte superior a la derecha → Nuevos Conjuntos de Datos
 
 Seleccionar una opción de recolección de datos →
 
-##(MODIFICAR NUMERO 04-conjuntodatos-03)
-.. image:: ../_static/images/img006.png
+.. image:: ../_static/images/04-conjuntodatos-03.png
   :align: center
 
 4.1 Desde un Archivo
 --------------------
 La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su computador como Conjunto de Datos, cargarlos  a la plataforma y convertirlos en  recursos de datos abiertos.
 
-## (AGREGAR IMAGEN 04-desdearchivo-04)
-.. image:: ../_static/images/img007.png
+.. image:: ../_static/images/04-desdearchivo-04.png
   :align: center
 
  Seleccione el archivo desde su computador y arrastre hacia la pantalla. Tenga en consideracion que el tamaño maximo permitido es 300 MB y que los archivos deben estar codificados en UTF-8. 
 
-## (AGREGAR IMAGEN 04-desdearchivo2-05)
- .. image:: ../_static/images/img007.png
+ .. image:: ../_static/images/04-desdearchivo2-05.png
   :align: center
 
  A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. 
@@ -45,8 +41,7 @@ La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su c
  
  Seguido, se puede seleccionar si su uso sera público o privado. 
 
-## (AGREGAR IMAGEN 04-desdearchivo3-06)
- .. image:: ../_static/images/img007.png
+ .. image:: ../_static/images/04-desdearchivo3-06.png
   :align: center
 
  En el margen inferior, se puede agregar información contextual la cual es opcional.
@@ -60,8 +55,7 @@ La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su c
   + **Anotaciones o aclaraciones adicionales**: Información que pueda ser relevante para el usuario final.
 
 
-## (AGREGAR IMAGEN 04-desdearchivo4-07)
- .. image:: ../_static/images/img007.png
+ .. image:: ../_static/images/04-desdearchivo4-07.png
   :align: center
 
  En el sector derecho se puede: 
@@ -79,23 +73,19 @@ La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su c
  Luego de completar los campos deseados, presione el botón Continuar.
 
 
- ## (MODIFICAR IMAGEN)
-
 4.2 Desde una URL o sitio web
 -----------------------------
 
 También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archivos hospedados en la red como Conjunto de Datos, cargarlos a la plataforma y convertirlos en recursos de datos abiertos. 
 
-## (AGREGAR IMAGEN 04-desdeweb-08)
-.. image:: ../_static/images/img008.png
+.. image:: ../_static/images/04-desdeweb-08.png
   :align: center
 
 
 + Sitio Web: Ingrese una URL con un enlace válido a la página web desde donde se quiera recolectar. Luego de completar los campos requeridos, presione el botón Continuar.
 + Archivos hospedados en la red: Se sigue el mismo procedimiento anterior, sin embargo lo que cambia es la fuente de la información. Para esta opción se requiere copiar una dirección de enlace de algún documento en alguno de los formatos soportados por Junar. Para ver la lista completa, ver la sección: ¿Que es un Conjunto de Datos?
 
-## (AGREGAR IMAGEN 04-desdeweb1-09)
-.. image:: ../_static/images/img009.png
+.. image:: ../_static/images/04-desdeweb-09b.png
   :align: center
 
   A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) y opcionales que deben ser completados como es explicado en el apartado 4.1.
@@ -105,14 +95,12 @@ También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archiv
 
 Nuestra Plataforma permite recolectar datos no solamente desde archivos locales, Sitio Web o Archivos Hospedados en la red, sino también a través de Servicios Web SOAP o REST, cargarlos  a nuestra plataforma y convertirlo en un recurso de datos abiertos. 
 
-##(MODIFICAR POR 04-servicioweb-10)
-.. image:: ../_static/images/img010.png
+.. image:: ../_static/images/04-servicioweb-10.png
   :align: center
 
 + Servicios Web SOAP: Determine el tipo de servicio web SOAP/XML. 
 
-##(MODIFICAR POR 04-serviciowebSOAP-12)
-.. image:: ../_static/images/img010.png
+.. image:: ../_static/images/04-serviciowebSOAP-12.png
   :align: center
 
   Ingrese la URL desde donde se está obteniendo el Servicio Web. También se necesitan los siguientes parámetros:
@@ -121,26 +109,22 @@ Nuestra Plataforma permite recolectar datos no solamente desde archivos locales,
   + Espacio de Nombres: Provee un método para evitar conflictos de nombre entre recursos.
   + Configuración avanzada: Aparecen distintas opciones.
 
-##(MODIFICAR POR 04-serviciowebSOAP-13)
-.. image:: ../_static/images/img010.png
+.. image:: ../_static/images/04-serviciowebsoap-13.png
   :align: center
 
   + Ruta a los datos: Permite acceder a la tabla de datos buscada agregando un atributo XML
 
-##(MODIFICAR POR 04-serviciowebSOAP-14)
-.. image:: ../_static/images/img010.png
+.. image:: ../_static/images/04-serviciowebsoap-14.png
   :align: center
 
   + Indicar nombre y contraseña en caso de que sea necesario para acceder al servicio web
 
-##(MODIFICAR POR 04-serviciowebSOAP-15)
-.. image:: ../_static/images/img015.png
+.. image:: ../_static/images/04-serviciowebsoap-15.png
   :align: center
 
   + Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
 
-##(MODIFICAR POR 04-serviciowebSOAP-16)
-.. image:: ../_static/images/img015.png
+.. image:: ../_static/images/04-serviciowebsoap-16.png
   :align: center
 
   + Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
@@ -153,63 +137,52 @@ Nuestra Plataforma permite recolectar datos no solamente desde archivos locales,
 
 De manera similar a los servicios web SOAP, podemos obtener datos y recolectarlos como Conjunto de Datos desde objetos JSON. 
 
-##(MODIFICAR POR 04-serviciowebREST-11)
-.. image:: ../_static/images/img015.png
+.. image:: ../_static/images/04-serviciowebREST-11.png
   :align: center
 
 Ingrese la URL desde donde se está obteniendo el Servicio Web. 
 
 Hay casos donde también es necesario el siguiente parámetro:
 
-  ##modificar por 04-serviciowebREST-17
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-17.png
 
   + Ruta a los datos: Define la ruta (xpath o json-path) a los datos de la tabla.
 
 + Configuración avanzada: Aparecen distintas opciones.
 
- ##modificar por 04-serviciowebREST-18
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-18.png
 
   + Evaluación de la ruta a los datos: Deberás ingresar los nodos a los que quiere acceder. Los mismos deberán estar separados por | (barra vertical) y si quiere acceder a los hijos de un nodo, se deberá usar . (punto). 
 
-   ##modificar por 04-serviciowebREST-19
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-19.png
 
   + En el caso de que tengan títulos, se pueden identificar como se muestra en la imagen. En el caso de que esten en una ruta diferente a la de los datos, se deberá configurar la ruta a las cabeceras (path-to-headers).
 
-  ##modificar por 04-serviciowebREST-20
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-20.png
 
   + GET, POST, PUT, PATCH son las 4 peticiones que son soportadas por el servicio de Junar.
 
-    ##modificar por 04-serviciowebREST-21
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-21.png
 
   + En el caso de que sea necesario autenticación para conectarse al servicio web. 
 
-   ##modificar por 04-serviciowebREST-22
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-22.png
 
   + Indicar en el caso de que sea preciso una firma para acceder al servicio web
 
-   ##modificar por 04-serviciowebREST-23
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-23.png
 
   + Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
 
-   ##modificar por 04-serviciowebREST-24
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-24.png
 
   + Estructura de autenticación: En el caso de que sea necesario un token.
 
-   ##modificar por 04-serviciowebREST-25
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-25.png
 
   + Esta opción permite agregar cabeceras
 
-     ##modificar por 04-serviciowebREST-26
-  .. image:: ../_static/images/img017.png
+  .. image:: ../_static/images/04-serviciowebrest-26.png
 
   + Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
 
@@ -219,8 +192,7 @@ Una vez que se han ingresado los parámetros de manera exitosa, el Servicio Web 
 
 El sistema visualiza la siguiente pantalla, complete los campos requeridos (*), pudiendo omitirse los siguientes: Categoría, Uso, Fuentes, Etiquetas y Notas del Conjunto de Datos así como el cuadro de información adicional. Luego de completar los campos requeridos, presione el botón Guardar. El Conjunto de Datos se crea por defecto en estatus de Borrador.
 
-##modificar por 04-serviciowebREST-26
-.. image:: ../_static/images/img012.png
+.. image:: ../_static/images/04-serviciowebrest-27.png 
 
 
 4.4 Desde archivos alojados en Dropbox
