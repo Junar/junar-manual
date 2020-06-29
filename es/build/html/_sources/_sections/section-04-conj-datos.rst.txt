@@ -7,8 +7,8 @@ Posicionarse sobre el botón → Conjunto de datos
 
  Seleccionar una opcion para la recoleccion de datos como se muestra en la imagen a continuacion →
 
-
 .. image:: ../_static/images/04-inicio-01.png
+
 Otra opción para poder acceder es:
 
 Ingresar a la sección → Conjuntos de Datos
@@ -16,6 +16,7 @@ Ingresar a la sección → Conjuntos de Datos
 
 .. image:: ../_static/images/04-conjuntodatos-02.png
   :align: center
+
 Presione el botón que se encuentra en la parte superior a la derecha → Nuevos Conjuntos de Datos
 
 Seleccionar una opción de recolección de datos →
@@ -27,13 +28,11 @@ Seleccionar una opción de recolección de datos →
 --------------------
 La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su computador como Conjunto de Datos, cargarlos  a la plataforma y convertirlos en  recursos de datos abiertos.
 
-.. image:: ../_static/images/04-desdearchivo-04.png
-  :align: center
+.. figure:: ../_static/images/04-desdearchivo-04.png
 
  Seleccione el archivo desde su computador y arrastre hacia la pantalla. Tenga en consideracion que el tamaño maximo permitido es 300 MB y que los archivos deben estar codificados en UTF-8. 
 
- .. image:: ../_static/images/04-desdearchivo2-05.png
-  :align: center
+ .. figure:: ../_static/images/04-desdearchivo2-05.png
 
  A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. 
 
@@ -81,11 +80,10 @@ También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archiv
 .. image:: ../_static/images/04-desdeweb-08.png
   :align: center
 
-
 + Sitio Web: Ingrese una URL con un enlace válido a la página web desde donde se quiera recolectar. Luego de completar los campos requeridos, presione el botón Continuar.
 + Archivos hospedados en la red: Se sigue el mismo procedimiento anterior, sin embargo lo que cambia es la fuente de la información. Para esta opción se requiere copiar una dirección de enlace de algún documento en alguno de los formatos soportados por Junar. Para ver la lista completa, ver la sección: ¿Que es un Conjunto de Datos?
 
-.. image:: ../_static/images/04-desdeweb-09b.png
+.. figure:: ../_static/images/04-desdeweb-09.png
   :align: center
 
   A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) y opcionales que deben ser completados como es explicado en el apartado 4.1.
@@ -95,15 +93,15 @@ También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archiv
 
 Nuestra Plataforma permite recolectar datos no solamente desde archivos locales, Sitio Web o Archivos Hospedados en la red, sino también a través de Servicios Web SOAP o REST, cargarlos  a nuestra plataforma y convertirlo en un recurso de datos abiertos. 
 
-.. image:: ../_static/images/04-servicioweb-10.png
+.. figure:: ../_static/images/04-servicioweb-10.png
   :align: center
 
 + Servicios Web SOAP: Determine el tipo de servicio web SOAP/XML. 
 
-.. image:: ../_static/images/04-serviciowebSOAP-12.png
+.. figure:: ../_static/images/04-serviciowebSOAP-12.png
   :align: center
 
-  Ingrese la URL desde donde se está obteniendo el Servicio Web. También se necesitan los siguientes parámetros:
+Ingrese la URL desde donde se está obteniendo el Servicio Web. También se necesitan los siguientes parámetros:
 
   + Método: Nombre del método asociado al conjunto de datos que queremos obtener.
   + Espacio de Nombres: Provee un método para evitar conflictos de nombre entre recursos.
@@ -112,22 +110,22 @@ Nuestra Plataforma permite recolectar datos no solamente desde archivos locales,
 .. image:: ../_static/images/04-serviciowebsoap-13.png
   :align: center
 
-  + Ruta a los datos: Permite acceder a la tabla de datos buscada agregando un atributo XML
++ Ruta a los datos: Permite acceder a la tabla de datos buscada agregando un atributo XML
 
-.. image:: ../_static/images/04-serviciowebsoap-14.png
+.. figure:: ../_static/images/04-serviciowebsoap-14.png
   :align: center
 
-  + Indicar nombre y contraseña en caso de que sea necesario para acceder al servicio web
++ Indicar nombre y contraseña en caso de que sea necesario para acceder al servicio web
 
-.. image:: ../_static/images/04-serviciowebsoap-15.png
+.. figure:: ../_static/images/04-serviciowebsoap-15.png
   :align: center
 
-  + Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
++ Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
 
-.. image:: ../_static/images/04-serviciowebsoap-16.png
+.. figure:: ../_static/images/04-serviciowebsoap-16.png
   :align: center
 
-  + Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
++ Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
 
   Estos parámetros deben ingresarse respetando mayúsculas y minúsculas.
 
