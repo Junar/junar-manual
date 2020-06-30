@@ -5,7 +5,7 @@ Para crear un conjunto de datos lo primero que se debe hacer es:
 
 Posicionarse sobre el botón → Conjunto de datos
 
- Seleccionar una opcion para la recoleccion de datos como se muestra en la imagen a continuacion →
+Seleccionar una opcion para la recolección de datos como se muestra en la imagen a continuación:
 
 .. image:: ../_static/images/04-inicio-01.png
 
@@ -28,24 +28,22 @@ Seleccionar una opción de recolección de datos →
 --------------------
 La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su computador como Conjunto de Datos, cargarlos  a la plataforma y convertirlos en  recursos de datos abiertos.
 
+Seleccione el archivo desde su computador y arrastre hacia la pantalla. Tenga en consideracion que el tamaño maximo permitido es 300 MB y que los archivos deben estar codificados en UTF-8. 
+
+
 .. figure:: ../_static/images/04-desdearchivo-04.png
-
- Seleccione el archivo desde su computador y arrastre hacia la pantalla. Tenga en consideracion que el tamaño maximo permitido es 300 MB y que los archivos deben estar codificados en UTF-8. 
-
- .. figure:: ../_static/images/04-desdearchivo2-05.png
-
- A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. 
-
- Se podrá seleccionar una categoría que sirve para clasificar al conjunto de datos y que sea mas fácil de filtrar a la hora de su búsqueda.
- 
- Seguido, se puede seleccionar si su uso sera público o privado. 
-
- .. image:: ../_static/images/04-desdearchivo3-06.png
   :align: center
 
- En el margen inferior, se puede agregar información contextual la cual es opcional.
+A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) que deben ser completados, pudiendo omitirse los otros. Se podrá seleccionar una categoría que sirva para clasificar al conjunto de datos para que sea mas fácil de filtrar a la hora de su búsqueda.
 
-  Las opciones disponibles incluyen:   
+Posteriormente, se puede seleccionar si su uso será público o privado. 
+
+.. figure:: ../_static/images/04-desdearchivo2-05.png
+  :align: center
+
+En el margen inferior, se puede agregar información contextual la cual es opcional.
+
+Las opciones disponibles incluyen:   
 
   + **Fuente de los datos**: Origen donde se creó el conjunto de datos.
 
@@ -53,13 +51,12 @@ La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su c
 
   + **Anotaciones o aclaraciones adicionales**: Información que pueda ser relevante para el usuario final.
 
-
- .. image:: ../_static/images/04-desdearchivo4-07.png
+.. image:: ../_static/images/04-desdearchivo3-06.png
   :align: center
 
- En el sector derecho se puede: 
+En el sector derecho se puede seleccionar: 
 
-  + **Seleccionar bajo que licencia se publicara el conjunto de datos**
+  + **Bajo que licencia se publicara el conjunto de datos**
 
   + **Frecuencia de actualización**
 
@@ -69,24 +66,25 @@ La Plataforma brinda la posibilidad de utilizar archivos recolectados desde su c
 
   + **Documentación técnica**
 
- Luego de completar los campos deseados, presione el botón Continuar.
+Luego de completar los campos deseados, presione el botón Continuar.
 
+.. image:: ../_static/images/04-desdearchivo4-07.png
+  :align: center
 
 4.2 Desde una URL o sitio web
 -----------------------------
 
 También nuestra Plataforma permite recolectar datos desde un Sitio Web o Archivos hospedados en la red como Conjunto de Datos, cargarlos a la plataforma y convertirlos en recursos de datos abiertos. 
 
-.. image:: ../_static/images/04-desdeweb-08.png
-  :align: center
-
 + Sitio Web: Ingrese una URL con un enlace válido a la página web desde donde se quiera recolectar. Luego de completar los campos requeridos, presione el botón Continuar.
 + Archivos hospedados en la red: Se sigue el mismo procedimiento anterior, sin embargo lo que cambia es la fuente de la información. Para esta opción se requiere copiar una dirección de enlace de algún documento en alguno de los formatos soportados por Junar. Para ver la lista completa, ver la sección: ¿Que es un Conjunto de Datos?
 
-.. figure:: ../_static/images/04-desdeweb-09.png
+.. image:: ../_static/images/04-desdeweb-08.png
   :align: center
 
-  A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) y opcionales que deben ser completados como es explicado en el apartado 4.1.
+A continuación se hará la carga de datos y metadatos la cual consta de campos requeridos (*) y opcionales que deben ser completados como es explicado en el apartado 4.1.
+
+.. figure:: ../_static/images/04-desdeweb-09.png
 
 4.3 Desde un Servicio Web
 -------------------------
@@ -96,93 +94,93 @@ Nuestra Plataforma permite recolectar datos no solamente desde archivos locales,
 .. figure:: ../_static/images/04-servicioweb-10.png
   :align: center
 
-+ Servicios Web SOAP: Determine el tipo de servicio web SOAP/XML. 
+Servicios Web SOAP
+------------------
 
-.. figure:: ../_static/images/04-serviciowebSOAP-12.png
-  :align: center
+Determine el tipo de servicio web SOAP/XML. 
 
-Ingrese la URL desde donde se está obteniendo el Servicio Web. También se necesitan los siguientes parámetros:
+Ingrese la URL desde donde se está obteniendo el Servicio Web. También se pueden seleccionar los siguientes parámetros:
 
   + Método: Nombre del método asociado al conjunto de datos que queremos obtener.
   + Espacio de Nombres: Provee un método para evitar conflictos de nombre entre recursos.
   + Configuración avanzada: Aparecen distintas opciones.
 
-.. image:: ../_static/images/04-serviciowebsoap-13.png
+.. figure:: ../_static/images/04-serviciowebSOAP-12.png
   :align: center
 
 + Ruta a los datos: Permite acceder a la tabla de datos buscada agregando un atributo XML
 
-.. figure:: ../_static/images/04-serviciowebsoap-14.png
+.. image:: ../_static/images/04-serviciowebsoap-13.png
   :align: center
 
 + Indicar nombre y contraseña en caso de que sea necesario para acceder al servicio web
 
-.. figure:: ../_static/images/04-serviciowebsoap-15.png
+.. figure:: ../_static/images/04-serviciowebsoap-14.png
   :align: center
 
 + Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
 
+.. figure:: ../_static/images/04-serviciowebsoap-15.png
+  :align: center
+
++ Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web. Estos parámetros deben ingresarse respetando mayúsculas y minúsculas. Esta información suele encontrarse en el mismo sitio desde donde se desea obtener la información, como también puede consultarle al administrador del sistema que esté albergando los servicios web.
+
 .. figure:: ../_static/images/04-serviciowebsoap-16.png
   :align: center
 
-+ Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
-
-  Estos parámetros deben ingresarse respetando mayúsculas y minúsculas.
-
-  Esta información suele encontrarse en el mismo sitio desde donde se desea obtener la información, como también puede consultarle al administrador del sistema que esté albergando los servicios web.
-
-+ Servicios Web REST: Determine el tipo de servicio web REST/JSON.
+Servicios Web REST
+-------------------
 
 De manera similar a los servicios web SOAP, podemos obtener datos y recolectarlos como Conjunto de Datos desde objetos JSON. 
+
+Determine el tipo de servicio web REST/JSON. A continuación, ingrese la URL desde donde se está obteniendo el Servicio Web. 
 
 .. image:: ../_static/images/04-serviciowebREST-11.png
   :align: center
 
-Ingrese la URL desde donde se está obteniendo el Servicio Web. 
-
 Hay casos donde también es necesario el siguiente parámetro:
 
-  .. image:: ../_static/images/04-serviciowebrest-17.png
++ Ruta a los datos: Define la ruta (xpath o json-path) para acceder a los datos de la tabla.
 
-  + Ruta a los datos: Define la ruta (xpath o json-path) a los datos de la tabla.
+.. image:: ../_static/images/04-serviciowebrest-17.png
 
-+ Configuración avanzada: Aparecen distintas opciones.
-
-  .. image:: ../_static/images/04-serviciowebrest-18.png
++ Configuración avanzada: Aparecen distintas opciones:
 
   + Evaluación de la ruta a los datos: Deberás ingresar los nodos a los que quiere acceder. Los mismos deberán estar separados por | (barra vertical) y si quiere acceder a los hijos de un nodo, se deberá usar . (punto). 
 
+  .. image:: ../_static/images/04-serviciowebrest-18.png
+
++ En el caso de que tengan títulos, se pueden identificar como se muestra en la imagen. En el caso de que esten en una ruta diferente a la de los datos, se deberá configurar la ruta a las cabeceras (path-to-headers).
+
   .. image:: ../_static/images/04-serviciowebrest-19.png
 
-  + En el caso de que tengan títulos, se pueden identificar como se muestra en la imagen. En el caso de que esten en una ruta diferente a la de los datos, se deberá configurar la ruta a las cabeceras (path-to-headers).
++ GET, POST, PUT, PATCH son las 4 peticiones que son soportadas por el servicio de Junar. 
 
   .. image:: ../_static/images/04-serviciowebrest-20.png
 
-  + GET, POST, PUT, PATCH son las 4 peticiones que son soportadas por el servicio de Junar.
++ En el caso de que sea necesario autenticación para conectarse al servicio web ingresar nombre de usuario y contraseña. 
 
   .. image:: ../_static/images/04-serviciowebrest-21.png
 
-  + En el caso de que sea necesario autenticación para conectarse al servicio web. 
-
++ En el caso de que sea necesario autenticación para conectarse al servicio web ingresar el nombre del argumento de la firma, el token de la firma y en el caso de que haga falta un algoritmo, se agrega en la última línea. 
+ 
   .. image:: ../_static/images/04-serviciowebrest-22.png
 
-  + Indicar en el caso de que sea preciso una firma para acceder al servicio web
++ Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
 
   .. image:: ../_static/images/04-serviciowebrest-23.png
 
-  + Agregar campos extendidos: Los campos extendidos se utilizan para extraer datos por fuera de la tabla de datos y cabeceras. Para cada campo debe ingresar nombre, descripción y ruta.
++ Estructura de autenticación: En el caso de que sea necesario un token.
 
   .. image:: ../_static/images/04-serviciowebrest-24.png
 
-  + Estructura de autenticación: En el caso de que sea necesario un token.
++ Esta opción permite agregar cabeceras
 
   .. image:: ../_static/images/04-serviciowebrest-25.png
 
-  + Esta opción permite agregar cabeceras
++ Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
 
   .. image:: ../_static/images/04-serviciowebrest-26.png
-
-  + Agregar otros parámetros: En el caso de que sean necesarios para acceder al sitio web.
 
   Estos parámetros deben ingresarse respetando mayúsculas y minúsculas.
 
