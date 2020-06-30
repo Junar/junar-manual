@@ -248,27 +248,25 @@ Luego, deberá completar los metadatos como en cualquier otro caso.
 -----------------------------------
 Una vez creado el Conjunto de Datos, se  visualiza el mismo en un listado, este listado cuenta con una paginación, es decir que se puede ir avanzando página por página dentro del listado o bien presionando la página correspondiente a la que desea acceder, de esta manera esa página es mostrada en el listado de Conjuntos de Datos correspondiente. Para esto se dirige a la sección → Conjuntos de Datos
 
-.. image:: ../_static/images/img013.png
+.. image:: ../_static/images/04-ediciondataset-28.png
 
 Para Editar un Conjunto de Datos, hay dos opciones:
 
-+ Clic sobre el Conjunto de Datos: El sistema visualiza la información del Conjunto de Datos seleccionado, presione el icono |icono-editar| e introduzca los cambios sobre la información del Conjunto de Datos.
++ Clic sobre el Conjunto de Datos: El sistema visualiza la información del Conjunto de Datos seleccionado, presione el icono |icono-punto| seleccione editar e introduzca los cambios sobre la información del Conjunto de Datos.
 
++ Para la segunda opción, acercar el mouse sobre el Conjunto de Datos como se muestra en la imagen a continuación.
 
-.. image:: ../_static/images/img014.png
-  :align: center
+.. image:: ../_static/images/04-ediciondataset-29.png
 
-.. image:: ../_static/images/img015.png
++ Se visualizan las siguientes opciones:
 
-+ Acercar el mouse sobre el Conjunto de Datos: Se visualizan las siguientes opciones:
-
-  .. image:: ../_static/images/img016.png
+  .. image:: ../_static/images/04-ediciondataset-30.png
     :align: center
 
-  + Crear Vistas: Al hacer click sobre este botón puede crear una nueva Vista, tomando como referencia el Conjunto de datos seleccionado.
+  + Crear Vistas: Al hacer click sobre este botón puede crear una nueva Vista, tomando como referencia el Conjunto de datos seleccionado. Existe la posibilidad de hacerlo de forma automática o usando el asistente.
   + Editar: Al hacer click sobre este botón puede realizar cambios a la información del Conjunto de Datos.
   + Borrar: Al hacer click sobre este botón puede borrar los cambios recientes del Conjunto de datos o todos los cambios el Conjunto de datos.
-  + Fuente/Descargar Original: Al hacer click sobre este botón accede a la página del recurso o descarga el archivo adjunto del Conjunto de Datos.
+  + Descargar: Al hacer click sobre este botón accede a la página del recurso o descarga el archivo adjunto del Conjunto de Datos.
 
 Cuando el Conjunto de Datos se encuentra En revisión:
 
@@ -284,7 +282,7 @@ Cuando el Conjunto de Datos se encuentra En revisión:
 ---------------------------------------
 Para publicar un Conjunto de Datos en el portal de datos abiertos, haga click sobre el botón Publicar.
 
-.. image:: ../_static/images/img019.png
+.. image:: ../_static/images/04-ediciondataset-31.png
 
 Para acceder al portal de datos abiertos y visualizar el Conjunto de Datos publicado |icono-publicado|, haga clic sobre |icono-ver-sitio|, localizado en el margen superior derecho de la visualización del Conjunto de Datos.
 
@@ -295,12 +293,15 @@ Para acceder al portal de datos abiertos y visualizar el Conjunto de Datos publi
 
 Para eliminar un Conjunto de Datos, hay dos opciones:
 
-+ Dentro del Conjunto de Datos, haga clic sobre |icono-eliminar|
++ Dentro del Conjunto de Datos, haga clic sobre |icono-punto| y seleccione Borrar
+
+ .. image:: ../_static/images/04-eliminardataset-34.png
+
 + En el listado de Conjuntos de Datos, seleccione un Conjunto de Datos y presione el botón |btn-borrar|
 
-  .. image:: ../_static/images/img021.png
+  .. image:: ../_static/images/04-ediciondataset-29.png
 
-  .. image:: ../_static/images/img022.png
+  .. image:: ../_static/images/04-ediciondataset-30.png
     :align: center
 
 El sistema permite eliminar la revisión actual o todas las revisiones del Conjunto de Datos. Esta última acción elimina el Conjunto de Datos y todos sus recursos asociados, como así también los elimina del portal de datos abiertos. Por Revisión se entiende los distintos cambios realizados sobre la información del Conjunto de Datos.
@@ -308,8 +309,8 @@ El sistema permite eliminar la revisión actual o todas las revisiones del Conju
 .. image:: ../_static/images/img023.png
   :align: center
 
-.. |icono-ver-sitio| image:: ../_static/images/icono-ver-sitio.png
+.. |icono-ver-sitio| image:: ../_static/images/04-ediciondataset-32.png
 .. |icono-eliminar| image:: ../_static/images/icono-eliminar.png
 .. |icono-publicado| image:: ../_static/images/icono-publicado.png
-.. |icono-editar| image:: ../_static/images/icono-editar.png
+.. |icono-punto| image:: ../_static/images/icono-punto.png
 .. |btn-borrar| image:: ../_static/images/btn-borrar.png
